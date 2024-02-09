@@ -56,4 +56,4 @@ products.forEach((product) => {
   `;
 });
 
-document.querySelector(".products-grid").innerHTML = productsHTML;
+document.querySelector(".product-grid").innerHTML = productsHTML;
