@@ -1,7 +1,7 @@
 export const products = [
   {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
-    image: "products/athletic-cotton-socks-6-pairs.jpg",
+    image: "images/products/athletic-cotton-socks-6-pairs.jpg",
     name: "Athletic Cotton Socks 6 Pairs",
     rating: {
       stars: 4.5,
@@ -12,7 +12,7 @@ export const products = [
   },
   {
     id: "72f8a8e9-3947-41cf-af2a-258b46825629",
-    image: "products/black-formal-mens.jpeg",
+    image: "images/products/black-formal-mens.jpeg",
     name: "Black Formal Mens",
     rating: {
       stars: 4.2,
@@ -23,7 +23,7 @@ export const products = [
   },
   {
     id: "4ebcfe51-3440-4a7e-9470-3d05897c157d",
-    image: "products/black-high-heels.jpg",
+    image: "images/products/black-high-heels.jpg",
     name: "Black High Heels",
     rating: {
       stars: 4.8,
@@ -34,7 +34,7 @@ export const products = [
   },
   {
     id: "24e36aa7-8264-4e20-8a8b-2d39f4e96f53",
-    image: "products/black-sneakers.jpg",
+    image: "images/products/black-sneakers.jpg",
     name: "Black Sneakers",
     rating: {
       stars: 4.3,
@@ -45,7 +45,7 @@ export const products = [
   },
   {
     id: "9cf21f0c-7a6f-4f1d-bc29-3d0a44f1bc39",
-    image: "products/blue-running-shoes-men.jpg",
+    image: "images/products/blue-running-shoes-men.jpg",
     name: "Blue Running Shoes Men",
     rating: {
       stars: 4.6,
@@ -56,7 +56,7 @@ export const products = [
   },
   {
     id: "e7f3af9e-4f5c-45f5-b7fc-760a41753b47",
-    image: "products/blue-sneakers.jpg",
+    image: "images/products/blue-sneakers.jpg",
     name: "Blue Sneakers",
     rating: {
       stars: 4.4,
@@ -67,7 +67,7 @@ export const products = [
   },
   {
     id: "7daacfbf-6a97-468e-b65f-2e70b45116fb",
-    image: "products/blue-winter-shoes.jpg",
+    image: "images/products/blue-winter-shoes.jpg",
     name: "Blue Winter Shoes",
     rating: {
       stars: 4.0,
@@ -78,7 +78,7 @@ export const products = [
   },
   {
     id: "8919fc8f-6768-4df7-85e1-0363e5f2503e",
-    image: "products/children-sports-shoes-sneakers.jpg",
+    image: "images/products/children-sports-shoes-sneakers.jpg",
     name: "Children Sports Shoes Sneakers",
     rating: {
       stars: 4.7,
@@ -98,7 +98,7 @@ export const products = [
   },
   {
     id: "62f8477b-c6d3-48e1-b862-6a84755a3fb4",
-    image: "products/dark-brown-work-shoes.jpg",
+    image: "images/products/dark-brown-work-shoes.jpg",
     name: "Dark Brown Work Shoes",
     rating: {
       stars: 4.2,
@@ -109,7 +109,7 @@ export const products = [
   },
   {
     id: "14fc5f13-9141-4f95-84e7-d68bc15c8c35",
-    image: "products/women-red-heels.jpg",
+    image: "images/products/women-red-heels.jpg",
     name: "Women Red Heels",
     rating: {
       stars: 4.9,
@@ -128,7 +128,7 @@ export const products = [
   },
   {
     id: "f47ac10b-58cc-4372-a567-0e02b2c3d479",
-    image: "products/women-tan-boots.jpg",
+    image: "images/products/women-tan-boots.jpg",
     name: "Women Tan Boots",
     rating: {
       stars: 0,
