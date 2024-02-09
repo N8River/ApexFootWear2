@@ -15,8 +15,9 @@
 }
 
 .brand-header {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between; /* Align items to the start and end of the header */
+  align-items: center; /* Vertically center items within the header */
 }
 
 .product-image {
