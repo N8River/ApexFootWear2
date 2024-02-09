@@ -1,5 +1,9 @@
 import { products } from "../data/products.js";
-
+const announcements = [
+  "25% OFF ON ALL PRODUCTS | USE CODE: RN25",
+  "BUY 1 PAIR OF SHOES AND GET 1 PAIR OF SOCKS FOR FREE | USE CODE: FG25",
+];
+let currentIndex = 0;
 let productsHTML = "";
 
 products.forEach((product) => {
@@ -57,3 +61,10 @@ products.forEach((product) => {
 });
 
 document.querySelector(".product-grid").innerHTML = productsHTML;
+
+setInterval(() => {
+  document.querySelector(".announcement-bar").innerHTML =
+    announcements[currentIndex];
+
+  currentIndex = (currentIndex + 1) % announcements.length;
+}, 5000);
