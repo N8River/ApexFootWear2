@@ -1,6 +1,6 @@
 .product-image {
-  max-height: 300px;
-  width: auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .product-grid {
@@ -12,7 +12,7 @@
 }
 
 .product-container {
-  padding: 25px 25px;
+  padding: 25px;
 
   border: 1px solid rgb(65, 128, 128);
 
