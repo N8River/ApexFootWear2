@@ -137,4 +137,59 @@ export const products = [
     priceCents: 0,
     keywords: ["women", "tan", "boots", "fashion"],
   },
+  {
+    id: "0d15c791-e925-4a8c-80fd-8a0b9d876a0d",
+    image: "images/products/women-knit-ballet-flat-black.jpg",
+    name: "Women's Knit Ballet Flat - Black",
+    rating: {
+      stars: 4.5,
+      count: 120,
+    },
+    priceCents: 2999,
+    keywords: ["women", "knit", "ballet", "flat", "black"],
+  },
+  {
+    id: "d4b7c5f7-1517-420d-b55c-501b3dc05c5b",
+    image: "images/products/women-beach-sandals.jpg",
+    name: "Women's Beach Sandals",
+    rating: {
+      stars: 4.2,
+      count: 98,
+    },
+    priceCents: 1999,
+    keywords: ["women", "beach", "sandals"],
+  },
+  {
+    id: "5d52926c-7f80-4e6e-b6d7-673a5a660b14",
+    image: "images/products/men-athletic-shoes-green.jpg",
+    name: "Men's Athletic Shoes - Green",
+    rating: {
+      stars: 4.8,
+      count: 150,
+    },
+    priceCents: 3999,
+    keywords: ["men", "athletic", "shoes", "green"],
+  },
+  {
+    id: "07301d1f-7558-4ee3-964b-cd3f6bbf3a5d",
+    image: "images/products/knit-athletic-sneakers-pink.jpg",
+    name: "Knit Athletic Sneakers - Pink",
+    rating: {
+      stars: 4.6,
+      count: 110,
+    },
+    priceCents: 3499,
+    keywords: ["knit", "athletic", "sneakers", "pink"],
+  },
+  {
+    id: "ddc09c63-d682-4b78-bc72-8617cbe42b30",
+    image: "images/products/knit-athletic-sneakers-gray.jpg",
+    name: "Knit Athletic Sneakers - Gray",
+    rating: {
+      stars: 4.7,
+      count: 130,
+    },
+    priceCents: 3499,
+    keywords: ["knit", "athletic", "sneakers", "gray"],
+  },
 ];
