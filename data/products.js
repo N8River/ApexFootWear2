@@ -98,7 +98,7 @@ export const products = [
   },
   {
     id: "62f8477b-c6d3-48e1-b862-6a84755a3fb4",
-    image: "images/products/dark-brown-work-shoes.jpg",
+    image: "images/products/dark-brown-work-shoes.png",
     name: "Dark Brown Work Shoes",
     rating: {
       stars: 4.2,
