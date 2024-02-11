@@ -48,8 +48,11 @@ body {
 }
 
 .product-image {
-  max-height: 100%;
-  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%; /* Set width to 100% of container */
+  max-width: 100%; /* Set height to 100% of container */
 }
 
 .product-grid {
@@ -76,6 +79,9 @@ body {
   width: 250px;
 
   margin-bottom: 15px;
+  position: relative;
+  width: 100%; /* Set width to 100% of container */
+  padding-top: 75%;
 }
 
 .product-name {

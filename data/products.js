@@ -172,7 +172,7 @@ export const products = [
   },
   {
     id: "07301d1f-7558-4ee3-964b-cd3f6bbf3a5d",
-    image: "images/products/knit-athletic-sneakers-pink.jpg",
+    image: "images/products/knit-athletic-sneakers-pink.webp",
     name: "Knit Athletic Sneakers - Pink",
     rating: {
       stars: 4.6,
