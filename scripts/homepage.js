@@ -45,6 +45,17 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % announcements.length;
 }, 5000);
 
+// window.addEventListener("scroll", function () {
+//   var header = document.querySelector(".brand-header");
+//   // var announcementBarHeight =
+//   //   document.querySelector(".announcement-bar").offsetHeight;
+//   if (window.scrollY > 5) {
+//     header.classList.add("fixed-header");
+//   } else {
+//     header.classList.remove("fixed-header");
+//   }
+// });
+
 // document.querySelector(".about-us-text").innerHTML = `
 // At ApexFootWear, we stride forward with a passion for crafting footwear that not only complements your style but also enhances your comfort and performance. With a rich legacy spanning generations, we pride ourselves on being a trusted companion in every step of your journey.
 

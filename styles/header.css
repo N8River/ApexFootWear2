@@ -1,10 +1,28 @@
 .announcement-bar {
-  background-color: #005959;
-  padding: 15px;
+  background-color: #004646;
+  height: 40px;
   font-weight: bold;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto";
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  font-size: 17px;
+}
+
+.fixed-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 80px; /* This sets the fixed height of the header */
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
 }
 
 .brand-header {
