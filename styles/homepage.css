@@ -19,6 +19,7 @@ body {
   grid-gap: 15px;
   border: 1px solid rgb(65, 128, 128);
   padding: 15px;
+  margin-bottom: 50px;
 }
 
 .product-container {
