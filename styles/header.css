@@ -56,7 +56,10 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
-  padding-left: 320px;
+  justify-items: center;
+  align-items: center;
+
+  padding-left: 350px;
   padding-right: 40px;
 }
 

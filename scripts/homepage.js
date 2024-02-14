@@ -8,30 +8,33 @@ let productsHTML = "";
 
 products.forEach((product) => {
   productsHTML += `
-  <div class="product-container block rounded-lg p-4 shadow-sm shadow-indigo-100">
+  <div class="product-container">
     <div class="product-image-container">
       <img
-        alt=""
         src="${product.image}"
-        class="product-image h-56 w-full rounded-md object-cover"
+        class="product-image"
       />
     </div>
-    <div class="mt-2">
-      <dl>
-        <div>
-          <dt class="sr-only">Price</dt>
-
-          <dd class="text-sm text-gray-500">$${(
-            product.priceCents / 100
-          ).toFixed(2)}</dd>
-        </div>
-
-        <div>
-          <dt class="sr-only">Product Name</dt>
-
-          <dd class="font-medium">${product.name}</dd>
-        </div>
-      </dl>
+    <div class="product-name">
+      ${product.name}
+    </div>
+    <div class="product-price">
+      <span class="price-original">      
+        Rs.${product.priceCents}
+      </span>
+      <span class="price-discounted">
+        Rs.${(product.priceCents * 0.9).toFixed(0)}
+      </span>
+      <span class="discount">
+        Save 10%
+      </span>
+    </div>
+    <div class="size-options">
+      <div class="size-variants"> 41 </div>
+      <div class="size-variants"> 42 </div>
+      <div class="size-variants"> 43 </div>
+      <div class="size-variants"> 44 </div>
+      <div class="size-variants"> 45 </div>
     </div>
   </div>`;
 });

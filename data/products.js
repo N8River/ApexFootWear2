@@ -1,15 +1,15 @@
 export const products = [
-  {
-    id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
-    image: "images/products/athletic-cotton-socks-6-pairs.jpg",
-    name: "Athletic Cotton Socks 6 Pairs",
-    rating: {
-      stars: 4.5,
-      count: 87,
-    },
-    priceCents: 1090,
-    keywords: ["athletic", "cotton", "socks", "sports", "apparel"],
-  },
+  // {
+  //   id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+  //   image: "images/products/athletic-cotton-socks-6-pairs.jpg",
+  //   name: "Athletic Cotton Socks 6 Pairs",
+  //   rating: {
+  //     stars: 4.5,
+  //     count: 87,
+  //   },
+  //   priceCents: 1090,
+  //   keywords: ["athletic", "cotton", "socks", "sports", "apparel"],
+  // },
   {
     id: "72f8a8e9-3947-41cf-af2a-258b46825629",
     image: "images/products/black-formal-mens.jpeg",
@@ -134,7 +134,7 @@ export const products = [
       stars: 0,
       count: 0,
     },
-    priceCents: 0,
+    priceCents: 3499,
     keywords: ["women", "tan", "boots", "fashion"],
   },
   {

@@ -1,0 +1,53 @@
+.product-name {
+  font-family: "Roboto";
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* font-weight: bold; */
+  /* background-color: aqua; */
+}
+
+.product-price {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-evenly;
+  align-items: center;
+
+  font-family: "Frank Libre";
+  font-weight: normal;
+
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.discount {
+  color: green;
+}
+
+.price-original {
+  text-decoration: line-through;
+}
+
+.size-variants {
+  border: 1px solid #dddddd;
+
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+  padding: 5px 12px;
+}
+
+.size-options {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: space-evenly;
+
+  cursor: pointer;
+}
