@@ -8,6 +8,16 @@
   src: url("../fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf");
 }
 
+@font-face {
+  font-family: "FF-regular";
+  src: url("../fonts/Forever Freedom/Forever Freedom Regular.otf");
+}
+
+@font-face {
+  font-family: "FF-italic";
+  src: url("../fonts/Forever Freedom/Forever Freedom Italic.otf");
+}
+
 .footer-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
