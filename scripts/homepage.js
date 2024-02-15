@@ -47,3 +47,21 @@ setInterval(() => {
 
   currentIndex = (currentIndex + 1) % announcements.length;
 }, 5000);
+
+// document.querySelector(".trending-btn").addEventListener("click", (event) => {
+//   event.target.classList.add("selected-btn");
+// });
+
+document.querySelectorAll(".trending-btn, .new-releases-btn").forEach((btn) => {
+  btn.addEventListener("click", (event) => {
+    btn.classList.toggle("selected-btn");
+
+    document
+      .querySelectorAll(".trending-btn, .new-releases-btn")
+      .forEach((otherBtn) => {
+        if (otherBtn !== btn) {
+          otherBtn.classList.remove("selected-btn");
+        }
+      });
+  });
+});
