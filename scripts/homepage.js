@@ -47,29 +47,3 @@ setInterval(() => {
 
   currentIndex = (currentIndex + 1) % announcements.length;
 }, 5000);
-
-// window.addEventListener("scroll", function () {
-//   var header = document.querySelector(".brand-header");
-//   // var announcementBarHeight =
-//   //   document.querySelector(".announcement-bar").offsetHeight;
-//   if (window.scrollY > 5) {
-//     header.classList.add("fixed-header");
-//   } else {
-//     header.classList.remove("fixed-header");
-//   }
-// });
-
-// document.querySelector(".about-us-text").innerHTML = `
-// At ApexFootWear, we stride forward with a passion for crafting footwear that not only complements your style but also enhances your comfort and performance. With a rich legacy spanning generations, we pride ourselves on being a trusted companion in every step of your journey.
-
-// For Men:
-// Discover the epitome of style and functionality with our meticulously designed men's footwear collection. From rugged outdoor adventures to sophisticated urban settings, our shoes blend durability with timeless elegance, ensuring you step out in confidence, no matter the occasion.
-
-// For Women:
-// Elevate your fashion game with ApexFootWear's exquisite range of women's shoes. Whether you're conquering the boardroom or embracing the weekend getaway, our footwear seamlessly integrates fashion-forward designs with superior comfort, empowering you to make a statement with every step.
-
-// For Children:
-// At ApexFootWear, we understand the importance of nurturing young feet with the utmost care and support. Our children's footwear collection combines playful designs with uncompromising quality, providing the perfect balance of style and functionality for your little ones' active lifestyles.
-
-// From the playground to the classroom, ApexFootWear accompanies you and your family on every adventure, ensuring that every step is a stride towards comfort, confidence, and style.
-// `;

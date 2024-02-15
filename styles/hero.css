@@ -44,46 +44,122 @@
   grid-column: 2 / 6;
   grid-row: 2 / 8;
 
-  font-family: "Frank Libre";
-  font-size: 72px;
-  font-weight: bold;
-
-  display: flex;
-  justify-content: flex-end;
-}
-
-.q2 {
-  grid-column: 6/8;
-  grid-row: 5/7;
-
   font-family: "FF-regular";
-  font-size: 70px;
-}
-
-.shop-mens-btn {
-  grid-column: 6/7;
-  grid-row: 7/8;
+  font-size: 110px;
+  /* font-weight: bold; */
+  letter-spacing: 2px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
+  text-align: right;
+  padding-right: 20px;
+}
+
+.q2 {
+  grid-column: 6/8;
+  grid-row: 4/6;
+
+  font-family: "FF-regular";
+  font-size: 75px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-mens-btn {
+  grid-column: 6/7;
+  grid-row: 6/7;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
   margin-top: 15px;
   margin-bottom: 15px;
   padding-left: 5px;
   padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 
   border-radius: 55px;
-  border: 3px solid black;
+  border: 4px solid black;
 
   font-family: "Frank Libre";
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
+
+  text-align: center;
+
+  cursor: pointer;
 }
 
 .women-hero {
   height: 700px;
   display: flex;
+}
+
+.women-hero-text-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.q3 {
+  grid-column: 2 / 6;
+  grid-row: 2 / 8;
+
+  font-family: "FF-regular";
+  font-size: 110px;
+  letter-spacing: 3px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  text-align: right;
+  padding-right: 20px;
+}
+
+.q4 {
+  grid-column: 6/8;
+  grid-row: 3/7;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "FF-regular";
+  font-size: 65px;
+}
+
+.shop-womens-btn {
+  grid-column: 6/7;
+  grid-row: 7/8;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  border-radius: 55px;
+  border: 4px solid black;
+
+  font-family: "Frank Libre";
+  font-weight: bold;
+  font-size: 20px;
+
+  text-align: center;
+
+  cursor: pointer;
 }
 
 .img-men-hero {

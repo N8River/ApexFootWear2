@@ -43,10 +43,11 @@
 
 .brand-header-middle {
   margin: 5px;
-  max-height: 70px; /* Setting max-height to 100% */
-  display: flex;
+  height: 70px; /* Setting max-height to 100% */
+
+  display: grid;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 .brand-header-right {
@@ -74,10 +75,13 @@
   cursor: pointer;
 }
 
-.menu-logo,
-.brand-logo {
+.menu-logo {
   max-width: 100%; /* Make the image fill the width of the container */
   max-height: 100%; /* Make the image fill the height of the container */
+}
+
+.brand-logo {
+  height: 70px;
 }
 
 .user-btn,
@@ -97,54 +101,3 @@
   max-width: 100%;
   max-height: 100%;
 }
-
-/* .brand-logo {
-  margin-top: 0;
-  margin-bottom: 0;
-  width: auto;
-  height: 75px;
-} */
-
-/* .brand-header-middle {
-  display: flex;
-  align-items: center;
-  height: 100%;
-} */
-
-/* .brand-logo {
-  max-height: 100%;
-} */
-
-/* .menu-logo {
-  width: auto;
-  height: 35px;
-} */
-
-/* .btn-menu {
-  border: none;
-  padding-left: 40px;
-  padding-right: 40px;
-  font-weight: bold;
-  background-color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  cursor: pointer;
-  font-size: 30px;
-} */
-
-/* .brand-header-right {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  height: 100%;
-  margin-bottom: 20px;
-} */
-
-/* .wishlist-logo,
-.cart-logo,
-.user-logo,
-.search-logo {
-  max-height: 50px;
-  width: auto;
-} */
