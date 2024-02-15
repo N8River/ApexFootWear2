@@ -3,11 +3,18 @@ const announcements = [
   "25% OFF ON ALL PRODUCTS | USE CODE: RN25",
   "BUY 1 PAIR OF SHOES AND GET 1 PAIR OF SOCKS FOR FREE | USE CODE: FG25",
 ];
+
 let currentIndex = 0;
+setInterval(() => {
+  document.querySelector(".announcement-bar").innerHTML =
+    announcements[currentIndex];
 
-renderProducts();
+  currentIndex = (currentIndex + 1) % announcements.length;
+}, 5000);
 
-function renderProducts() {
+renderProducts(categorizeProductsTags(products).newRelease);
+
+function renderProducts(products) {
   let productsHTML = "";
 
   products.forEach((product) => {
@@ -46,12 +53,24 @@ function renderProducts() {
   document.querySelector(".product-grid").innerHTML = productsHTML;
 }
 
-setInterval(() => {
-  document.querySelector(".announcement-bar").innerHTML =
-    announcements[currentIndex];
+function categorizeProductsTags(products) {
+  let newReleaseProducts = [];
+  let trendingProducts = [];
+  products.forEach((product) => {
+    if (product.tag === "new-release") {
+      newReleaseProducts.push(product);
+    } else if (product.tag === "trending") {
+      trendingProducts.push(product);
+    }
+  });
 
-  currentIndex = (currentIndex + 1) % announcements.length;
-}, 5000);
+  return {
+    newRelease: newReleaseProducts,
+    trending: trendingProducts,
+  };
+}
+
+function renderProductsTab() {}
 
 document.querySelectorAll(".trending-btn, .new-releases-btn").forEach((btn) => {
   btn.addEventListener("click", (event) => {
@@ -64,5 +83,13 @@ document.querySelectorAll(".trending-btn, .new-releases-btn").forEach((btn) => {
           otherBtn.classList.remove("selected-btn");
         }
       });
+
+    const categorizedProducts = categorizeProductsTags(products);
+
+    if (btn.classList.contains("new-releases-btn")) {
+      renderProducts(categorizedProducts.newRelease);
+    } else if (btn.classList.contains("trending-btn")) {
+      renderProducts(categorizedProducts.trending);
+    }
   });
 });
