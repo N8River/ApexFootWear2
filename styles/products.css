@@ -6,6 +6,8 @@
   justify-content: center;
   align-items: center;
 
+  margin-bottom: 10px;
+
   /* font-weight: bold; */
   /* background-color: aqua; */
 }
@@ -22,6 +24,8 @@
 
   padding-left: 25px;
   padding-right: 25px;
+
+  margin-bottom: 10px;
 }
 
 .discount {

@@ -4,10 +4,14 @@ const announcements = [
   "BUY 1 PAIR OF SHOES AND GET 1 PAIR OF SOCKS FOR FREE | USE CODE: FG25",
 ];
 let currentIndex = 0;
-let productsHTML = "";
 
-products.forEach((product) => {
-  productsHTML += `
+renderProducts();
+
+function renderProducts() {
+  let productsHTML = "";
+
+  products.forEach((product) => {
+    productsHTML += `
   <div class="product-container">
     <div class="product-image-container">
       <img
@@ -37,9 +41,10 @@ products.forEach((product) => {
       <div class="size-variants"> 45 </div>
     </div>
   </div>`;
-});
+  });
 
-document.querySelector(".product-grid").innerHTML = productsHTML;
+  document.querySelector(".product-grid").innerHTML = productsHTML;
+}
 
 setInterval(() => {
   document.querySelector(".announcement-bar").innerHTML =
@@ -47,10 +52,6 @@ setInterval(() => {
 
   currentIndex = (currentIndex + 1) % announcements.length;
 }, 5000);
-
-// document.querySelector(".trending-btn").addEventListener("click", (event) => {
-//   event.target.classList.add("selected-btn");
-// });
 
 document.querySelectorAll(".trending-btn, .new-releases-btn").forEach((btn) => {
   btn.addEventListener("click", (event) => {
