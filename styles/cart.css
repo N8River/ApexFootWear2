@@ -1,0 +1,92 @@
+/* Cart Container Style */
+.cart-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 450px; /* Adjust width as needed */
+
+  background-color: rgba(255, 255, 255);
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Add shadow for depth */
+
+  z-index: 999; /* Ensure it's above other elements but below cart button */
+
+  backdrop-filter: blur(5px); /* Apply backdrop filter for blur effect */
+  overflow-y: auto; /* Allow scrolling if content exceeds container */
+  /* padding: 20px; */
+  transition: transform 0.3s ease; /* Add smooth transition */
+  /* transform: translateX(100%); Start off-screen */
+}
+
+/* Show Cart Container when Active */
+.cart-container.active {
+  /* transform: translateX(0); Slide in from right */
+}
+
+.cart-heading {
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 15px;
+
+  font-family: "Frank Libre";
+  font-weight: 600;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+.cart-product-container {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  /* border: 1px solid black; */
+}
+
+.cart-product-container-child {
+  border-bottom: 1px solid rgb(230, 230, 230);
+  height: 125px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  display: grid;
+  grid-template-columns: 180px 240px;
+}
+
+.cart-product-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-product-img {
+  max-height: 120px;
+  max-width: 180px;
+}
+
+.cart-product-info-container {
+  padding-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.cart-product-name {
+  font-family: "Frank Libre";
+  font-weight: 500;
+
+  margin-bottom: 15px;
+}
+
+.cart-product-info-sub {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  display: flex;
+  justify-content: space-evenly;
+}
