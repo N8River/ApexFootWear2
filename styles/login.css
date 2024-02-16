@@ -1,0 +1,151 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 500px;
+  padding-right: 500px;
+
+  margin-top: 50px;
+  margin-bottom: 500px;
+}
+
+.login-heading {
+  font-family: "Frank Libre";
+  font-weight: 550;
+
+  display: flex;
+  padding-bottom: 5px;
+}
+
+.login-lines {
+  font-family: "Frank Libre";
+  margin: 5px;
+}
+
+.tel-input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 5px;
+  height: 40px;
+
+  padding-left: 5px;
+  padding-right: 5px;
+
+  padding: 5px;
+
+  margin: 5px;
+}
+
+.tel-input {
+  border: none;
+  border-left: 1px solid rgb(128, 128, 128);
+
+  padding: 5px;
+
+  height: 100%;
+
+  font-family: "Roboto";
+  text-align: center;
+  font-size: 16px;
+
+  outline: none;
+}
+
+.img-flag {
+  max-height: 100%;
+}
+
+.tel-input-container-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 5px;
+
+  height: 100%;
+}
+
+.request-otp-btn {
+  margin: 7px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Frank Libre";
+  font-size: 16px;
+
+  color: white;
+  background-color: black;
+
+  border: none;
+  border-radius: 10px;
+
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.login-lines-2 {
+  width: 400px;
+  font-family: "Frank Libre";
+  margin: 5px;
+  font-size: 19px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+}
+
+.login-lines-2::before,
+.login-lines-2::after {
+  content: "";
+  display: inline-block;
+  width: 65px; /* Adjust the width based on your text length */
+  height: 1px; /* Adjust thickness of the line */
+  background-color: black; /* Adjust color of the line */
+  vertical-align: middle;
+}
+
+.login-lines-2::before {
+  margin-right: 10px; /* Adjust spacing between text and line */
+}
+
+.login-lines-2::after {
+  margin-left: 10px; /* Adjust spacing between text and line */
+}
+
+.login-action-btn {
+  margin: 7px;
+
+  width: 150px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 10px;
+
+  font-family: "Frank Libre";
+  font-size: 16px;
+
+  background-color: white;
+
+  font-family: "Frank Libre";
+}
+
+.login-action-btn-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-right: 7px;
+}

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/hero.css" />
     <link rel="stylesheet" href="styles/tab.css" />
     <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/login.css" />
   </head>
   <body>
     <!-- ANNOUNCEMENT BAR -->
@@ -48,6 +49,31 @@
           <img class="cart-logo" src="images/logos/svg/cart.svg" />
         </div>
       </div>
+    </div>
+
+    <!-- LOGIN PROMPT -->
+    <div class="login-container">
+      <h1 class="login-heading">LOGIN WITH OTP</h1>
+      <p class="login-lines">Please enter your 10 digit mobile number</p>
+      <div class="tel-input-container">
+        <div class="tel-input-container-child">
+          <img class="img-flag" src="images/logos/india-flag-icon.png" />
+          +91
+        </div>
+        <input
+          type="tel"
+          placeholder="phone number"
+          maxlength="10"
+          class="tel-input"
+        />
+      </div>
+      <button class="request-otp-btn">Request OTP</button>
+      <p class="login-lines">A 6 digit OTP will be sent to your phone number</p>
+      <p class="login-lines-2">Or Sign-in with</p>
+      <button class="login-action-btn">
+        <img src="images/logos/svg/email.svg" class="login-action-btn-img" />
+        Email
+      </button>
     </div>
 
     <!-- FOOTER  -->
