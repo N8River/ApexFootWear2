@@ -1,0 +1,48 @@
+a {
+  color: inherit; /* Use the color inherited from the parent element */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.about-container {
+  display: flex;
+  padding-left: 250px;
+  padding-right: 250px;
+
+  background-color: #005959;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+  text-align: center;
+
+  font-family: "FF-regular";
+  /* font-weight: bold; */
+  letter-spacing: 2px;
+  font-size: 48px;
+  color: white;
+
+  margin-bottom: 10px;
+}
+
+.about-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  letter-spacing: 5px;
+  font-family: "FF-regular";
+  font-size: 72px;
+
+  /* font-weight: bold; */
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
