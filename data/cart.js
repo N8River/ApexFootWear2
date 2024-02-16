@@ -40,7 +40,17 @@ cart.forEach((cartItem) => {
           </div>
 
           <div class="cart-product-info-sub">
-            <div class="cart-product-quantity">${cartItem.quantity}</div>
+            <div class="add-remove-cart-item">
+              <div class="remove-cart-item">
+                -
+              </div>              
+              <div class="cart-product-quantity">
+              ${cartItem.quantity}
+              </div>
+              <div class="add-cart-item">
+                +
+              </div>
+            </div>
             <div class="cart-product-price">Rs.${matchingItem.priceCents}</div>
           </div>
 
@@ -53,3 +63,13 @@ cart.forEach((cartItem) => {
 });
 
 document.querySelector(".cart-product-container").innerHTML = cartContainerHTML;
+
+// Get cart button and cart container elements
+const cartBtn = document.querySelector(".cart-btn");
+const cartContainer = document.querySelector(".cart-container");
+
+// Add click event listener to cart button
+cartBtn.addEventListener("click", () => {
+  // Toggle 'active' class to show/hide cart container
+  cartContainer.classList.toggle("active");
+});

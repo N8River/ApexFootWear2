@@ -13,15 +13,19 @@
   z-index: 999; /* Ensure it's above other elements but below cart button */
 
   backdrop-filter: blur(5px); /* Apply backdrop filter for blur effect */
+
   overflow-y: auto; /* Allow scrolling if content exceeds container */
-  /* padding: 20px; */
-  transition: transform 0.3s ease; /* Add smooth transition */
-  /* transform: translateX(100%); Start off-screen */
+
+  /* Add smooth transition */
+  transition: transform 0.2s ease;
+
+  /* Start off-screen */
+  transform: translateX(100%); /* Start off-screen */
 }
 
 /* Show Cart Container when Active */
 .cart-container.active {
-  /* transform: translateX(0); Slide in from right */
+  transform: translateX(0); /*Slide in from right*/
 }
 
 .cart-heading {
@@ -76,17 +80,73 @@
   justify-content: space-evenly;
 }
 
+.cart-product-info-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .cart-product-name {
   font-family: "Frank Libre";
   font-weight: 500;
 
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .cart-product-info-sub {
   margin-top: 5px;
   margin-bottom: 5px;
 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.add-remove-cart-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* justify-self: center; */
+  border: 1px solid rgb(128, 128, 128);
+}
+
+.cart-product-price {
+  grid-column: 3;
+
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-cart-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-left: 1px solid rgb(128, 128, 128);
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+  font-weight: 500;
+}
+
+.remove-cart-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-right: 1px solid rgb(128, 128, 128);
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+  font-weight: 500;
+}
+
+.cart-product-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+  font-weight: 300;
+  font-family: "Frank Libre";
 }
