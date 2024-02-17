@@ -1,5 +1,8 @@
 /* Cart Container Style */
 .cart-container {
+  /* display: flex;
+  flex-direction: column; */
+
   position: fixed;
   top: 0;
   right: 0;
@@ -12,7 +15,7 @@
 
   z-index: 999; /* Ensure it's above other elements but below cart button */
 
-  backdrop-filter: blur(5px); /* Apply backdrop filter for blur effect */
+  backdrop-filter: blur(20px); /* Apply backdrop filter for blur effect */
 
   overflow-y: auto; /* Allow scrolling if content exceeds container */
 
@@ -28,19 +31,52 @@
   transform: translateX(0); /*Slide in from right*/
 }
 
-.cart-heading {
+/* .blur {
+  filter: blur(5px);
+} */
+
+.cart-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid rgb(198, 198, 198);
+
   margin-top: 15px;
   margin-left: 20px;
   margin-right: 20px;
   padding-bottom: 15px;
+}
 
-  font-family: "Frank Libre";
+.cart-heading {
+  font-family: "Roboto";
   font-weight: 600;
+
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
 
-  border-bottom: 1px solid rgb(198, 198, 198);
+  letter-spacing: 1px;
+}
+
+.close-cart-btn {
+  font-family: "Frank Libre";
+  font-size: 32px;
+  font-weight: 600;
+
+  border: none;
+  background-color: white;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+}
+
+.close-cart-btn-img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .cart-product-container {
@@ -125,6 +161,12 @@
   padding-bottom: 2px;
 
   font-weight: 500;
+  cursor: pointer;
+}
+
+.add-cart-item:hover {
+  color: white;
+  background-color: black;
 }
 
 .remove-cart-item {
@@ -137,6 +179,12 @@
   padding-bottom: 2px;
 
   font-weight: 500;
+  cursor: pointer;
+}
+
+.remove-cart-item:hover {
+  color: white;
+  background-color: black;
 }
 
 .cart-product-quantity {
@@ -149,4 +197,85 @@
 
   font-weight: 300;
   font-family: "Frank Libre";
+}
+
+.subtotal-container {
+  position: fixed;
+  bottom: 0;
+
+  width: 420px;
+
+  margin-left: 15px;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border-top: 1px solid rgb(128, 128, 128);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: white;
+}
+
+.subtotal-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-bottom: 5px;
+}
+
+.subtotal-heading {
+  display: flex;
+  justify-content: center;
+
+  font-family: "Frank Libre";
+  font-weight: 500;
+}
+
+.subtotal-calculated {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.subtotal-description {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  font-family: "Frank Libre";
+  font-size: 14px;
+}
+
+.checkout-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 72px;
+
+  font-family: "Frank Libre";
+  font-weight: 500;
+
+  letter-spacing: 1px;
+
+  color: white;
+  background-color: black;
+
+  border: none;
+}
+
+.checkout-text {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.checkout-description {
+  font-size: 11px;
+  font-weight: 400;
 }
