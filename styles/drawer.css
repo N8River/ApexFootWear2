@@ -1,0 +1,87 @@
+.drawer-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 350px;
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  backdrop-filter: blur(20px);
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  /* transform: translateX(-100%); */
+}
+
+.drawer-container.active {
+  transform: translateX(0);
+}
+
+.drawer-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  font-family: "Frank Libre";
+  font-weight: 500;
+  font-size: 18px;
+
+  letter-spacing: 1px;
+}
+
+.drawer-login-user-img {
+  max-height: 30px;
+  max-width: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 10px;
+}
+
+.drawer-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.drawer-scrollable {
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer-elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  margin-left: 10px;
+}
+
+.drawer-element-new-arrivals,
+.drawer-element-most-trending,
+.drawer-element-shop,
+.drawer-element-track-order,
+.drawer-element-return-replace,
+.drawer-element-customer-support,
+.drawer-element-visit-store {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  margin-left: 10px;
+  margin-right: 30px;
+  border-top: 1px solid rgb(212, 212, 212);
+
+  font-family: "Frank Libre";
+  font-size: 18px;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+}

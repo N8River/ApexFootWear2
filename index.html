@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/tab.css" />
     <link rel="stylesheet" href="styles/about.css" />
     <link rel="stylesheet" href="styles/cart.css" />
+    <link rel="stylesheet" href="styles/drawer.css" />
   </head>
   <body>
     <!-- ANNOUNCEMENT BAR -->
@@ -62,6 +63,31 @@
 
       <div class="cart-product-container"></div>
       <div class="cart-footer"></div>
+    </div>
+
+    <!-- DRAWER -->
+    <div class="drawer-container">
+      <div class="drawer-header">
+        <div class="drawer-login">
+          <img class="drawer-login-user-img" src="images/logos/svg/user.svg" />
+          <p class="drawer-login-text">LOGIN</p>
+        </div>
+        <div class="drawer-close-btn">
+          <img src="images/logos/svg/close.svg" />
+        </div>
+      </div>
+      <div class="drawer-scrollable">
+        <div class="drawer-elements">
+          <div class="drawer-element-new-arrivals">NEW ARRIVALS</div>
+          <div class="drawer-element-most-trending">MOST TRENDING</div>
+          <div class="drawer-element-shop">SHOP</div>
+          <div class="drawer-element-track-order">TRACK ORDER</div>
+          <div class="drawer-element-return-replace">RETURN / REPLACE</div>
+          <div class="drawer-element-customer-support">CUSTOMER SUPPORT</div>
+          <div class="drawer-element-visit-store">VISIT STORE</div>
+        </div>
+        <div class="drawer-socials"></div>
+      </div>
     </div>
 
     <!-- HERO SECTION -->
@@ -189,5 +215,6 @@
     <script type="module" src="scripts/homepage.js"></script>
     <script type="module" src="scripts/about.js"></script>
     <script type="module" src="data/cart.js"></script>
+    <script type="module" src="scripts/drawer.js"></script>
   </body>
 </html>
