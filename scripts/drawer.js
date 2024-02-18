@@ -7,6 +7,9 @@ const shopDropdown = document.getElementById("shopDropdown");
 const menDrawerButton = document.getElementById("menDrawerButton");
 const menDropdown = document.getElementById("menDropdown");
 
+const womenDrawerButton = document.getElementById("womenDrawerButton");
+const womenDropdown = document.getElementById("womenDropdown");
+
 // Open draer when drawer button is clicked
 drawerBtn.addEventListener("click", () => {
   drawerContainer.classList.toggle("active");
@@ -55,6 +58,25 @@ menDrawerButton.addEventListener("click", () => {
     menDropdown.style.opacity = "0";
     setTimeout(() => {
       menDropdown.style.display = "none";
+    }, 100);
+  }
+});
+
+womenDrawerButton.addEventListener("click", () => {
+  womenDropdown.classList.toggle("open");
+
+  const womenArrowContainer = document.querySelector(".arrow-down-women");
+  womenArrowContainer.classList.toggle("open");
+
+  if (womenDropdown.classList.contains("open")) {
+    womenDropdown.style.display = "block";
+    setTimeout(() => {
+      womenDropdown.style.opacity = "1";
+    }, 10);
+  } else {
+    womenDropdown.style.opacity = "0";
+    setTimeout(() => {
+      womenDropdown.style.display = "none";
     }, 100);
   }
 });
