@@ -180,7 +180,8 @@
 
 .dropdown-men,
 .dropdown-women,
-.dropdown-kid {
+.dropdown-kid,
+.view-all-shop {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -194,6 +195,12 @@
 
   font-family: "Frank Libre";
   cursor: pointer;
+}
+
+.view-all-shop {
+  font-family: "Roboto";
+  font-weight: 450;
+  padding-bottom: 20px;
 }
 
 .dropdown-men-list {
