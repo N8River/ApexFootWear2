@@ -40,13 +40,19 @@
   padding-bottom: 5px;
 }
 
-.for-dropdown-list {
+.for-dropdown-list,
+.style-dropdown-list,
+.price-dropdown-list,
+.color-dropdown-list {
   display: none;
   opacity: 0;
   transition: opacity 0.2s ease;
 }
 
-.for-dropdown-list div {
+.for-dropdown-list div,
+.style-dropdown-list div,
+.price-dropdown-list div,
+.color-dropdown-list div {
   width: 250px;
   display: flex;
   flex-direction: column;

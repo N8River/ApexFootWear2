@@ -2,25 +2,59 @@ import { products } from "../data/products.js";
 
 const forDropdownBtn = document.getElementById("forDropdownBtn");
 const forDropdown = document.getElementById("forDropdown");
+drawerButtonHandler(forDropdownBtn, forDropdown);
 
-forDropdownBtn.addEventListener("click", () => {
-  forDropdown.classList.toggle("open");
+const styleDropdownBtn = document.getElementById("styleDropdownBtn");
+const styleDropdown = document.getElementById("styleDropdown");
+drawerButtonHandler(styleDropdownBtn, styleDropdown);
 
-  // const menArrowContainer = document.querySelector(".arrow-down-men");
-  // menArrowContainer.classList.toggle("open");
+const priceDropdownBtn = document.getElementById("priceDropdownBtn");
+const priceDropdown = document.getElementById("priceDropdown");
+drawerButtonHandler(priceDropdownBtn, priceDropdown);
 
-  if (forDropdown.classList.contains("open")) {
-    forDropdown.style.display = "block";
-    setTimeout(() => {
-      forDropdown.style.opacity = "1";
-    }, 10);
-  } else {
-    forDropdown.style.opacity = "0";
-    setTimeout(() => {
-      forDropdown.style.display = "none";
-    }, 100);
-  }
-});
+const colorDropdownBtn = document.getElementById("colorDropdownBtn");
+const colorDropdown = document.getElementById("colorDropdown");
+drawerButtonHandler(colorDropdownBtn, colorDropdown);
+
+function drawerButtonHandler(button, drawer, arrowLink) {
+  button.addEventListener("click", () => {
+    drawer.classList.toggle("open");
+
+    // const menArrowContainer = document.querySelector(".arrow-down-men");
+    // menArrowContainer.classList.toggle("open");
+
+    if (drawer.classList.contains("open")) {
+      drawer.style.display = "block";
+      setTimeout(() => {
+        drawer.style.opacity = "1";
+      }, 10);
+    } else {
+      drawer.style.opacity = "0";
+      setTimeout(() => {
+        drawer.style.display = "none";
+      }, 100);
+    }
+  });
+}
+
+// forDropdownBtn.addEventListener("click", () => {
+//   forDropdown.classList.toggle("open");
+
+//   // const menArrowContainer = document.querySelector(".arrow-down-men");
+//   // menArrowContainer.classList.toggle("open");
+
+//   if (forDropdown.classList.contains("open")) {
+//     forDropdown.style.display = "block";
+//     setTimeout(() => {
+//       forDropdown.style.opacity = "1";
+//     }, 10);
+//   } else {
+//     forDropdown.style.opacity = "0";
+//     setTimeout(() => {
+//       forDropdown.style.display = "none";
+//     }, 100);
+//   }
+// });
 
 renderProductsCollection(products);
 function renderProductsCollection(products) {
