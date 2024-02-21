@@ -12,9 +12,9 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % announcements.length;
 }, 5000);
 
-renderProducts(categorizeProductsTags(products).newRelease);
+renderProducts(categorizeProductsTags(products).newRelease, ".product-grid");
 
-function renderProducts(products) {
+function renderProducts(products, link) {
   let productsHTML = "";
 
   products.forEach((product) => {
@@ -50,7 +50,7 @@ function renderProducts(products) {
   </div>`;
   });
 
-  document.querySelector(".product-grid").innerHTML = productsHTML;
+  document.querySelector(`link`).innerHTML = productsHTML;
 }
 
 function categorizeProductsTags(products) {
@@ -87,9 +87,9 @@ document.querySelectorAll(".trending-btn, .new-releases-btn").forEach((btn) => {
     const categorizedProducts = categorizeProductsTags(products);
 
     if (btn.classList.contains("new-releases-btn")) {
-      renderProducts(categorizedProducts.newRelease);
+      renderProducts(categorizedProducts.newRelease, ".product-grid");
     } else if (btn.classList.contains("trending-btn")) {
-      renderProducts(categorizedProducts.trending);
+      renderProducts(categorizedProducts.trending, ".product-grid");
     }
   });
 });

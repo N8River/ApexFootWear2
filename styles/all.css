@@ -1,0 +1,69 @@
+.products-layout {
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.products-layout-left {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+
+  width: 300px;
+}
+
+.products-layout-right {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+}
+
+.for-layout-drawer,
+.style-layout-drawer,
+.price-layout-drawer,
+.color-layout-drawer {
+  width: 250px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribute items along the main axis */
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.for-dropdown-list {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.for-dropdown-list div {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  font-family: "Frank Libre";
+  font-size: 17px;
+  font-weight: 450;
+}
+
+.for-dropdown-kid {
+  border-bottom: 1px solid rgb(230, 230, 230);
+  padding-bottom: 8px;
+}
