@@ -37,25 +37,6 @@ function drawerButtonHandler(button, drawer, arrowLink) {
   });
 }
 
-// forDropdownBtn.addEventListener("click", () => {
-//   forDropdown.classList.toggle("open");
-
-//   // const menArrowContainer = document.querySelector(".arrow-down-men");
-//   // menArrowContainer.classList.toggle("open");
-
-//   if (forDropdown.classList.contains("open")) {
-//     forDropdown.style.display = "block";
-//     setTimeout(() => {
-//       forDropdown.style.opacity = "1";
-//     }, 10);
-//   } else {
-//     forDropdown.style.opacity = "0";
-//     setTimeout(() => {
-//       forDropdown.style.display = "none";
-//     }, 100);
-//   }
-// });
-
 renderProductsCollection(products);
 function renderProductsCollection(products) {
   let productsHTML = "";
@@ -73,7 +54,7 @@ function renderProductsCollection(products) {
         ${product.name}
       </div>
       <div class="product-price">
-        <span class="price-original">      
+        <span class="price-original">
           Rs.${product.priceCents}
         </span>
         <span class="price-discounted">
@@ -91,8 +72,6 @@ function renderProductsCollection(products) {
         <div class="size-variants"> 45 </div>
       </div>
     </div>`;
-
-    console.log(product.image);
   });
 
   document.querySelector(".products-layout-right").innerHTML = productsHTML;

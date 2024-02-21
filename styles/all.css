@@ -38,6 +38,8 @@
 
   padding-top: 5px;
   padding-bottom: 5px;
+
+  cursor: pointer;
 }
 
 .for-dropdown-list,
@@ -73,3 +75,80 @@
   border-bottom: 1px solid rgb(230, 230, 230);
   padding-bottom: 8px;
 }
+
+.color-dropdown-list div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.color-red,
+.color-blue,
+.color-green,
+.color-cyan,
+.color-magenta,
+.color-yellow,
+.color-white,
+.color-black {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* COLORS START*/
+.color-box-red {
+  background-color: red;
+  height: 15px;
+  width: 5px;
+  margin-left: 150px;
+}
+
+.color-box-blue {
+  background-color: blue;
+  height: 15px;
+  width: 5px;
+  margin-left: 150px;
+}
+
+.color-box-green {
+  background-color: green;
+  height: 15px;
+  width: 5px;
+  margin-left: 150px;
+}
+
+.color-box-cyan {
+  background-color: cyan;
+  height: 15px;
+  width: 5px;
+  margin-left: 150px;
+}
+
+.color-box-magenta {
+  background-color: magenta;
+  height: 15px;
+  width: 5px;
+  margin-left: 150px;
+}
+
+.color-box-yellow {
+  background-color: yellow;
+  height: 15px;
+  width: 5px;
+  margin-left: 150px;
+}
+
+.color-box-white {
+  background-color: white;
+  height: 15px;
+  width: 5px;
+  margin-left: 150px;
+}
+
+.color-box-black {
+  background-color: black;
+  height: 15px;
+  width: 5px;
+  margin-left: 150px;
+}
+/* COLORS END */

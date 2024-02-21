@@ -50,7 +50,7 @@ function renderProducts(products, link) {
   </div>`;
   });
 
-  document.querySelector(`link`).innerHTML = productsHTML;
+  document.querySelector(`${link}`).innerHTML = productsHTML;
 }
 
 function categorizeProductsTags(products) {
