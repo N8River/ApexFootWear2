@@ -169,3 +169,62 @@
 .img-women-hero {
   max-height: 100%;
 }
+
+@media (max-width: 1440px) {
+  .q1 {
+    font-size: 68px;
+    letter-spacing: 1.5px;
+  }
+
+  .q2 {
+    font-size: 50px;
+  }
+
+  .shop-mens-btn {
+    grid-column: 6/8;
+    align-items: center;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    border-radius: 13px;
+    border: 3px solid black;
+
+    font-size: 15px;
+  }
+
+  .q3 {
+    font-size: 72px;
+    letter-spacing: 1.5px;
+    padding-right: 15px;
+  }
+
+  .q4 {
+    grid-column: 6/8;
+    grid-row: 3/7;
+    font-size: 50px;
+  }
+
+  .shop-womens-btn {
+    grid-column: 6/8;
+    align-items: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+    border-radius: 20px;
+    border: 3px solid black;
+
+    font-size: 15px;
+  }
+}

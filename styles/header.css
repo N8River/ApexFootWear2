@@ -43,16 +43,16 @@
 
 .brand-header-middle {
   margin: 5px;
-  height: 70px; /* Setting max-height to 100% */
+  height: 70px;
 
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .brand-header-right {
   margin: 5px;
-  max-height: 100%; /* Setting max-height to 100% */
+  max-height: 100%;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -81,6 +81,9 @@
 }
 
 .brand-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 70px;
 }
 
@@ -102,4 +105,66 @@
 .search-logo {
   max-width: 100%;
   max-height: 100%;
+}
+
+@media (max-width: 1440px) {
+  .announcement-bar {
+    height: 33px;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+  }
+
+  .brand-header {
+    /* grid-template-columns: repeat(3, 1fr); */
+    height: 70px;
+  }
+
+  .brand-header-left {
+    margin: 5px;
+    height: 60px;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .brand-header-middle {
+    margin: 5px;
+    height: 60px;
+  }
+
+  .brand-header-right {
+    margin: 5px;
+    height: 60px;
+    justify-content: center;
+    padding-left: 270px;
+    padding-right: 40px;
+  }
+
+  .btn-menu {
+    height: 35px;
+    width: 35px;
+  }
+
+  .brand-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+
+  .user-btn,
+  .search-btn,
+  .wishlist-btn,
+  .cart-btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .wishlist-logo,
+  .cart-logo,
+  .user-logo,
+  .search-logo {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }

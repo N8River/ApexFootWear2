@@ -55,40 +55,25 @@ body {
   }
 }
 
-/* This @media means when the screen width is 1600px or
-   less, we will divide the grid into 6 columns. */
-@media (max-width: 1600px) {
-  .products-grid {
-    grid-template-columns: repeat(5, 1fr);
+@media (max-width: 1440px) {
+  .product-grid {
+    grid-gap: 5px;
+    padding: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
-}
 
-@media (max-width: 1300px) {
-  .products-grid {
-    grid-template-columns: repeat(5, 1fr);
+  .product-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
-}
 
-@media (max-width: 1000px) {
-  .products-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
+  .product-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-@media (max-width: 800px) {
-  .products-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 575px) {
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 450px) {
-  .products-grid {
-    grid-template-columns: 1fr;
+    height: 180px;
+    margin-bottom: 15px;
   }
 }
