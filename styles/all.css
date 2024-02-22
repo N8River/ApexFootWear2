@@ -17,7 +17,33 @@
   width: 300px;
 }
 
-.products-layout-right {
+.search-bar-collection {
+  margin-left: 10px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  height: 30px;
+  width: 1030px;
+
+  font-family: "Frank libre";
+  border: 1px solid rgb(216, 216, 216);
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-container .search-btn-collection {
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Adjust this value based on the padding and size of your input */
+  transform: translateY(-50%);
+  width: 20px; /* Adjust this value based on the size of your icon */
+  height: 20px; /* Adjust this value based on the size of your icon */
+}
+
+.products-display {
   display: grid;
   grid-template-columns: repeat(3, 350px);
 }
@@ -152,3 +178,7 @@
   margin-left: 150px;
 }
 /* COLORS END */
+
+.collection-product-container {
+  margin: 10px;
+}

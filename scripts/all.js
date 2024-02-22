@@ -43,7 +43,7 @@ function renderProductsCollection(products) {
 
   products.forEach((product) => {
     productsHTML += `
-    <div class="product-container">
+    <div class="product-container collection-product-container">
       <div class="product-image-container">
         <img
           src="../${product.image}"
@@ -74,5 +74,5 @@ function renderProductsCollection(products) {
     </div>`;
   });
 
-  document.querySelector(".products-layout-right").innerHTML = productsHTML;
+  document.querySelector(".products-display").innerHTML = productsHTML;
 }
