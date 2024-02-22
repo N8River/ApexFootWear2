@@ -1,4 +1,4 @@
-export const products = [
+export const products2 = [
   // {
   //   id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
   //   image: "images/products/athletic-cotton-socks-6-pairs.jpg",
@@ -209,7 +209,7 @@ export const products = [
   },
 ];
 
-const newProducts = [
+export const products = [
   {
     id: "ddc09c63-d682-4b78-bc72-8617cbe42b30",
     image: "images/products/sneakers/black-sneakers.jpg",
@@ -336,7 +336,7 @@ const newProducts = [
     name: "Dark Grey Loafers",
     priceCents: 5099,
     keywords: ["formal", "loafers", "dark grey"],
-    tag: "trending",
+    tag: "new-release",
     type: "loafers",
     color: "dark grey",
   },
@@ -346,7 +346,7 @@ const newProducts = [
     name: "Dark Brown Penny Loafers Pin",
     priceCents: 5299,
     keywords: ["formal", "penny", "loafers", "dark brown"],
-    tag: "trending",
+    tag: "new-release",
     type: "loafers",
     color: "dark brown",
   },
@@ -356,7 +356,7 @@ const newProducts = [
     name: "Dark Brown Penny Loafers",
     priceCents: 5499,
     keywords: ["formal", "penny", "loafers", "dark brown"],
-    tag: "trending",
+    tag: "new-release",
     type: "loafers",
     color: "dark brown",
   },
@@ -366,7 +366,7 @@ const newProducts = [
     name: "Tan Loafers",
     priceCents: 5699,
     keywords: ["formal", "loafers", "tan"],
-    tag: "trending",
+    tag: "new-release",
     type: "loafers",
     color: "tan",
   },
