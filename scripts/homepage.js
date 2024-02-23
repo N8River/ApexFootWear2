@@ -1,5 +1,6 @@
 import { products } from "../data/products.js";
 import { cart } from "../data/cart.js";
+import { renderCart } from "../data/cart.js";
 
 const announcements = [
   "25% OFF ON ALL PRODUCTS | USE CODE: RN25",
@@ -129,6 +130,6 @@ document.querySelectorAll(".size-variants").forEach((button) => {
       });
     }
 
-    console.log(cart);
+    renderCart(products);
   });
 });
