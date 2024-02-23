@@ -1,4 +1,6 @@
 import { products } from "../data/products.js";
+import { cart } from "../data/cart.js";
+
 const announcements = [
   "25% OFF ON ALL PRODUCTS | USE CODE: RN25",
   "BUY 1 PAIR OF SHOES AND GET 1 PAIR OF SOCKS FOR FREE | USE CODE: FG25",
@@ -41,11 +43,21 @@ function renderProducts(products, link) {
       </span>
     </div>
     <div class="size-options">
-      <div class="size-variants"> 41 </div>
-      <div class="size-variants"> 42 </div>
-      <div class="size-variants"> 43 </div>
-      <div class="size-variants"> 44 </div>
-      <div class="size-variants"> 45 </div>
+      <div class="size-variants" data-product-id="${
+        product.id
+      }" data-product-size="41"> 41 </div>
+      <div class="size-variants" data-product-id="${
+        product.id
+      }" data-product-size="42"> 42 </div>
+      <div class="size-variants" data-product-id="${
+        product.id
+      }" data-product-size="43"> 43 </div>
+      <div class="size-variants" data-product-id="${
+        product.id
+      }" data-product-size="44"> 44 </div>
+      <div class="size-variants" data-product-id="${
+        product.id
+      }" data-product-size="45"> 45 </div>    
     </div>
   </div>`;
   });
@@ -91,5 +103,32 @@ document.querySelectorAll(".trending-btn, .new-releases-btn").forEach((btn) => {
     } else if (btn.classList.contains("trending-btn")) {
       renderProducts(categorizedProducts.trending, ".product-grid");
     }
+  });
+});
+
+document.querySelectorAll(".size-variants").forEach((button) => {
+  button.addEventListener("click", () => {
+    const productId = button.dataset.productId;
+    const productSize = button.dataset.productSize;
+
+    let matchingItem;
+
+    cart.forEach((item) => {
+      if (productId === item.productId && productSize === item.productSize) {
+        matchingItem = item;
+      }
+    });
+
+    if (matchingItem) {
+      matchingItem.quantity += 1;
+    } else {
+      cart.push({
+        productId: productId,
+        productSize: productSize,
+        quantity: 1,
+      });
+    }
+
+    console.log(cart);
   });
 });
