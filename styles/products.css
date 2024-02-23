@@ -7,9 +7,6 @@
   align-items: center;
 
   margin-bottom: 10px;
-
-  /* font-weight: bold; */
-  /* background-color: aqua; */
 }
 
 .product-price {
@@ -22,10 +19,15 @@
   font-family: "Frank Libre";
   font-weight: normal;
 
-  padding-left: 25px;
-  padding-right: 25px;
+  /* padding-left: 25px;
+  padding-right: 25px; */
 
   margin-bottom: 10px;
+}
+
+.product-price span {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .discount {
@@ -36,16 +38,6 @@
   text-decoration: line-through;
 }
 
-.size-variants {
-  border: 1px solid #dddddd;
-
-  display: flex;
-  justify-content: center;
-  align-self: center;
-
-  padding: 5px 12px;
-}
-
 .size-options {
   display: flex;
   flex-direction: row;
@@ -54,6 +46,23 @@
   justify-content: space-evenly;
 
   cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.size-options div {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.size-variants {
+  border: 1px solid #dddddd;
+
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+  padding: 5px 8px;
 }
 
 @media (max-width: 1440px) {

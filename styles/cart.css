@@ -23,7 +23,7 @@
   transition: transform 0.2s ease;
 
   /* Start off-screen */
-  transform: translateX(100%); /* Start off-screen */
+  transform: translateX(100%);
 }
 
 /* Show Cart Container when Active */

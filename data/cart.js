@@ -2,15 +2,15 @@ import { products } from "./products.js";
 
 export let cart = [
   {
-    productID: "62f8477b-c6d3-48e1-b862-6a84755a3fb4",
+    productID: "ddc09c63-d682-4b78-bc72-8617cbe42b30",
     quantity: 3,
   },
   {
-    productID: "14fc5f13-9141-4f95-84e7-d68bc15c8c35",
+    productID: "7daacfbf-6a97-468e-b65f-2e70b45116fb",
     quantity: 1,
   },
   {
-    productID: "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    productID: "f80d9586-4823-42bb-9387-1606a2829470",
     quantity: 2,
   },
 ];
