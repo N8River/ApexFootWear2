@@ -1,4 +1,5 @@
 import { products } from "./products.js";
+import { calculateSubTotal } from "./utils/totalCalculator.js";
 
 export let cart = [
   {
@@ -68,7 +69,7 @@ export function renderCart(products) {
         <div class="subtotal-container">
           <div class="subtotal-text">
             <div class="subtotal-heading">SUBTOTAL</div>
-            <div class="subtotal-calculated">Rs. 1299</div>
+            <div class="subtotal-calculated">Rs. ${calculateSubTotal()}</div>
           </div>
           <div class="subtotal-description">Shipping, taxes, and discount codes calculated at checkout.</div>
           <button class="checkout-btn">

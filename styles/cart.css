@@ -1,13 +1,10 @@
 /* Cart Container Style */
 .cart-container {
-  /* display: flex;
-  flex-direction: column; */
-
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
-  width: 450px; /* Adjust width as needed */
+  width: 450px;
 
   background-color: rgba(255, 255, 255);
 
@@ -83,7 +80,14 @@
   padding-left: 15px;
   padding-right: 15px;
 
+  max-height: 700px;
+  overflow-y: auto;
+
   /* border: 1px solid black; */
+}
+
+.cart-product-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
 }
 
 .cart-product-container-child {
@@ -200,7 +204,7 @@
 }
 
 .subtotal-container {
-  position: fixed;
+  position: absolute;
   bottom: 0;
 
   width: 420px;
@@ -217,6 +221,7 @@
   justify-content: center;
 
   background-color: white;
+  z-index: 1;
 }
 
 .subtotal-text {
