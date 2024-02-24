@@ -4,6 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 100px;
 }
 
 .hero-background {
@@ -20,7 +22,7 @@
 
 .hero-shoe-img {
   position: absolute;
-  top: 50px;
+  top: 90px;
   height: 900px;
   width: auto;
   display: block;
@@ -28,7 +30,7 @@
 
 .hero-text {
   position: absolute;
-  top: 420px;
+  top: 460px;
   transform: translateY(-50%);
   z-index: 1;
   text-align: center;
@@ -43,7 +45,7 @@
 
 .hero-about-us {
   position: absolute;
-  top: 140px;
+  top: 181px;
   right: 50px;
   z-index: 2;
   text-align: center;

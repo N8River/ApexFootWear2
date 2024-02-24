@@ -28,22 +28,67 @@
 .brand-header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 80px; /* This sets the fixed height of the header */
+  height: 120px; /* This sets the fixed height of the header */
 }
 
 .brand-header-left {
-  margin: 5px;
-  max-height: 100%; /* Setting max-height to 100% */
-  padding-left: 40px;
+  height: 120px;
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 30px;
+
   display: flex;
   align-items: center;
 }
 
+.widget-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* border: 2px solid black; */
+  border-radius: 100px;
+  background-color: hsl(200, 50%, 90%);
+
+  height: 75px;
+}
+
+.widget-left div {
+  /* border: 2px solid black; */
+  border-radius: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 25px;
+  padding-right: 25px;
+
+  height: 75px;
+
+  font-family: "Roboto";
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.widget-newdrops:hover,
+.widget-trending:hover {
+  background-color: black;
+  color: hsl(200, 66%, 95%);
+}
+
+.widget-home {
+  background-color: black;
+  color: hsl(200, 66%, 95%);
+}
+.widget-home:hover {
+  background-color: hsl(200, 50%, 90%);
+  color: black;
+}
+
 .brand-header-middle {
-  margin: 5px;
-  height: 70px;
+  height: 120px;
 
   display: flex;
   justify-content: center;
@@ -51,17 +96,14 @@
 }
 
 .brand-header-right {
-  margin: 5px;
-  max-height: 100%;
+  max-height: 120px;
 
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-  justify-items: center;
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-end;
 
-  padding-left: 350px;
-  padding-right: 40px;
+  padding-right: 37px;
 }
 
 .btn-menu {
@@ -84,19 +126,40 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
+  height: 100px;
 }
 
-.user-btn,
+/* .user-btn,
 .search-btn,
 .wishlist-btn,
 .cart-btn {
-  /* border: 2px solid black; */
   width: 40px;
   height: 40px;
   align-self: center;
 
   cursor: pointer;
+} */
+
+.user-btn,
+.cart-btn {
+  background-color: hsl(200, 50%, 90%);
+  border-radius: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 20px;
+
+  height: 75px;
+  width: 80px;
+
+  cursor: pointer;
+}
+
+.user-btn:hover,
+.cart-btn:hover {
+  background-color: hsl(200, 50%, 75%);
 }
 
 .wishlist-logo,
