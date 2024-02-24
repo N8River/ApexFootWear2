@@ -29,7 +29,7 @@ export function renderCart(products) {
 
     if (matchingProduct) {
       cartContainerHTML += `
-      <div class="cart-product-container-child">
+      <div class="cart-product-container-child cart-product-container-child-${matchingProduct.id}">
         <div class="cart-product-img-container">
           <img class="cart-product-img" src="${matchingProduct.image}"/>
         </div>
@@ -42,13 +42,13 @@ export function renderCart(products) {
     
             <div class="cart-product-info-sub">
               <div class="add-remove-cart-item">
-                <div class="remove-cart-item">
+                <div class="remove-cart-item remove-cart-item-btn" data-product-id="${matchingProduct.id}">
                   -
                 </div>              
                 <div class="cart-product-quantity">
                 ${cartItem.quantity}
                 </div>
-                <div class="add-cart-item">
+                <div class="add-cart-item add-cart-item-btn">
                   +
                 </div>
               </div>
@@ -104,3 +104,28 @@ cartBtn.addEventListener("click", () => {
   // Toggle 'blur' class to blur/de-blur the body
   // body.classList.toggle("blur");
 });
+
+document.querySelectorAll(".remove-cart-item-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    const productId = button.dataset.productId;
+    removeFromCart(productId);
+    renderCart(products);
+    console.log(cart);
+    // const container = document.querySelector(
+    //   `.cart-product-container-child-${productId}`
+    // );
+    // container.remove();
+  });
+});
+
+export function removeFromCart(productId) {
+  const index = cart.findIndex((item) => item.productId === productId);
+
+  if (index !== -1) {
+    cart[index].quantity -= 1;
+    if (cart[index].quantity === 0) {
+      // If quantity becomes zero, remove the item from the cart
+      cart.splice(index, 1);
+    }
+  }
+}
