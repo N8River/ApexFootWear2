@@ -74,17 +74,18 @@
 
 .widget-newdrops:hover,
 .widget-trending:hover {
-  background-color: black;
-  color: hsl(200, 66%, 95%);
+  background-color: hsl(200, 70%, 75%);
+  cursor: pointer;
+}
+
+.widget-home,
+.widget-trending {
+  margin-right: 5px;
 }
 
 .widget-home {
   background-color: black;
   color: hsl(200, 66%, 95%);
-}
-.widget-home:hover {
-  background-color: hsl(200, 50%, 90%);
-  color: black;
 }
 
 .brand-header-middle {
@@ -128,17 +129,6 @@
   align-items: center;
   height: 100px;
 }
-
-/* .user-btn,
-.search-btn,
-.wishlist-btn,
-.cart-btn {
-  width: 40px;
-  height: 40px;
-  align-self: center;
-
-  cursor: pointer;
-} */
 
 .user-btn,
 .cart-btn {

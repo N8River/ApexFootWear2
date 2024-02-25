@@ -133,3 +133,30 @@ document.querySelectorAll(".size-variants").forEach((button) => {
     renderCart(products);
   });
 });
+
+const wigdetTrending = document.querySelector(".widget-trending");
+const newdropsTrending = document.querySelector(".widget-newdrops");
+
+wigdetTrending.addEventListener("click", () => {
+  const targetY1 = document.querySelector(".new-releases-btn").offsetTop;
+
+  const trendingBtn = document.querySelector(".trending-btn");
+  if (trendingBtn.classList.contains(".selected-btn")) {
+  } else {
+    trendingBtn.click();
+  }
+
+  window.scrollTo({
+    top: targetY1 - 30,
+    behavior: "smooth",
+  });
+});
+
+newdropsTrending.addEventListener("click", () => {
+  const targetY2 = document.querySelector(".trending-btn").offsetTop;
+
+  window.scrollTo({
+    top: targetY2 - 30,
+    behavior: "smooth",
+  });
+});

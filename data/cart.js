@@ -105,27 +105,23 @@ cartBtn.addEventListener("click", () => {
   // body.classList.toggle("blur");
 });
 
-document.querySelectorAll(".remove-cart-item-btn").forEach((button) => {
-  button.addEventListener("click", () => {
-    const productId = button.dataset.productId;
-    removeFromCart(productId);
-    renderCart(products);
-    console.log(cart);
-    // const container = document.querySelector(
-    //   `.cart-product-container-child-${productId}`
-    // );
-    // container.remove();
-  });
-});
+// document.querySelectorAll(".remove-cart-item-btn").forEach((button) => {
+//   button.addEventListener("click", () => {
+//     const productId = button.dataset.productId;
 
-export function removeFromCart(productId) {
-  const index = cart.findIndex((item) => item.productId === productId);
+//     removeFromCart(productId);
+//     console.log(cart);
+//   });
+// });
 
-  if (index !== -1) {
-    cart[index].quantity -= 1;
-    if (cart[index].quantity === 0) {
-      // If quantity becomes zero, remove the item from the cart
-      cart.splice(index, 1);
-    }
-  }
-}
+// export function removeFromCart(productId) {
+//   const newCart = [];
+
+//   cart.forEach((cartItem) => {
+//     if (cartItem.productId !== productId) {
+//       newCart.push(cartItem);
+//     }
+//   });
+
+//   cart = newCart;
+// }
