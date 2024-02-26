@@ -7,6 +7,8 @@ const announcements = [
   "BUY 1 PAIR OF SHOES AND GET 1 PAIR OF SOCKS FOR FREE | USE CODE: FG25",
 ];
 
+const tab = document.querySelector(".tab");
+
 let currentIndex = 0;
 setInterval(() => {
   document.querySelector(".announcement-bar").innerHTML =
@@ -83,8 +85,6 @@ function categorizeProductsTags(products) {
   };
 }
 
-function renderProductsTab() {}
-
 document.querySelectorAll(".trending-btn, .new-releases-btn").forEach((btn) => {
   btn.addEventListener("click", (event) => {
     btn.classList.toggle("selected-btn");
@@ -154,7 +154,6 @@ wigdetTrending.addEventListener("click", () => {
 
 newdropsTrending.addEventListener("click", () => {
   const targetY2 = document.querySelector(".trending-btn").offsetTop;
-
   window.scrollTo({
     top: targetY2 - 30,
     behavior: "smooth",

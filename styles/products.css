@@ -65,6 +65,44 @@
   padding: 5px 8px;
 }
 
+.product-grid-header {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsl(200, 100%, 80%);
+  border-radius: 1000px;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 600px;
+  margin-right: 600px;
+  height: 75px;
+
+  font-family: "Frank libre";
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.product-grid-header-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsl(200, 100%, 80%);
+  border-radius: 1000px;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 600px;
+  margin-right: 600px;
+  height: 75px;
+
+  font-family: "Frank libre";
+  font-size: 32px;
+  font-weight: 600;
+}
+
 @media (max-width: 1440px) {
   .product-name {
     font-size: 18px;

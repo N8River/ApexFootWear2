@@ -25,6 +25,7 @@
   letter-spacing: 1px;
 
   cursor: pointer;
+  z-index: 500;
 }
 
 .trending-btn {
@@ -44,6 +45,7 @@
   letter-spacing: 1px;
 
   cursor: pointer;
+  z-index: 500;
 }
 
 .selected-btn {

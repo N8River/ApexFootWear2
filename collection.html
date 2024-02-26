@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="styles/hero.css" />
     <link rel="stylesheet" href="styles/tab.css" />
     <link rel="stylesheet" href="styles/about.css" />
-    <link rel="stylesheet" href="styles/collection.css" />
+    <link rel="stylesheet" href="styles/cart.css" />
+    <link rel="stylesheet" href="styles/drawer.css" />
   </head>
   <body>
     <!-- ANNOUNCEMENT BAR -->
@@ -20,68 +21,162 @@
     <!-- BRAND HEADER -->
     <div class="brand-header">
       <div class="brand-header-left">
-        <div class="dropdown">
-          <button class="btn-menu">
-            <img class="menu-logo" src="images/logos/svg/menu.svg" />
-          </button>
+        <div class="widget-left">
+          <div class="widget-home-2"><a href="index.html">HOME</a></div>
+          <div class="widget-trending">
+            <a href="index.html">TRENDING</a>
+          </div>
+          <div class="widget-newdrops">
+            <a href="index.html">NEW DROPS</a>
+          </div>
+          <div class="widget-all-2">ALL</div>
         </div>
       </div>
       <div class="brand-header-middle">
         <a href="index.html" class="header-link">
-          <img class="brand-logo" src="images/logos/apex-footwear-logo-2.png" />
+          <img class="brand-logo" src="images/logos/apex-footwear-logo-3.png" />
         </a>
       </div>
       <div class="brand-header-right">
-        <div class="wishlist-btn">
-          <img class="wishlist-logo" src="images/logos/svg/wishlist.svg" />
-        </div>
         <div class="user-btn">
-          <img class="user-logo" src="images/logos/svg/user.svg" />
+          <a href="user.html">
+            <img class="user-logo" src="images/logos/svg/user.svg" />
+          </a>
         </div>
-        <div class="search-btn">
-          <img class="search-logo" src="images/logos/svg/search.svg" />
-        </div>
+
         <div class="cart-btn">
           <img class="cart-logo" src="images/logos/svg/cart.svg" />
         </div>
       </div>
     </div>
 
-    <!-- COLLECTION -->
-    <div class="collection-container">
-      <div class="collection-header">CATALOG</div>
-      <div class="catalog-cards">
-        <div class="catalog-mens-sneakers">
-          <a href="collection/all.html">
-            <img src="images/products/black-sneakers.jpg" />
-            <p>Men's Sneakers</p>
-          </a>
+    <!-- CART -->
+    <div class="cart-container">
+      <div class="cart-header">
+        <h1 class="cart-heading">CART</h1>
+        <button class="close-cart-btn">
+          <img class="close-cart-btn-img" src="images/logos/svg/close.svg" />
+        </button>
+      </div>
+
+      <div class="cart-product-container"></div>
+      <div class="cart-footer"></div>
+    </div>
+
+    <!-- DRAWER -->
+    <div class="drawer-container">
+      <div class="drawer-header">
+        <div class="drawer-login">
+          <img class="drawer-login-user-img" src="images/logos/svg/user.svg" />
+          <p class="drawer-login-text">LOG IN</p>
         </div>
-        <div class="catalog-mens-formals">
-          <a>
-            <img src="images/products/black-formal-mens.jpeg" />
-            <p>Men's Formals</p>
-          </a>
-        </div>
-        <div class="catalog-womens-sneakers">
-          <a>
-            <img src="images/products/knit-athletic-sneakers-pink.webp" />
-            <p>Women's Sneakers</p>
-          </a>
-        </div>
-        <div class="catalog-womens-formals">
-          <a>
-            <img src="images/products/women-tan-boots.jpg" />
-            <p>Women's Formals</p>
-          </a>
-        </div>
-        <div class="catalog-kids">
-          <a>
-            <img src="images/products/children-sports-shoes-sneakers.jpg" />
-            <p>Kid's</p>
-          </a>
+        <div class="drawer-close-btn">
+          <img src="images/logos/svg/close.svg" />
         </div>
       </div>
+      <div class="drawer-scrollable">
+        <div class="drawer-elements">
+          <div class="drawer-element-new-arrivals">NEW ARRIVALS</div>
+          <div class="drawer-element-most-trending">MOST TRENDING</div>
+          <div class="drawer-element-shop" id="shopButton">
+            <p>SHOP</p>
+            <div class="arrow-down-container">
+              <img
+                class="arrow-down-img"
+                src="images/logos/svg/arrow-down.svg"
+              />
+            </div>
+          </div>
+          <div class="shop-dropdown" id="shopDropdown">
+            <!-- Dropdown menu items -->
+            <div class="dropdown-men" id="menDrawerButton">
+              <p>Men's</p>
+              <div class="arrow-down-men">
+                <img
+                  class="arrow-down-img"
+                  src="images/logos/svg/arrow-down.svg"
+                />
+              </div>
+            </div>
+            <div class="dropdown-men-list" id="menDropdown">
+              <div class="dropdown-men-formals">Formals</div>
+              <div class="dropdown-men-sneakers">Sneakers</div>
+            </div>
+            <div class="dropdown-women" id="womenDrawerButton">
+              <p>Women's</p>
+              <div class="arrow-down-women">
+                <img
+                  class="arrow-down-img"
+                  src="images/logos/svg/arrow-down.svg"
+                />
+              </div>
+            </div>
+            <div class="dropdown-women-list" id="womenDropdown">
+              <div class="dropdown-women-formals">Formals</div>
+              <div class="dropdown-women-sneakers">Sneakers</div>
+            </div>
+            <div class="dropdown-kid">
+              <p>Kid's</p>
+              <!-- <div class="arrow-down-container">
+                <img
+                  class="arrow-down-img"
+                  src="images/logos/svg/arrow-down.svg"
+                />
+              </div> -->
+            </div>
+            <div class="view-all-shop">
+              <a href="collection.html"> VIEW ALL </a>
+            </div>
+          </div>
+          <div class="drawer-element-track-order">TRACK ORDER</div>
+          <div class="drawer-element-return-replace">RETURN / REPLACE</div>
+          <div class="drawer-element-customer-support">CUSTOMER SUPPORT</div>
+          <div class="drawer-element-visit-store">VISIT STORE</div>
+        </div>
+        <div class="drawer-socials">
+          <div class="drawer-social-media-links">
+            <a class="drawer-fb">
+              <img
+                class="drawer-fb-img"
+                src="images/logos/svg/socials/facebook.svg"
+              />
+            </a>
+            <a class="drawer-insta">
+              <img
+                class="drawer-insta-img"
+                src="images/logos/svg/socials/instagram.svg"
+              />
+            </a>
+            <a class="drawer-youtube">
+              <img
+                class="drawer-youtube-img"
+                src="images/logos/svg/socials/youtube.svg"
+              />
+            </a>
+            <a class="drawer-twitter">
+              <img
+                class="drawer-twitter-img"
+                src="images/logos/svg/socials/twitter.svg"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUCT GRID -->
+    <div class="product-grid-header product-grid-header-open">
+      OUR COLLECTION
+    </div>
+    <div class="product-grid-container">
+      <div class="filter-container">
+        <div class="filter-header"></div>
+        <div class="filters">
+          <div class="filter-sneakers">Sneakers</div>
+          <div class="filter-loafers">Loafers</div>
+        </div>
+      </div>
+      <div class="product-grid-all"></div>
     </div>
 
     <!-- FOOTER  -->
@@ -98,7 +193,7 @@
       <div class="footer-grid-2">
         <div class="footer-bullet">
           <li class="li1">
-            <a>About Us</a>
+            <a href="about.html">About Us</a>
           </li>
           <li class="li1">
             <a>FAQ</a>
@@ -163,5 +258,9 @@
 
     <script type="module" src="scripts/homepage.js"></script>
     <script type="module" src="scripts/about.js"></script>
+    <script type="module" src="data/cart.js"></script>
+    <script type="module" src="scripts/drawer.js"></script>
+    <script type="module" src="data/utils/totalCalculator.js"></script>
+    <script type="module" src="scripts/all.js"></script>
   </body>
 </html>
