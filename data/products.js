@@ -278,7 +278,7 @@ export const products = [
     keywords: ["sneakers", "vintage white"],
     tag: "new-release",
     type: "sneakers",
-    color: "vintage white",
+    color: "white",
   },
   {
     id: "0c88356d-1c9c-41b3-97a3-57dab8e84bc2",
@@ -338,7 +338,7 @@ export const products = [
     keywords: ["formal", "loafers", "dark grey"],
     tag: "new-release",
     type: "loafers",
-    color: "dark grey",
+    color: "grey",
   },
   {
     id: "19b20a9c-9cf0-47d3-a891-60f874aa6f57",
@@ -348,7 +348,7 @@ export const products = [
     keywords: ["formal", "penny", "loafers", "dark brown"],
     tag: "new-release",
     type: "loafers",
-    color: "dark brown",
+    color: "brown",
   },
   {
     id: "59f588db-52d3-46c3-8c91-0e1f59016009",
@@ -358,7 +358,7 @@ export const products = [
     keywords: ["formal", "penny", "loafers", "dark brown"],
     tag: "new-release",
     type: "loafers",
-    color: "dark brown",
+    color: "brown",
   },
   {
     id: "85b6a0e7-3b6f-4450-b4d6-8ef815b7ac84",
@@ -368,6 +368,6 @@ export const products = [
     keywords: ["formal", "loafers", "tan"],
     tag: "new-release",
     type: "loafers",
-    color: "tan",
+    color: "brown",
   },
 ];

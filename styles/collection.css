@@ -12,7 +12,6 @@
   /* align-items: center; */
 
   width: 350px;
-  /* border: 1px solid black; */
 }
 
 .product-grid-all {
@@ -23,7 +22,6 @@
   flex-wrap: wrap;
 
   width: 1200px;
-  /* border: 1px solid black; */
 }
 
 .filter-header {
@@ -48,19 +46,6 @@
   align-items: center;
   justify-content: center;
 }
-
-/* .filters div {
-  font-family: "Frank Libre";
-  font-weight: 600;
-  letter-spacing: 1px;
-  font-size: 18px;
-
-  padding: 15px 25px;
-  background-color: hsl(200, 66%, 90%);
-  border-radius: 1000px;
-
-  margin-top: 10px;
-} */
 
 .filter-type,
 .filter-size,
@@ -108,6 +93,8 @@
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 1px;
+
+  cursor: pointer;
 }
 
 .filter-size div {
@@ -133,4 +120,9 @@
 
   border: 1px solid hsl(200, 66%, 90%);
   padding: 4px;
+}
+
+.active-filter {
+  background-color: black;
+  color: white;
 }
