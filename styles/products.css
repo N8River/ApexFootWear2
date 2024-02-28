@@ -1,5 +1,5 @@
 .product-name {
-  font-family: "Roboto";
+  font-family: "Futura";
   font-size: 20px;
 
   display: flex;
@@ -16,7 +16,7 @@
   justify-content: space-evenly;
   align-items: center;
 
-  font-family: "Frank Libre";
+  font-family: "Futura";
   font-weight: normal;
 
   /* padding-left: 25px;
@@ -79,7 +79,7 @@
   margin-right: 600px;
   height: 75px;
 
-  font-family: "Frank libre";
+  font-family: "Futura";
   font-size: 32px;
   font-weight: 600;
 }
@@ -98,7 +98,7 @@
   margin-right: 600px;
   height: 75px;
 
-  font-family: "Frank libre";
+  font-family: "Futura";
   font-size: 32px;
   font-weight: 600;
 }

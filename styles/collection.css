@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Futura C";
+  src: url("../fonts/futura/futura medium condensed bt.ttf");
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/futura/futura medium bt.ttf");
+}
+
 .product-grid-container {
   display: flex;
   flex-direction: row;
@@ -29,7 +39,7 @@
   justify-content: center;
   align-items: center;
 
-  font-family: "Frank Libre";
+  font-family: "Futura";
   font-weight: bold;
   font-size: 24px;
   letter-spacing: 1.5px;
@@ -65,7 +75,7 @@
   justify-content: center;
   align-items: center;
 
-  font-family: "Frank Libre";
+  font-family: "Futura";
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 20px;
@@ -89,10 +99,10 @@
 
   background-color: hsl(200, 66%, 90%);
 
-  font-family: "Frank Libre";
-  font-weight: 500;
+  font-family: "Futura";
+  font-weight: 550;
   font-size: 18px;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
 
   cursor: pointer;
 }
@@ -114,8 +124,8 @@
   margin-left: 5px;
   margin-right: 5px;
 
-  font-family: "Frank Libre";
-  font-weight: 400;
+  font-family: "Futura";
+  font-weight: 500;
   font-size: 18px;
 
   border: 1px solid hsl(200, 66%, 90%);
@@ -125,4 +135,54 @@
 .active-filter {
   background-color: black;
   color: white;
+}
+
+.stacked-steps {
+  background-image: url("../images/styles/stacked-layers-250.svg");
+  /* opacity: 0.8; */
+}
+
+.offer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 250px;
+  /* width: 1080px; */
+
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.p-large {
+  position: absolute;
+  top: 210px;
+
+  font-family: "Futura C";
+  font-size: 150px;
+  color: white;
+  font-weight: 500;
+}
+
+.p-small-1,
+.p-small-2 {
+  font-family: "Futura C";
+  font-size: 45px;
+  color: white;
+  font-weight: 500;
+}
+
+.p-small-1 {
+  position: absolute;
+  top: 360px;
+  transform: translateX(40px);
+}
+
+.p-small-2 {
+  position: absolute;
+  top: 190px;
+  transform: translateX(430px);
 }
