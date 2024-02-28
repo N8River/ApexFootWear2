@@ -240,35 +240,72 @@
 
 @media (max-width: 320px) {
   .announcement-bar {
-    height: 40px;
+    height: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: "Roboto";
+    text-align: center;
     display: flex;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 10px;
   }
 
   .brand-header {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 180px; /* This sets the fixed height of the header */
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
   }
 
   .brand-header-left {
-    height: 180px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 30px;
+    height: 100px;
 
-    display: flex;
-    align-items: center;
-  }
-
-  .widget-left {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    /* border: 2px solid black; */
-    border-radius: 100px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .brand-header-middle {
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .brand-header-right {
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .widget-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
     background-color: hsl(200, 50%, 90%);
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 
     height: 75px;
   }
@@ -281,16 +318,16 @@
     justify-content: center;
     align-items: center;
 
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0px;
 
     height: 75px;
 
     font-family: "Frank Libre";
     font-weight: 500;
     letter-spacing: 0.5px;
-    font-size: 20px;
+    font-size: 10px;
 
+    padding-bottom: 5px;
     z-index: 500;
   }
 
@@ -320,27 +357,9 @@
   }
 
   .widget-home {
+    display: none;
     background-color: black;
     color: hsl(200, 66%, 95%);
-  }
-
-  .brand-header-middle {
-    height: 180px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .brand-header-right {
-    max-height: 180px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-
-    padding-right: 37px;
   }
 
   .btn-menu {
@@ -363,7 +382,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 80px;
   }
 
   .user-btn,
@@ -375,10 +394,11 @@
     justify-content: center;
     align-items: center;
 
-    margin-left: 20px;
+    margin: 0px;
+    padding: 5px;
 
-    height: 75px;
-    width: 80px;
+    height: 30px;
+    width: 30px;
 
     cursor: pointer;
   }

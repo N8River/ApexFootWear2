@@ -52,3 +52,60 @@
   background-color: black;
   color: white;
 }
+
+@media (max-width: 320px) {
+  .tab {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .new-releases-btn {
+    border: 2px solid black;
+    border-radius: 50px;
+
+    margin-right: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-color: white;
+
+    font-family: "Roboto";
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+    z-index: 500;
+  }
+
+  .trending-btn {
+    border: 2px solid black;
+    border-radius: 50px;
+
+    margin-left: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-color: white;
+
+    font-family: "Roboto";
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+    z-index: 500;
+  }
+
+  .selected-btn {
+    background-color: black;
+    color: white;
+  }
+}

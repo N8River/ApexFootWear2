@@ -57,7 +57,7 @@ document.querySelector(".footer-container").innerHTML = `
             <img src="images/logos/svg/email.svg" />
           </button>
         </div>
-        <div class="social-media-links">
+        <!--<div class="social-media-links">
           <a>
             <img src="images/logos/svg/socials/facebook.svg" />
           </a>
@@ -70,6 +70,6 @@ document.querySelector(".footer-container").innerHTML = `
           <a>
             <img src="images/logos/svg/socials/twitter.svg" />
           </a>
-        </div>
+        </div>-->
       </div>
 `;

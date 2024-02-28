@@ -150,13 +150,13 @@
 
 @media (max-width: 320px) {
   .hero-container {
-    height: 1000px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    margin-bottom: 70px;
+    margin-bottom: 10px;
   }
 
   .hero-background {
@@ -165,16 +165,16 @@
     justify-content: center;
     align-items: center;
     background-color: hsl(200, 75%, 50%);
-    border-radius: 75px;
+    border-radius: 30px;
 
-    height: 700px;
-    width: 1850px;
+    height: 650px;
+    width: 310px;
   }
 
   .hero-shoe-img {
     position: absolute;
-    top: 90px;
-    height: 900px;
+    top: 200px;
+    height: 450px;
     width: auto;
     display: block;
   }
@@ -187,22 +187,26 @@
     text-align: center;
 
     font-family: "FF-italic";
-    font-size: 180px;
-    letter-spacing: 4px;
+    font-size: 110px;
+    letter-spacing: 3px;
     color: hsl(30, 100%, 50%);
+
+    padding-left: 5px;
+    padding-right: 5px;
 
     text-shadow: 1px 2px 0 hsl(30, 100%, 20%);
   }
 
   .hero-about-us {
     position: absolute;
-    top: 181px;
-    right: 50px;
+    top: 141px;
+    right: 15px;
     z-index: 2;
     text-align: center;
 
-    height: 150px;
-    width: 150px;
+    height: 25px;
+    width: 25px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,26 +221,10 @@
     font-weight: 100;
 
     color: hsl(170, 75%, 70%);
-    font-size: 55px;
+    font-size: 35px;
   }
 
   .hero-about-us:hover {
     background-color: hsl(230, 75%, 33%);
-  }
-
-  .motto-container {
-    font-family: "FF-regular";
-    /* font-weight: bolder; */
-    font-size: 72px;
-
-    height: 200px;
-    background-color: black;
-    color: hsl(29, 100%, 55%);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    letter-spacing: 5px;
   }
 }
