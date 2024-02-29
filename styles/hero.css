@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: hsl(200, 75%, 50%);
+  background-color: hsl(200, 75%, 45%);
   border-radius: 75px;
 
   height: 700px;
@@ -38,9 +38,9 @@
   font-family: "FF-italic";
   font-size: 180px;
   letter-spacing: 4px;
-  color: hsl(30, 100%, 50%);
+  color: hsl(35, 100%, 50%);
 
-  text-shadow: 1px 2px 0 hsl(30, 100%, 20%);
+  text-shadow: 2px 2px 2px hsl(35, 100%, 25%);
 }
 
 .hero-about-us {
@@ -56,7 +56,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: hsl(230, 75%, 40%);
+  background-color: hsl(200, 100%, 20%);
   border-radius: 1000px;
   padding: 50px 50px;
 
@@ -65,12 +65,13 @@
   letter-spacing: 5px;
   font-weight: 100;
 
-  color: hsl(170, 75%, 70%);
+  color: hsl(190, 100%, 80%);
   font-size: 55px;
 }
 
 .hero-about-us:hover {
-  background-color: hsl(230, 75%, 33%);
+  background-color: hsl(200, 100%, 15%);
+  color: hsl(190, 100%, 85%);
 }
 
 .motto-container {

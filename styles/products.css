@@ -1,6 +1,7 @@
 .product-name {
-  font-family: "Futura";
+  font-family: "Frank Libre";
   font-size: 20px;
+  font-weight: 500;
 
   display: flex;
   justify-content: center;
@@ -16,7 +17,7 @@
   justify-content: space-evenly;
   align-items: center;
 
-  font-family: "Futura";
+  font-family: "Frank Libre";
   font-weight: normal;
 
   /* padding-left: 25px;
@@ -79,7 +80,7 @@
   margin-right: 600px;
   height: 75px;
 
-  font-family: "Futura";
+  font-family: "Frank Libre";
   font-size: 32px;
   font-weight: 600;
 }
@@ -98,7 +99,7 @@
   margin-right: 600px;
   height: 75px;
 
-  font-family: "Futura";
+  font-family: "Frank Libre";
   font-size: 32px;
   font-weight: 600;
 }
