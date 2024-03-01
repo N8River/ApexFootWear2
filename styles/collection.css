@@ -53,8 +53,12 @@
 .filter-price {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
+
+  width: 350px;
+  padding-left: 15px;
+  padding-top: 5px;
 }
 
 .filter-type h,
@@ -62,7 +66,7 @@
 .filter-color h,
 .filter-price h {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
   font-family: "Futura";
@@ -86,13 +90,15 @@
   margin-bottom: 5px;
   padding: 10px 20px;
   border-radius: 1000px;
+  margin-left: 15px;
+  margin-right: 15px;
 
-  background-color: hsl(200, 66%, 90%);
+  background-color: hsl(200, 50%, 90%);
 
   font-family: "Frank Libre";
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
-  /* letter-spacing: 1px; */
+  letter-spacing: 0.5px;
 
   cursor: pointer;
 }
@@ -118,7 +124,7 @@
   font-weight: 500;
   font-size: 18px;
 
-  border: 1px solid hsl(200, 66%, 90%);
+  border: 1px solid hsl(200, 100%, 90%);
   padding: 4px;
 }
 
@@ -180,7 +186,7 @@
 .product-grid-all-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 
@@ -193,6 +199,9 @@
   padding-left: 15px;
   padding-right: 30px;
   width: 100%;
+
+  border-bottom: 1px solid rgb(200, 200, 200);
+  padding-bottom: 14px;
 }
 
 .search-input {
@@ -201,12 +210,31 @@
 
   font-family: "Futura";
   font-size: 17px;
+
+  text-indent: 10px;
 }
 
-.search-input::placeholder {
-  padding: 5px;
+.search-input::-ms-clear {
+  display: none; /* Hide the clear button in IE/Edge */
+}
+
+.search-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+
+  color: red;
+  font-size: 20px;
 }
 
 .hide-for-search {
   display: none;
+}
+
+.filter-type div:hover,
+.filter-size div div:hover,
+.filter-color div:hover,
+.filter-price div:hover {
+  background-color: black;
+  color: hsl(200, 100%, 90%);
+  cursor: pointer;
 }

@@ -155,22 +155,6 @@ over3000.addEventListener("click", () => {
 
 const searchButton = document.querySelector(".search-input");
 const productsObject = document.querySelectorAll(".product-container");
-// searchButton.addEventListener("input", (e) => {
-//   const value = e.target.value.toLowerCase();
-//   console.log(value);
-//   products.forEach((product) => {
-//     const productContainer = document.querySelector(
-//       `[data-product-id="${product.id}"]`
-//     );
-
-//     if (product.name.toLowerCase().includes(value)) {
-//       productContainer.classList.remove("hide-for-search"); // Show the product container
-//     } else {
-//       productContainer.classList.add("hide-for-search"); // Hide the product container
-//     }
-//   });
-// });
-
 searchButton.addEventListener("input", (e) => {
   const value = e.target.value.toLowerCase();
 
@@ -183,9 +167,9 @@ searchButton.addEventListener("input", (e) => {
   });
 });
 
-productsObject.forEach((productObject) => {
-  const productName = productObject
-    .querySelector(".product-name")
-    .innerHTML.toLowerCase();
-  console.log(productName);
-});
+// productsObject.forEach((productObject) => {
+//   const productName = productObject
+//     .querySelector(".product-name")
+//     .innerHTML.toLowerCase();
+//   console.log(productName);
+// });

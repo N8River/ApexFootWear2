@@ -13,11 +13,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: hsl(200, 75%, 45%);
+  /* background-color: hsl(200, 75%, 45%); */
+  background-image: url("../images/styles/layered-steps-700 2.png");
+
   border-radius: 75px;
 
   height: 700px;
   width: 1850px;
+}
+
+.layered-steps-700 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 75px;
+  height: 700px;
+  width: 1850px;
+
+  background-image: url("../images/styles/layered-steps-700.svg");
+  opacity: 0.5;
 }
 
 .hero-shoe-img {
