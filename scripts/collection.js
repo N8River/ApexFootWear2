@@ -152,3 +152,40 @@ under3000.addEventListener("click", () => {
 over3000.addEventListener("click", () => {
   renderCollection(productPriceFilter(products, 9999, 3000));
 });
+
+const searchButton = document.querySelector(".search-input");
+const productsObject = document.querySelectorAll(".product-container");
+// searchButton.addEventListener("input", (e) => {
+//   const value = e.target.value.toLowerCase();
+//   console.log(value);
+//   products.forEach((product) => {
+//     const productContainer = document.querySelector(
+//       `[data-product-id="${product.id}"]`
+//     );
+
+//     if (product.name.toLowerCase().includes(value)) {
+//       productContainer.classList.remove("hide-for-search"); // Show the product container
+//     } else {
+//       productContainer.classList.add("hide-for-search"); // Hide the product container
+//     }
+//   });
+// });
+
+searchButton.addEventListener("input", (e) => {
+  const value = e.target.value.toLowerCase();
+
+  productsObject.forEach((productObject) => {
+    const productName = productObject
+      .querySelector(".product-name")
+      .innerHTML.toLowerCase();
+    const isVisible = productName.includes(value);
+    productObject.classList.toggle("hide-for-search", !isVisible);
+  });
+});
+
+productsObject.forEach((productObject) => {
+  const productName = productObject
+    .querySelector(".product-name")
+    .innerHTML.toLowerCase();
+  console.log(productName);
+});
