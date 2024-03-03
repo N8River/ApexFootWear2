@@ -29,6 +29,12 @@ body {
   margin-bottom: 50px;
   margin-left: 270px;
   margin-right: 270px;
+
+  transition: opacity 1s ease;
+}
+
+.product-grid.hide-pe {
+  opacity: 0; /* When hidden, set opacity to 0 */
 }
 
 .product-container {
@@ -44,6 +50,12 @@ body {
   align-items: center;
 
   flex-direction: column;
+  opacity: 1;
+}
+
+.hide-pe {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .product-image-container {

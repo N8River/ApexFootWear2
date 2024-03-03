@@ -104,13 +104,20 @@ document.querySelectorAll(".trending-btn, .new-releases-btn").forEach((btn) => {
     } else if (btn.classList.contains("trending-btn")) {
       renderProducts(categorizedProducts.trending, ".product-grid");
     }
+
+    const productGrid = document.querySelector(".product-grid");
+    productGrid.classList.add("hide"); // Add hide class to trigger transition
+
+    setTimeout(() => {
+      productGrid.classList.remove("hide"); // Remove hide class after a delay
+    }, 50); // Adjust delay as needed to ensure smooth transition
   });
 });
 
-document.querySelectorAll(".size-variants").forEach((button) => {
-  button.addEventListener("click", () => {
-    const productId = button.dataset.productId;
-    const productSize = button.dataset.productSize;
+document.querySelector(".product-grid").addEventListener("click", (event) => {
+  if (event.target.classList.contains("size-variants")) {
+    const productId = event.target.dataset.productId;
+    const productSize = event.target.dataset.productSize;
 
     let matchingItem;
 
@@ -131,7 +138,7 @@ document.querySelectorAll(".size-variants").forEach((button) => {
     }
 
     renderCart(products);
-  });
+  }
 });
 
 const wigdetTrending = document.querySelector(".widget-trending");
