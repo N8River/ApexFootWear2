@@ -8,6 +8,16 @@
   src: url("../fonts/futura/futura medium bt.ttf");
 }
 
+.hide {
+  opacity: 0;
+  transition: 100ms all ease-out;
+}
+
+.active {
+  transition: 250ms all ease;
+  opacity: 1;
+}
+
 .announcement-bar {
   background-color: hsl(200, 100%, 25%);
   height: 40px;
