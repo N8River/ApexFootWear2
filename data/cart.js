@@ -63,6 +63,7 @@ export function renderCart(products) {
   });
   document.querySelector(".cart-product-container").innerHTML =
     cartContainerHTML;
+  document.querySelector(".order-summary").innerHTML = cartContainerHTML;
 
   let cartFooterHTML = "";
   cartFooterHTML += `

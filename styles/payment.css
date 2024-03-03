@@ -1,0 +1,320 @@
+.payment-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px);
+
+  /* width: 800px; */
+  /* height: 800px; */
+
+  z-index: 999;
+  font-family: "Futura";
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  border-radius: 15px;
+
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-right: 15px;
+  border-right: 10px solid rgb(230, 230, 230);
+
+  width: 420px;
+}
+
+.user-details img {
+  width: 40px;
+  position: absolute;
+  top: 15px;
+  transform: translateX(-205px);
+}
+
+.steps {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  gap: 40px;
+  font-size: 20px;
+  font-family: "Futura";
+
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  /* padding-bottom: 10px; */
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.mobile {
+  background-color: rgb(216, 216, 216);
+  border-radius: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.address,
+.payment {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 30px;
+
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.main-container h {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.main-container input {
+  font-size: 16px;
+  font-family: "Futura";
+
+  text-indent: 5px;
+  border: none;
+
+  border-radius: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 1px solid rgb(177, 177, 177);
+}
+
+.main-container div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 7px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.payment-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 50px;
+}
+
+.payment-footer button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-family: "Futura";
+  font-size: 19px;
+  font-weight: 500;
+
+  color: white;
+  background-color: grey;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.payment-footer l {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-size: 16px;
+  margin-top: 5px;
+
+  padding-top: 5px;
+  color: grey;
+}
+
+.cart-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 20px;
+}
+
+.order-summary-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-summary-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  gap: 20px;
+  border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.order-summary-header h {
+  font-size: 20px;
+  font-weight: 500;
+
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.order-summary-header img {
+  width: 22px;
+  height: 22px;
+}
+
+.order-summary {
+  height: 145px;
+  overflow-y: auto;
+}
+
+.totals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.totals div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.totals div div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 250px;
+  margin-right: 25px;
+}
+
+.totals div l {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-left: 10px;
+}
+
+.cart-summary-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 17px;
+  width: 100%;
+}
+
+.login-for-loyalty {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.to-pay {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  font-weight: 600;
+  border-top: 1px solid rgb(212, 212, 212);
+  padding-top: 10px;
+}
+
+.coupon-wrap input {
+  font-size: 16px;
+  font-family: "Futura";
+  text-align: center;
+  padding: 5px 15px;
+
+  width: 200px;
+  border-radius: 1000px;
+  border: 1px dotted black;
+}
+
+.coupon-wrap input::placeholder {
+  font-size: 16px;
+  font-family: "Futura";
+  text-align: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  background-color: rgb(200, 200, 200);
+  border: 2px solid black;
+  outline: none;
+}
+
+.dot.active {
+  background-color: black;
+}
+
+.close-checkout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background-color: white;
+
+  position: absolute;
+  width: 30px;
+  transform: translateX(237px);
+  top: 15px;
+
+  cursor: pointer;
+}
+
+.close-checkout-btn img {
+  width: 30px;
+}
