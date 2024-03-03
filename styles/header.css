@@ -92,6 +92,7 @@
   /* font-weight: 400; */
 
   z-index: 500;
+  transition: 200ms all ease;
 }
 
 .widget-home-2 {
@@ -188,6 +189,7 @@
   width: 75px;
 
   cursor: pointer;
+  transition: 200ms all ease;
 }
 
 .user-btn:hover,

@@ -26,6 +26,7 @@
 
   cursor: pointer;
   z-index: 500;
+  transition: 300ms all ease;
 }
 
 .trending-btn {
@@ -46,6 +47,8 @@
 
   cursor: pointer;
   z-index: 500;
+
+  transition: 300ms all ease;
 }
 
 .selected-btn {
