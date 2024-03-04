@@ -1,3 +1,5 @@
+import { calculateSubTotal } from "../data/utils/totalCalculator.js";
+
 const toggleButton = document.getElementById("toggleButton");
 
 toggleButton.addEventListener("click", () => {
@@ -22,3 +24,6 @@ closeCheckoutBtn.addEventListener("click", () => {
   paymentContainer.classList.remove("active");
   paymentContainer.classList.add("hide");
 });
+
+document.querySelector(".subtotal-rupees").innerHTML = calculateSubTotal();
+document.querySelector(".grand-total-rupees").innerHTML = calculateSubTotal();

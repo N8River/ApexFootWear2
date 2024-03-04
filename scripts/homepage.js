@@ -106,11 +106,11 @@ document.querySelectorAll(".trending-btn, .new-releases-btn").forEach((btn) => {
     }
 
     const productGrid = document.querySelector(".product-grid");
-    productGrid.classList.add("hide"); // Add hide class to trigger transition
+    productGrid.classList.add("hide");
 
     setTimeout(() => {
-      productGrid.classList.remove("hide"); // Remove hide class after a delay
-    }, 50); // Adjust delay as needed to ensure smooth transition
+      productGrid.classList.remove("hide");
+    }, 50);
   });
 });
 

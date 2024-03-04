@@ -47,8 +47,8 @@
 }
 
 .cart-heading {
-  font-family: "Roboto";
-  font-weight: 600;
+  font-family: "Futura";
+  /* font-weight: 600; */
 
   display: flex;
   justify-content: center;
@@ -99,6 +99,8 @@
 
   display: grid;
   grid-template-columns: 180px 240px;
+
+  font-family: "futura";
 }
 
 .cart-product-img-container {
@@ -126,7 +128,6 @@
 }
 
 .cart-product-name {
-  font-family: "Frank Libre";
   font-weight: 500;
 
   margin-bottom: 20px;
@@ -220,6 +221,8 @@
   flex-direction: column;
   justify-content: center;
 
+  font-family: "Futura";
+
   background-color: white;
   z-index: 1;
 }
@@ -236,7 +239,6 @@
   display: flex;
   justify-content: center;
 
-  font-family: "Frank Libre";
   font-weight: 500;
 }
 
@@ -252,7 +254,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
 
-  font-family: "Frank Libre";
+  font-family: "Futura";
   font-size: 14px;
 }
 
@@ -264,8 +266,7 @@
 
   height: 72px;
 
-  font-family: "Frank Libre";
-  font-weight: 500;
+  font-family: "Futura";
 
   letter-spacing: 1px;
 

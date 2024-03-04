@@ -18,7 +18,7 @@ function renderCollection(products) {
         ${product.name}
       </div>
       <div class="product-price product-price__c">
-        <span class="price-original price-original__c">      
+        <span class="price-original price-original__c">
           Rs.${product.priceCents}
         </span>
         <span class="price-discounted price-discounted__c">
@@ -43,7 +43,7 @@ function renderCollection(products) {
         }" data-product-size="44"> 44 </div>
         <div class="size-variants" data-product-id="${
           product.id
-        }" data-product-size="45"> 45 </div>    
+        }" data-product-size="45"> 45 </div>
       </div>
     </div>
     `;
@@ -166,10 +166,3 @@ searchButton.addEventListener("input", (e) => {
     productObject.classList.toggle("hide-for-search", !isVisible);
   });
 });
-
-// productsObject.forEach((productObject) => {
-//   const productName = productObject
-//     .querySelector(".product-name")
-//     .innerHTML.toLowerCase();
-//   console.log(productName);
-// });

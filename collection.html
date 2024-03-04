@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/cart.css" />
     <link rel="stylesheet" href="styles/drawer.css" />
     <link rel="stylesheet" href="styles/collection.css" />
+    <link rel="stylesheet" href="styles/payment.css" />
   </head>
   <body>
     <!-- ANNOUNCEMENT BAR -->
@@ -33,6 +34,71 @@
 
       <div class="cart-product-container"></div>
       <div class="cart-footer"></div>
+    </div>
+
+    <!-- PAYMENT -->
+    <div class="payment-container hide">
+      <div class="user-details">
+        <img src="images\logos\apex-footwear-logo-3.png" />
+        <div class="steps">
+          <div class="mobile">1. Mobile</div>
+          <div class="address">2. Address</div>
+          <div class="payment">3. Payment</div>
+        </div>
+        <div class="main-container">
+          <h>Enter Mobile Number</h>
+          <input placeholder="Enter Number" />
+          <div class="notification-checkbox">
+            <button id="toggleButton" class="dot"></button>
+            <p>Notify me for orders, updates & offers</p>
+          </div>
+        </div>
+        <div class="payment-footer">
+          <button>Continue →</button>
+          <l
+            >By proceeding, I accept that I have read and understood the
+            ApexFootWear's Privacy Policy and T&C</l
+          >
+        </div>
+      </div>
+      <div class="cart-summary">
+        <button class="close-checkout-btn">
+          <img class="close-checkout-img" src="images/logos/svg/close.svg" />
+        </button>
+        <div class="order-summary-wrap">
+          <div class="order-summary-header">
+            <h>Order Summary</h>
+            <img src="images/logos/svg/arrow-down.svg" />
+          </div>
+          <div class="order-summary"></div>
+        </div>
+        <div class="totals">
+          <div class="subtotal__p">
+            <l>Subtotal</l>
+            <div class="subtotal-rupees">Rs. 9999</div>
+          </div>
+          <div class="shipping__p">
+            <l>Shipping</l>
+            <div class="shipping-rupees">To be calculated</div>
+          </div>
+          <div class="to-pay">
+            <l>To Pay</l>
+            <div class="grand-total-rupees">Rs. 9999</div>
+          </div>
+        </div>
+        <div class="cart-summary-footer">
+          <div class="login-for-loyalty">
+            <a>Login to Redeem Apex Coins</a>
+          </div>
+          <div class="coupon-wrap">
+            <input
+              class="coupon-input"
+              type="text"
+              placeholder="Enter the coupon here"
+            />
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- PRODUCT GRID -->
@@ -96,11 +162,10 @@
     <script type="module" src="scripts/homepage.js"></script>
     <script type="module" src="scripts/about.js"></script>
     <script type="module" src="data/cart.js"></script>
-    <script type="module" src="scripts/drawer.js"></script>
     <script type="module" src="data/utils/totalCalculator.js"></script>
-    <script type="module" src="scripts/all.js"></script>
     <script type="module" src="scripts/collection.js"></script>
     <script src="scripts/common/footer.js"></script>
     <script src="scripts/common/header.js"></script>
+    <script type="module" src="scripts/payment.js"></script>
   </body>
 </html>
