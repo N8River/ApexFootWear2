@@ -1,5 +1,5 @@
 .product-name {
-  font-family: "Frank Libre";
+  /* font-family: "Frank Libre"; */
   font-size: 20px;
   font-weight: 500;
 
@@ -17,7 +17,7 @@
   justify-content: space-evenly;
   align-items: center;
 
-  font-family: "Frank Libre";
+  /* font-family: "Frank Libre"; */
   font-weight: normal;
 
   /* padding-left: 25px;

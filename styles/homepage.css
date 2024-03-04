@@ -51,6 +51,8 @@ body {
 
   flex-direction: column;
   opacity: 1;
+
+  font-family: "Futura";
 }
 
 .hide-pe {
