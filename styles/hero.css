@@ -36,6 +36,17 @@
   opacity: 0.5;
 }
 
+.hero-shoe-img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 700px;
+  width: 700px;
+
+  overflow: hidden;
+}
+
 .hero-shoe-img {
   position: absolute;
   top: 90px;
@@ -193,9 +204,18 @@
   .hero-shoe-img {
     position: absolute;
     top: 200px;
-    height: 450px;
-    width: auto;
+    height: auto;
+    width: 100%;
+
     display: block;
+  }
+
+  .hero-shoe-img-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 320px;
   }
 
   .hero-text {

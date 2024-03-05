@@ -318,3 +318,9 @@
 .close-checkout-btn img {
   width: 30px;
 }
+
+@media (max-width: 320px) {
+  .payment-container {
+    display: none;
+  }
+}

@@ -20,9 +20,9 @@
 
   background-color: white;
 
-  font-family: "Roboto";
-  font-size: 16px;
-  letter-spacing: 1px;
+  font-family: "Futura";
+  font-size: 20px;
+  letter-spacing: 0px;
 
   cursor: pointer;
   z-index: 500;
@@ -41,9 +41,9 @@
 
   background-color: white;
 
-  font-family: "Roboto";
-  font-size: 16px;
-  letter-spacing: 1px;
+  font-family: "Futura";
+  font-size: 20px;
+  letter-spacing: 0px;
 
   cursor: pointer;
   z-index: 500;
@@ -59,16 +59,38 @@
 @media (max-width: 320px) {
   .tab {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 
-    height: 60px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    height: 50px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+
+    gap: 10px;
   }
 
-  .new-releases-btn {
-    border: 2px solid black;
+  .tab button {
+    border: 1.5px solid black;
+    border-radius: 30px;
+
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 15px;
+
+    background-color: white;
+
+    font-family: "Futura";
+    font-size: 14px;
+    letter-spacing: 0px;
+
+    cursor: pointer;
+    z-index: 500;
+  }
+
+  /* .new-releases-btn {
+    border: 1.5px solid black;
     border-radius: 50px;
 
     margin-right: 7px;
@@ -79,16 +101,16 @@
 
     background-color: white;
 
-    font-family: "Roboto";
+    font-family: "Futura";
     font-size: 16px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 
     cursor: pointer;
     z-index: 500;
-  }
+  } */
 
-  .trending-btn {
-    border: 2px solid black;
+  /* .trending-btn {
+    border: 1.5px solid black;
     border-radius: 50px;
 
     margin-left: 7px;
@@ -105,10 +127,10 @@
 
     cursor: pointer;
     z-index: 500;
-  }
+  } */
 
   .selected-btn {
-    background-color: black;
-    color: white;
+    background-color: black !important;
+    color: white !important;
   }
 }
