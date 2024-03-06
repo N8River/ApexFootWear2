@@ -1194,3 +1194,197 @@
     color: hsl(200, 66%, 95%) !important;
   }
 }
+
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .announcement-bar {
+    height: 8vh;
+    font-weight: 500;
+    color: white;
+    font-family: "Futura";
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0px;
+    font-size: 3.5vh;
+  }
+
+  .brand-header {
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20vh;
+
+    z-index: 1000 !important;
+  }
+
+  .brand-header-left {
+    height: 20vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .brand-header-middle {
+    height: 20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .brand-header-right {
+    height: 20vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 10px;
+    padding: 0px;
+    margin: 0px;
+
+    padding-right: 0px;
+    padding-left: 0px;
+
+    margin-right: 7%;
+  }
+
+  .widget-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    background-color: white;
+
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    gap: 10px;
+    height: 100%;
+    margin-left: 10%;
+  }
+
+  .widget-left div {
+    /* border: 2px solid black; */
+    border-radius: 100px;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 20px;
+
+    height: 100%;
+
+    font-family: "Futura";
+    font-weight: 600;
+    letter-spacing: 0px;
+    font-size: 3.5vh;
+
+    margin-bottom: 0px;
+    background-color: hsl(200, 50%, 90%);
+    z-index: 500;
+
+    width: 100%;
+  }
+
+  .widget-home-2 {
+    cursor: pointer;
+  }
+  .widget-home-2:hover {
+    background-color: hsl(200, 70%, 75%);
+  }
+
+  .widget-all-2 {
+    background-color: black;
+    color: hsl(200, 66%, 95%);
+    cursor: pointer;
+  }
+
+  .widget-newdrops:hover,
+  .widget-trending:hover,
+  .widget-all:hover {
+    background-color: hsl(200, 70%, 75%);
+    cursor: pointer;
+  }
+
+  .widget-home,
+  .widget-trending {
+    margin-right: 0px;
+  }
+
+  .btn-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .menu-logo {
+    max-width: 100%; /* Make the image fill the width of the container */
+    max-height: 100%; /* Make the image fill the height of the container */
+  }
+
+  .brand-logo {
+    position: absolute;
+    left: 50%;
+    top: 9.25vh;
+    transform: translateX(-50%);
+    height: 16.5vh;
+  }
+
+  .user-btn,
+  .cart-btn {
+    background-color: hsl(200, 50%, 90%);
+    border-radius: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px;
+    padding: 5px;
+
+    height: 10vh;
+    width: 10vh;
+
+    cursor: pointer;
+  }
+
+  .user-btn:hover,
+  .cart-btn:hover {
+    background-color: hsl(200, 50%, 75%);
+  }
+
+  .wishlist-logo,
+  .cart-logo,
+  .user-logo,
+  .search-logo {
+    max-width: 55px;
+    max-height: 55px;
+  }
+
+  .widget-home {
+    /* display: none !important; */
+    background-color: black !important;
+    color: hsl(200, 66%, 95%) !important;
+  }
+}

@@ -637,3 +637,98 @@
     background-color: hsl(200, 75%, 33%);
   }
 }
+
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .hero-container {
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 0px;
+    margin-bottom: 25px;
+  }
+
+  .hero-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(200, 75%, 50%);
+    border-radius: 30px;
+
+    height: 650px;
+    width: 96%;
+  }
+
+  .hero-shoe-img {
+    position: absolute;
+    top: 88vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 66%;
+
+    display: block;
+  }
+
+  .hero-shoe-img-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 96%;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 82vh;
+    transform: translateY(-50%);
+    z-index: 1;
+    text-align: center;
+
+    width: 96%;
+
+    font-family: "FF-italic";
+    font-size: 176px;
+    letter-spacing: 3px;
+    color: hsl(30, 100%, 50%);
+
+    padding-left: 0px;
+    padding-right: 0px;
+
+    text-shadow: 1px 2px 0 hsl(30, 100%, 20%);
+  }
+
+  .hero-about-us {
+    position: absolute;
+    top: 30vh;
+    right: 7.5vh;
+    z-index: 2;
+    text-align: center;
+
+    height: 40px;
+    width: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(200, 75%, 20%);
+    border-radius: 1000px;
+    padding: 70px 70px;
+
+    cursor: pointer;
+    font-family: "Futura c";
+    letter-spacing: 0px;
+    font-weight: 100;
+
+    color: hsl(200, 75%, 70%);
+    font-size: 45px;
+  }
+
+  .hero-about-us:hover {
+    background-color: hsl(200, 75%, 33%);
+  }
+}
