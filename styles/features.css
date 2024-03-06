@@ -61,7 +61,7 @@
   transition-delay: 800ms;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   .features-container {
     display: flex;
     flex-direction: row;
@@ -104,7 +104,50 @@
   }
 }
 
-@media (min-width: 425px) {
+@media (max-width: 375px) and (min-width: 321px) {
+  .features-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 375px;
+    height: 110px;
+
+    padding-left: 0px;
+    padding-right: 0px;
+
+    margin-bottom: 10px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    z-index: 100;
+  }
+
+  .feature {
+    padding: 0px 10px;
+    /* border: 2px solid black; */
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+
+    width: 65px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-family: "Futura c";
+    letter-spacing: 0px;
+    font-size: 16px;
+    color: #ff9900;
+
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+@media (max-width: 425px) and (min-width: 376px) {
   .features-container {
     display: flex;
     flex-direction: row;

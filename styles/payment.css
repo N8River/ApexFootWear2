@@ -325,7 +325,13 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 375px) and (min-width: 321px) {
+  .payment-container {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) and (min-width: 376px) {
   .payment-container {
     display: none;
   }

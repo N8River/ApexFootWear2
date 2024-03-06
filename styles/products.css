@@ -120,7 +120,7 @@
   }
 }
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   .product-name {
     font-family: "Futura";
     font-size: 14px;
@@ -233,7 +233,122 @@
   }
 }
 
-@media (min-width: 425px) {
+@media (max-width: 375px) and (min-width: 321px) {
+  .product-name {
+    font-family: "Futura";
+    font-size: 13px;
+    font-weight: 600;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    margin-bottom: 10px;
+
+    height: 40px;
+  }
+
+  .product-price {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Futura";
+    font-weight: normal;
+
+    font-size: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    margin-bottom: 10px;
+  }
+
+  .product-price span {
+    text-align: center;
+    padding-left: 3.5px;
+    padding-right: 3.5px;
+  }
+
+  .discount {
+    color: green;
+  }
+
+  .price-original {
+    text-decoration: line-through;
+  }
+
+  .size-options {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    cursor: pointer;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .size-options div {
+    margin-left: 3.5px;
+    margin-right: 3.5px;
+  }
+
+  .size-variants {
+    border: 0.5px solid #dddddd;
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    font-size: 14px;
+    padding: 3px 4px;
+  }
+
+  .product-grid-header {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(200, 100%, 80%);
+    border-radius: 1000px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 600px;
+    margin-right: 600px;
+    height: 75px;
+
+    font-family: "Frank Libre";
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .product-grid-header-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(200, 100%, 80%);
+    border-radius: 1000px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 600px;
+    margin-right: 600px;
+    height: 75px;
+
+    font-family: "Frank Libre";
+    font-size: 32px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 425px) and (min-width: 376px) {
   .product-name {
     font-family: "Futura";
     font-size: 14px;
