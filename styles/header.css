@@ -816,3 +816,187 @@
     color: hsl(200, 66%, 95%) !important;
   }
 }
+
+@media (max-width: 768px) and (min-width: 426px) {
+  .announcement-bar {
+    height: 50px;
+    font-weight: 500;
+    color: white;
+    font-family: "Futura";
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0px;
+    font-size: 16px;
+  }
+
+  .brand-header {
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 140px;
+  }
+
+  .brand-header-left {
+    height: 140px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .brand-header-middle {
+    height: 140px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .brand-header-right {
+    height: 140px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+    padding: 0px;
+    margin: 0px;
+
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .widget-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    background-color: white;
+
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .widget-left div {
+    /* border: 2px solid black; */
+    border-radius: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 6px 12px;
+
+    height: 75px;
+
+    font-family: "Futura";
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 18px;
+
+    margin-bottom: 5px;
+    background-color: hsl(200, 50%, 90%);
+    z-index: 500;
+
+    width: 100%;
+  }
+
+  .widget-home-2 {
+    cursor: pointer;
+  }
+  .widget-home-2:hover {
+    background-color: hsl(200, 70%, 75%);
+  }
+
+  .widget-all-2 {
+    background-color: black;
+    color: hsl(200, 66%, 95%);
+    cursor: pointer;
+  }
+
+  .widget-newdrops:hover,
+  .widget-trending:hover,
+  .widget-all:hover {
+    background-color: hsl(200, 70%, 75%);
+    cursor: pointer;
+  }
+
+  .widget-home,
+  .widget-trending {
+    margin-right: 5px;
+  }
+
+  .btn-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .menu-logo {
+    max-width: 100%; /* Make the image fill the width of the container */
+    max-height: 100%; /* Make the image fill the height of the container */
+  }
+
+  .brand-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+  }
+
+  .user-btn,
+  .cart-btn {
+    background-color: hsl(200, 50%, 90%);
+    border-radius: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px;
+    padding: 10px;
+
+    height: 60px;
+    width: 60px;
+
+    cursor: pointer;
+  }
+
+  .user-btn:hover,
+  .cart-btn:hover {
+    background-color: hsl(200, 50%, 75%);
+  }
+
+  .wishlist-logo,
+  .cart-logo,
+  .user-logo,
+  .search-logo {
+    max-width: 55px;
+    max-height: 55px;
+  }
+
+  .widget-home {
+    display: none !important;
+    background-color: black !important;
+    color: hsl(200, 66%, 95%) !important;
+  }
+}
