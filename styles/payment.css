@@ -324,3 +324,9 @@
     display: none;
   }
 }
+
+@media (max-width: 425px) {
+  .payment-container {
+    display: none;
+  }
+}
