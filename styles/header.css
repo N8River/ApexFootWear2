@@ -9,7 +9,7 @@
 }
 
 .hide {
-  opacity: 0;
+  display: none !important;
   transition: 100ms all ease-out;
 }
 

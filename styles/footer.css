@@ -19,121 +19,77 @@
 }
 
 .footer-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  height: 350px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
 
-  padding-left: 45px;
-  padding-right: 45px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  gap: 5vh;
 
   background-color: #005580;
   color: white;
-  letter-spacing: 1px;
-
   background: linear-gradient(to top, #003047, #005580);
 }
 
-.footer-grid-1,
-.footer-grid-2,
-.footer-grid-3,
-.footer-grid-4,
-.footer-signup {
-  font-family: "Frank Libre";
+.footer-container div {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 30vh;
+  height: 20vh;
 
-  padding-top: 20px;
-  padding-left: 0px;
-}
-
-.footer-signup {
-  grid-row: 2/3;
-  grid-column: 1/3;
-  margin-bottom: 300px;
-}
-
-.social-media-links {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-  justify-items: center;
-  align-items: center;
-
-  margin-top: 15px;
-  padding-right: 770px;
-
-  cursor: pointer;
-}
-
-.social-media-links a {
-  color: white;
-}
-
-.footer-title {
   font-family: "Futura";
-  font-size: 24px;
-  font-weight: 500;
 }
 
-.store-location {
-  padding-top: 10px;
+.footer-container div h {
+  font-size: 3vh;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+
+  margin-bottom: 15px;
 }
 
-.directions-link {
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.footer-bullet {
-  /* padding: 5px; */
-  margin: 5px;
-}
-
-.li1 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  list-style-type: none;
-
-  cursor: pointer;
-}
-
-.p1 {
-  margin-top: 10px;
-  line-height: 24px;
+.footer-container div p {
+  font-size: 2vh;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 .newsletter {
-  display: flex;
-  align-items: center; /* Align items vertically */
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 /* Style the email input box */
 .newsletter input[type="email"] {
   border: none;
-  height: 28px;
+  height: 3vh;
+
   margin-top: 5px;
-  border-bottom: 1.5px solid black; /* Add bottom border */
-  outline: none; /* Remove outline when focused */
-  width: 207px; /* Adjust width as needed */
+  margin-bottom: 5px;
+
+  padding-left: 5px;
+  outline: none;
+  width: 100%;
 }
 
 /* Style the placeholder text */
 .newsletter input[type="email"]::placeholder {
-  color: #474747; /* Placeholder text color */
-  letter-spacing: 1px;
-  transform: translateX(2.5px);
-  padding-left: 5px;
+  color: #757575;
+  font-family: "Futura";
 }
 
 /* Optional: Style the button */
 .newsletter-btn {
-  padding-left: 5px;
-  margin-top: 5px;
-  padding-right: 5px;
-
   border: none;
-  border-bottom: 1.5px solid black;
-  background-color: white;
+
+  padding-right: 5px;
+  height: 3vh;
+  background-color: none;
   cursor: pointer;
 }
 
@@ -149,222 +105,115 @@
   background-image: url("../images/styles/layers-waves-100.svg");
 }
 
-@media (max-width: 1440px) {
-  .footer-container {
-    height: 300px;
-    padding-top: 10px;
-  }
-
-  .footer-grid-1,
-  .footer-grid-2,
-  .footer-grid-3,
-  .footer-grid-4,
-  .footer-signup {
-    padding-top: 17px;
-  }
-
-  .footer-signup {
-    margin-bottom: 300px;
-  }
-
-  .social-media-links {
-    justify-content: center;
-    margin-top: 10px;
-    padding-right: 550px;
-  }
-
-  .footer-title {
-    font-size: 20px;
-  }
-
-  .store-location {
-    padding-top: 8px;
-  }
-
-  .directions-link {
-  }
-
-  .footer-bullet {
-    margin: 5px;
-  }
-
-  .li1 {
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-
-  .p1 {
-    margin-top: 8px;
-    /* line-height: 24px; */
-  }
-
-  .newsletter {
-  }
-
-  .newsletter input[type="email"] {
-    height: 24px;
-    margin-top: 3px;
-  }
-
-  .newsletter input[type="email"]::placeholder {
-    letter-spacing: 1px;
-    transform: translateX(2.5px);
-  }
-
-  .newsletter-btn {
-    padding-left: 0px;
-    margin-top: 0px;
-  }
-}
-
 @media (max-width: 320px) {
   .spacer {
-    width: 320px;
-    height: 50px;
+    height: 10vh;
   }
 
   .footer-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    height: 35vh;
     flex-wrap: wrap;
-    gap: 10px;
 
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    gap: 0vh;
 
+    padding-left: 5%;
+    padding-right: 5%;
+
+    padding-top: 5%;
+
+    /* padding-bottom: 2vh; */
     background-color: #005580;
     color: white;
-    letter-spacing: 0px;
-    height: 500px;
-
     background: linear-gradient(to top, #003047, #005580);
   }
 
   .footer-container div {
-    padding: 0px;
-    width: 120px;
-    /* height: 140px; */
-
     display: flex;
     flex-direction: column;
-    align-self: center;
-    justify-content: flex-start;
-  }
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 15vh;
+    height: 10vh;
 
-  .footer-signup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom: 50px;
-  }
-
-  .social-media-links {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    justify-items: center;
-    align-items: center;
-
-    margin-top: 15px;
-    padding-right: 770px;
-
-    cursor: pointer;
-  }
-
-  .social-media-links a {
-    color: white;
-  }
-
-  .footer-title {
     font-family: "Futura";
-    font-size: 16px;
+  }
+
+  .footer-grid-2 {
+    align-items: center;
+  }
+
+  .footer-grid-4,
+  .footer-signup {
+    width: 45% !important;
+    height: 20vh !important;
+  }
+
+  .footer-container div h {
+    font-size: 2vh;
+    letter-spacing: 0.5px;
     font-weight: 600;
 
-    margin-bottom: 5px;
+    margin-bottom: 0.5vh;
   }
 
-  .store-location {
-    margin-top: 0px;
-    font-family: "futura";
-    font-size: 14px;
-  }
-
-  .store-location div {
-    height: 20px;
-  }
-
-  .directions-link {
-    font-weight: 500;
-    cursor: pointer;
-  }
-
-  .footer-bullet {
-    padding: 0px;
-    margin: 0px;
-
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: flex-start;
-  }
-
-  .li1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    line-height: 1.5;
-    list-style-type: none;
-
-    font-family: "Futura";
-    font-size: 14px;
-    cursor: pointer;
-  }
-
-  .p1 {
-    margin-top: 0px;
-    font-size: 14px;
-    line-height: 1.5;
+  .footer-container div p {
+    font-size: 1.75vh;
+    margin-top: 2px;
+    margin-bottom: 2px;
   }
 
   .newsletter {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Align items vertically */
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    height: 2vh !important;
+    width: 100% !important;
+
+    margin-top: 7px;
+    margin-bottom: 7px;
   }
 
   /* Style the email input box */
   .newsletter input[type="email"] {
     border: none;
-    height: 28px;
-    margin-top: 5px;
-    border-bottom: 1.5px solid black; /* Add bottom border */
-    outline: none; /* Remove outline when focused */
-    width: 207px; /* Adjust width as needed */
+    height: 2vh;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    padding-left: 5px;
+    outline: none;
+    width: 100%;
   }
 
   /* Style the placeholder text */
   .newsletter input[type="email"]::placeholder {
-    color: #474747; /* Placeholder text color */
-    letter-spacing: 1px;
-    transform: translateX(2.5px);
-    padding-left: 5px;
+    color: #757575;
+    font-family: "Futura";
+
+    font-size: 1.7vh;
+    text-align: center;
   }
 
   /* Optional: Style the button */
   .newsletter-btn {
-    padding-left: 5px;
-    margin-top: 5px;
-    padding-right: 5px;
-
     border: none;
-    border-bottom: 1.5px solid black;
-    background-color: white;
+
+    padding-right: 2px;
+    height: 2vh;
+    background-color: none;
     cursor: pointer;
+  }
+
+  .newsletter button img {
+    max-height: 100%;
+    width: auto;
   }
 
   .spacer {
@@ -382,152 +231,113 @@
 
 @media (max-width: 375px) and (min-width: 321px) {
   .spacer {
-    width: 320px;
-    height: 50px;
+    height: 10vh;
   }
 
   .footer-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    height: 35vh;
     flex-wrap: wrap;
-    gap: 10px;
 
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    gap: 0vh;
 
+    padding-left: 5%;
+    padding-right: 5%;
+
+    padding-top: 1%;
+
+    /* padding-bottom: 2vh; */
     background-color: #005580;
     color: white;
-    letter-spacing: 0px;
-    height: 500px;
-
     background: linear-gradient(to top, #003047, #005580);
   }
 
   .footer-container div {
-    padding: 0px;
-    width: 120px;
-    /* height: 140px; */
-
     display: flex;
     flex-direction: column;
-    align-self: center;
-    justify-content: flex-start;
-  }
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 15vh;
+    height: 14vh;
 
-  .footer-signup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom: 50px;
-  }
-
-  .social-media-links {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    justify-items: center;
-    align-items: center;
-
-    margin-top: 15px;
-    padding-right: 770px;
-
-    cursor: pointer;
-  }
-
-  .social-media-links a {
-    color: white;
-  }
-
-  .footer-title {
     font-family: "Futura";
-    font-size: 16px;
+  }
+
+  .footer-grid-2 {
+    align-items: center;
+  }
+
+  .footer-grid-4,
+  .footer-signup {
+    width: 45% !important;
+    height: 20vh !important;
+  }
+
+  .footer-container div h {
+    font-size: 2.2vh;
+    letter-spacing: 0.5px;
     font-weight: 600;
 
-    margin-bottom: 5px;
+    margin-bottom: 0.5vh;
   }
 
-  .store-location {
-    margin-top: 0px;
-    font-family: "futura";
-    font-size: 14px;
-  }
-
-  .store-location div {
-    height: 20px;
-  }
-
-  .directions-link {
-    font-weight: 500;
-    cursor: pointer;
-  }
-
-  .footer-bullet {
-    padding: 0px;
-    margin: 0px;
-
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: flex-start;
-  }
-
-  .li1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    line-height: 1.5;
-    list-style-type: none;
-
-    font-family: "Futura";
-    font-size: 14px;
-    cursor: pointer;
-  }
-
-  .p1 {
-    margin-top: 0px;
-    font-size: 14px;
-    line-height: 1.5;
+  .footer-container div p {
+    font-size: 1.8vh;
+    margin-top: 2px;
+    margin-bottom: 2px;
   }
 
   .newsletter {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Align items vertically */
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    height: 2vh !important;
+    width: 100% !important;
+
+    margin-top: 7px;
+    margin-bottom: 7px;
   }
 
   /* Style the email input box */
   .newsletter input[type="email"] {
     border: none;
-    height: 28px;
-    margin-top: 5px;
-    border-bottom: 1.5px solid black; /* Add bottom border */
-    outline: none; /* Remove outline when focused */
-    width: 207px; /* Adjust width as needed */
+    height: 2vh;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    padding-left: 5px;
+    outline: none;
+    width: 100%;
   }
 
   /* Style the placeholder text */
   .newsletter input[type="email"]::placeholder {
-    color: #474747; /* Placeholder text color */
-    letter-spacing: 1px;
-    transform: translateX(2.5px);
-    padding-left: 5px;
+    color: #757575;
+    font-family: "Futura";
+
+    font-size: 1.7vh;
+    text-align: center;
   }
 
   /* Optional: Style the button */
   .newsletter-btn {
-    padding-left: 5px;
-    margin-top: 5px;
-    padding-right: 5px;
-
     border: none;
-    border-bottom: 1.5px solid black;
-    background-color: white;
+
+    padding-right: 2px;
+    height: 2vh;
+    background-color: none;
     cursor: pointer;
+  }
+
+  .newsletter button img {
+    max-height: 100%;
+    width: auto;
   }
 
   .spacer {
@@ -545,152 +355,113 @@
 
 @media (max-width: 425px) and (min-width: 376px) {
   .spacer {
-    width: 320px;
-    height: 50px;
+    height: 12vh;
   }
 
   .footer-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    height: 40vh;
     flex-wrap: wrap;
-    gap: 10px;
 
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    gap: 0vh;
 
+    padding-left: 5%;
+    padding-right: 5%;
+
+    padding-top: 1%;
+
+    /* padding-bottom: 2vh; */
     background-color: #005580;
     color: white;
-    letter-spacing: 0px;
-    height: 500px;
-
     background: linear-gradient(to top, #003047, #005580);
   }
 
   .footer-container div {
-    padding: 0px;
-    width: 120px;
-    /* height: 140px; */
-
     display: flex;
     flex-direction: column;
-    align-self: center;
-    justify-content: flex-start;
-  }
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 19vh;
+    height: 14vh;
 
-  .footer-signup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom: 50px;
-  }
-
-  .social-media-links {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    justify-items: center;
-    align-items: center;
-
-    margin-top: 15px;
-    padding-right: 770px;
-
-    cursor: pointer;
-  }
-
-  .social-media-links a {
-    color: white;
-  }
-
-  .footer-title {
     font-family: "Futura";
-    font-size: 16px;
+  }
+
+  .footer-grid-2 {
+    align-items: center;
+  }
+
+  .footer-grid-4,
+  .footer-signup {
+    width: 45% !important;
+    height: 20vh !important;
+  }
+
+  .footer-container div h {
+    font-size: 2.5vh;
+    letter-spacing: 0.5px;
     font-weight: 600;
 
-    margin-bottom: 5px;
+    margin-bottom: 0.5vh;
   }
 
-  .store-location {
-    margin-top: 0px;
-    font-family: "futura";
-    font-size: 14px;
-  }
-
-  .store-location div {
-    height: 20px;
-  }
-
-  .directions-link {
-    font-weight: 500;
-    cursor: pointer;
-  }
-
-  .footer-bullet {
-    padding: 0px;
-    margin: 0px;
-
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: flex-start;
-  }
-
-  .li1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    line-height: 1.5;
-    list-style-type: none;
-
-    font-family: "Futura";
-    font-size: 14px;
-    cursor: pointer;
-  }
-
-  .p1 {
-    margin-top: 0px;
-    font-size: 14px;
-    line-height: 1.5;
+  .footer-container div p {
+    font-size: 2.1vh;
+    margin-top: 2px;
+    margin-bottom: 2px;
   }
 
   .newsletter {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Align items vertically */
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    height: 2vh !important;
+    width: 100% !important;
+
+    margin-top: 7px;
+    margin-bottom: 7px;
   }
 
   /* Style the email input box */
   .newsletter input[type="email"] {
     border: none;
-    height: 28px;
-    margin-top: 5px;
-    border-bottom: 1.5px solid black; /* Add bottom border */
-    outline: none; /* Remove outline when focused */
-    width: 207px; /* Adjust width as needed */
+    height: 2vh;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    padding-left: 5px;
+    outline: none;
+    width: 100%;
   }
 
   /* Style the placeholder text */
   .newsletter input[type="email"]::placeholder {
-    color: #474747; /* Placeholder text color */
-    letter-spacing: 1px;
-    transform: translateX(2.5px);
-    padding-left: 5px;
+    color: #757575;
+    font-family: "Futura";
+
+    font-size: 1.8vh;
+    text-align: left;
   }
 
   /* Optional: Style the button */
   .newsletter-btn {
-    padding-left: 5px;
-    margin-top: 5px;
-    padding-right: 5px;
-
     border: none;
-    border-bottom: 1.5px solid black;
-    background-color: white;
+
+    padding-right: 2px;
+    height: 2vh;
+    background-color: none;
     cursor: pointer;
+  }
+
+  .newsletter button img {
+    max-height: 100%;
+    width: auto;
   }
 
   .spacer {
@@ -708,152 +479,113 @@
 
 @media (max-width: 768px) and (min-width: 426px) {
   .spacer {
-    width: 100%;
-    height: 50px;
+    height: 12vh;
   }
 
   .footer-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    height: 43vh;
     flex-wrap: wrap;
-    gap: 10px;
 
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    gap: 0vh;
 
+    padding-left: 5%;
+    padding-right: 5%;
+
+    padding-top: 1%;
+
+    /* padding-bottom: 2vh; */
     background-color: #005580;
     color: white;
-    letter-spacing: 0px;
-    height: 100%;
-
     background: linear-gradient(to top, #003047, #005580);
   }
 
   .footer-container div {
-    padding: 0px;
-    width: 120px;
-    /* height: 140px; */
-
     display: flex;
     flex-direction: column;
-    align-self: center;
-    justify-content: flex-start;
-  }
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 30vh;
+    height: 16vh;
 
-  .footer-signup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom: 50px;
-  }
-
-  .social-media-links {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    justify-items: center;
-    align-items: center;
-
-    margin-top: 15px;
-    padding-right: 770px;
-
-    cursor: pointer;
-  }
-
-  .social-media-links a {
-    color: white;
-  }
-
-  .footer-title {
     font-family: "Futura";
-    font-size: 16px;
+  }
+
+  .footer-grid-2 {
+    align-items: center;
+  }
+
+  .footer-grid-4,
+  .footer-signup {
+    width: 45% !important;
+    height: 20vh !important;
+  }
+
+  .footer-container div h {
+    font-size: 2.8vh;
+    letter-spacing: 0.5px;
     font-weight: 600;
 
-    margin-bottom: 5px;
+    margin-bottom: 0.5vh;
   }
 
-  .store-location {
-    margin-top: 0px;
-    font-family: "futura";
-    font-size: 14px;
-  }
-
-  .store-location div {
-    height: 20px;
-  }
-
-  .directions-link {
-    font-weight: 500;
-    cursor: pointer;
-  }
-
-  .footer-bullet {
-    padding: 0px;
-    margin: 0px;
-
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: flex-start;
-  }
-
-  .li1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    line-height: 1.5;
-    list-style-type: none;
-
-    font-family: "Futura";
-    font-size: 14px;
-    cursor: pointer;
-  }
-
-  .p1 {
-    margin-top: 0px;
-    font-size: 14px;
-    line-height: 1.5;
+  .footer-container div p {
+    font-size: 2.3vh;
+    margin-top: 2px;
+    margin-bottom: 2px;
   }
 
   .newsletter {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Align items vertically */
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    height: 2vh !important;
+    width: 100% !important;
+
+    margin-top: 7px;
+    margin-bottom: 7px;
   }
 
   /* Style the email input box */
   .newsletter input[type="email"] {
     border: none;
-    height: 28px;
-    margin-top: 5px;
-    border-bottom: 1.5px solid black; /* Add bottom border */
-    outline: none; /* Remove outline when focused */
-    width: 207px; /* Adjust width as needed */
+    height: 3.2vh;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    padding-left: 5px;
+    outline: none;
+    width: 100%;
   }
 
   /* Style the placeholder text */
   .newsletter input[type="email"]::placeholder {
-    color: #474747; /* Placeholder text color */
-    letter-spacing: 1px;
-    transform: translateX(2.5px);
-    padding-left: 5px;
+    color: #757575;
+    font-family: "Futura";
+
+    font-size: 2.2vh;
+    text-align: left;
   }
 
   /* Optional: Style the button */
   .newsletter-btn {
-    padding-left: 5px;
-    margin-top: 5px;
-    padding-right: 5px;
-
     border: none;
-    border-bottom: 1.5px solid black;
-    background-color: white;
+
+    padding-right: 5px;
+    height: 3.2vh;
+    background-color: none;
     cursor: pointer;
+  }
+
+  .newsletter button img {
+    max-height: 100%;
+    width: auto;
   }
 
   .spacer {
@@ -871,152 +603,114 @@
 
 @media (max-width: 1024px) and (min-width: 769px) {
   .spacer {
-    width: 100%;
-    height: 50px;
+    height: 12vh;
   }
 
   .footer-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    height: 25vh;
     flex-wrap: wrap;
-    gap: 10px;
 
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    gap: 0vh;
 
+    padding-left: 2%;
+    padding-right: 2%;
+
+    padding-top: 0%;
+
+    /* padding-bottom: 2vh; */
     background-color: #005580;
     color: white;
-    letter-spacing: 0px;
-    height: 100%;
-
     background: linear-gradient(to top, #003047, #005580);
   }
 
   .footer-container div {
-    padding: 0px;
-    width: 120px;
-    /* height: 140px; */
-
     display: flex;
     flex-direction: column;
-    align-self: center;
-    justify-content: flex-start;
-  }
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 25vh;
+    height: 20vh;
 
-  .footer-signup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom: 50px;
-  }
-
-  .social-media-links {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    justify-items: center;
-    align-items: center;
-
-    margin-top: 15px;
-    padding-right: 770px;
-
-    cursor: pointer;
-  }
-
-  .social-media-links a {
-    color: white;
-  }
-
-  .footer-title {
     font-family: "Futura";
-    font-size: 16px;
+  }
+
+  .footer-grid-2 {
+    align-items: center;
+    width: auto !important;
+  }
+
+  .footer-grid-4,
+  .footer-signup {
+    width: 35vh !important;
+    /* height: 20vh !important; */
+  }
+
+  .footer-container div h {
+    font-size: 2.8vh;
+    letter-spacing: 0.5px;
     font-weight: 600;
 
-    margin-bottom: 5px;
+    margin-bottom: 0.5vh;
   }
 
-  .store-location {
-    margin-top: 0px;
-    font-family: "futura";
-    font-size: 14px;
-  }
-
-  .store-location div {
-    height: 20px;
-  }
-
-  .directions-link {
-    font-weight: 500;
-    cursor: pointer;
-  }
-
-  .footer-bullet {
-    padding: 0px;
-    margin: 0px;
-
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: flex-start;
-  }
-
-  .li1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    line-height: 1.5;
-    list-style-type: none;
-
-    font-family: "Futura";
-    font-size: 14px;
-    cursor: pointer;
-  }
-
-  .p1 {
-    margin-top: 0px;
-    font-size: 14px;
-    line-height: 1.5;
+  .footer-container div p {
+    font-size: 2.3vh;
+    margin-top: 2px;
+    margin-bottom: 2px;
   }
 
   .newsletter {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Align items vertically */
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    height: 2vh !important;
+    width: 100% !important;
+
+    margin-top: 7px;
+    margin-bottom: 7px;
   }
 
   /* Style the email input box */
   .newsletter input[type="email"] {
     border: none;
-    height: 28px;
-    margin-top: 5px;
-    border-bottom: 1.5px solid black; /* Add bottom border */
-    outline: none; /* Remove outline when focused */
-    width: 207px; /* Adjust width as needed */
+    height: 3.2vh;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    padding-left: 5px;
+    outline: none;
+    width: 100%;
   }
 
   /* Style the placeholder text */
   .newsletter input[type="email"]::placeholder {
-    color: #474747; /* Placeholder text color */
-    letter-spacing: 1px;
-    transform: translateX(2.5px);
-    padding-left: 5px;
+    color: #757575;
+    font-family: "Futura";
+
+    font-size: 2.2vh;
+    text-align: left;
   }
 
   /* Optional: Style the button */
   .newsletter-btn {
-    padding-left: 5px;
-    margin-top: 5px;
-    padding-right: 5px;
-
     border: none;
-    border-bottom: 1.5px solid black;
-    background-color: white;
+
+    padding-right: 5px;
+    height: 3.2vh;
+    background-color: none;
     cursor: pointer;
+  }
+
+  .newsletter button img {
+    max-height: 100%;
+    width: auto;
   }
 
   .spacer {
@@ -1034,152 +728,114 @@
 
 @media (max-width: 1440px) and (min-width: 1025px) {
   .spacer {
-    width: 100%;
-    height: 50px;
+    height: 12vh;
   }
 
   .footer-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    height: 30vh;
     flex-wrap: wrap;
-    gap: 10px;
 
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    gap: 0vh;
 
+    padding-left: 5%;
+    padding-right: 5%;
+
+    padding-top: 0%;
+
+    /* padding-bottom: 2vh; */
     background-color: #005580;
     color: white;
-    letter-spacing: 0px;
-    height: 100%;
-
     background: linear-gradient(to top, #003047, #005580);
   }
 
   .footer-container div {
-    padding: 0px;
-    width: 120px;
-    /* height: 140px; */
-
     display: flex;
     flex-direction: column;
-    align-self: center;
-    justify-content: flex-start;
-  }
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 30vh;
+    height: 30vh;
 
-  .footer-signup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom: 50px;
-  }
-
-  .social-media-links {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    justify-items: center;
-    align-items: center;
-
-    margin-top: 15px;
-    padding-right: 770px;
-
-    cursor: pointer;
-  }
-
-  .social-media-links a {
-    color: white;
-  }
-
-  .footer-title {
     font-family: "Futura";
-    font-size: 16px;
+  }
+
+  .footer-grid-2 {
+    align-items: center;
+    width: auto !important;
+  }
+
+  .footer-grid-4,
+  .footer-signup {
+    width: 45vh !important;
+    /* height: 20vh !important; */
+  }
+
+  .footer-container div h {
+    font-size: 3.2vh;
+    letter-spacing: 0.5px;
     font-weight: 600;
 
-    margin-bottom: 5px;
+    margin-bottom: 1vh;
   }
 
-  .store-location {
-    margin-top: 0px;
-    font-family: "futura";
-    font-size: 14px;
-  }
-
-  .store-location div {
-    height: 20px;
-  }
-
-  .directions-link {
-    font-weight: 500;
-    cursor: pointer;
-  }
-
-  .footer-bullet {
-    padding: 0px;
-    margin: 0px;
-
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: flex-start;
-  }
-
-  .li1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    line-height: 1.5;
-    list-style-type: none;
-
-    font-family: "Futura";
-    font-size: 14px;
-    cursor: pointer;
-  }
-
-  .p1 {
-    margin-top: 0px;
-    font-size: 14px;
-    line-height: 1.5;
+  .footer-container div p {
+    font-size: 2.5vh;
+    margin-top: 2px;
+    margin-bottom: 2px;
   }
 
   .newsletter {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Align items vertically */
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    height: 2vh !important;
+    width: 100% !important;
+
+    margin-top: 12px;
+    margin-bottom: 12px;
   }
 
   /* Style the email input box */
   .newsletter input[type="email"] {
     border: none;
-    height: 28px;
-    margin-top: 5px;
-    border-bottom: 1.5px solid black; /* Add bottom border */
-    outline: none; /* Remove outline when focused */
-    width: 207px; /* Adjust width as needed */
+    height: 3.5vh;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    padding-left: 5px;
+    outline: none;
+    width: 100%;
   }
 
   /* Style the placeholder text */
   .newsletter input[type="email"]::placeholder {
-    color: #474747; /* Placeholder text color */
-    letter-spacing: 1px;
-    transform: translateX(2.5px);
-    padding-left: 5px;
+    color: #757575;
+    font-family: "Futura";
+
+    font-size: 2.5vh;
+    text-align: left;
   }
 
   /* Optional: Style the button */
   .newsletter-btn {
-    padding-left: 5px;
-    margin-top: 5px;
-    padding-right: 5px;
-
     border: none;
-    border-bottom: 1.5px solid black;
-    background-color: white;
+
+    padding-right: 5px;
+    height: 3.5vh;
+    background-color: none;
     cursor: pointer;
+  }
+
+  .newsletter button img {
+    max-height: 100%;
+    width: auto;
   }
 
   .spacer {
