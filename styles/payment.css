@@ -9,16 +9,11 @@
   left: 50%;
   transform: translateX(-50%) translateY(50px);
 
-  /* width: 800px; */
-  /* height: 800px; */
-
+  height: 27vw;
+  width: 60vw;
+  font-size: 1.1vw;
   z-index: 999;
   font-family: "Futura";
-
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 50px;
-  padding-right: 50px;
 
   border-radius: 15px;
 
@@ -28,53 +23,69 @@
 .user-details {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
-  padding-right: 15px;
+  padding-right: 1.5em;
+  padding-left: 5em;
   border-right: 10px solid rgb(230, 230, 230);
 
-  width: 420px;
+  height: 75%;
+  width: 50%;
+}
+
+.cart-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding-left: 1.5em;
+  padding-right: 5em;
+  height: 75%;
+  width: 50%;
+}
+
+.cart-summary div {
+  width: 100%;
 }
 
 .user-details img {
-  width: 40px;
   position: absolute;
-  top: 15px;
-  transform: translateX(-205px);
+  height: 2.5em;
+  width: 2.5em;
+  left: 2vh;
+  top: 2vh;
 }
 
 .steps {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
-  gap: 40px;
-  font-size: 20px;
+  width: 100%;
+  font-size: 1em;
+  font-weight: 600;
   font-family: "Futura";
 
-  margin-top: 20px;
-  margin-bottom: 10px;
-
-  /* padding-bottom: 10px; */
-  border-bottom: 1px solid rgb(200, 200, 200);
+  border-bottom: 1.5px solid rgb(200, 200, 200);
 }
 
 .mobile {
   background-color: rgb(216, 216, 216);
   border-radius: 5px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 1%;
+  padding-bottom: 1%;
 
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .address,
 .payment {
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .main-container {
@@ -84,19 +95,17 @@
   align-items: center;
 
   margin-top: 30px;
-
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 100%;
 }
 
 .main-container h {
-  font-size: 22px;
+  font-size: 1.1em;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 }
 
 .main-container input {
-  font-size: 16px;
+  font-size: 0.8em;
   font-family: "Futura";
 
   text-indent: 5px;
@@ -114,11 +123,13 @@
   justify-content: center;
   align-items: center;
 
-  gap: 7px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  font-size: 0.7em;
+  width: 100%;
+  gap: 5%;
+  margin-top: 2%;
+  margin-bottom: 1%;
 
-  padding-bottom: 15px;
+  padding-bottom: 4%;
   border-bottom: 1px solid rgb(230, 230, 230);
 }
 
@@ -128,7 +139,7 @@
   justify-content: center;
   align-items: center;
 
-  margin-top: 50px;
+  margin-top: 10%;
 }
 
 .payment-footer button {
@@ -138,12 +149,12 @@
   text-align: center;
 
   font-family: "Futura";
-  font-size: 19px;
+  font-size: 1em;
   font-weight: 500;
 
   color: white;
   background-color: grey;
-  padding: 10px 15px;
+  padding: 0.5em 1.5em;
   border-radius: 5px;
   border: none;
 }
@@ -154,20 +165,11 @@
   justify-content: center;
   text-align: center;
 
-  font-size: 16px;
-  margin-top: 5px;
+  font-size: 0.8em;
+  margin-top: 1%;
 
-  padding-top: 5px;
+  padding-top: 1%;
   color: grey;
-}
-
-.cart-summary {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  padding-left: 20px;
 }
 
 .order-summary-wrap {
@@ -183,26 +185,30 @@
   justify-content: center;
 
   width: 100%;
-  gap: 20px;
+  gap: 10%;
   border-bottom: 1px solid rgb(216, 216, 216);
 }
 
 .order-summary-header h {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: 600;
 
-  margin-top: 7px;
-  margin-bottom: 7px;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .order-summary-header img {
-  width: 22px;
-  height: 22px;
+  width: 1.4vw;
+  height: 1.4vw;
 }
 
 .order-summary {
-  height: 145px;
+  height: 7.5vw;
   overflow-y: auto;
+}
+
+.order-summary div {
+  font-size: 0.96em;
 }
 
 .totals {
@@ -212,6 +218,7 @@
   justify-content: center;
 
   width: 100%;
+  font-size: 0.8em;
 }
 
 .totals div {
@@ -229,8 +236,8 @@
   align-items: center;
   justify-content: flex-end;
 
-  width: 250px;
-  margin-right: 25px;
+  width: 40%;
+  margin-right: 5%;
 }
 
 .totals div l {
@@ -239,7 +246,8 @@
   align-items: center;
   justify-content: flex-start;
 
-  margin-left: 10px;
+  width: 40%;
+  margin-left: 1%;
 }
 
 .cart-summary-footer {
@@ -248,46 +256,56 @@
   align-items: center;
   justify-content: center;
 
-  font-size: 17px;
+  font-size: 1.1em;
+
   width: 100%;
 }
 
 .login-for-loyalty {
-  margin-top: 5px;
-  margin-bottom: 10px;
+  text-align: center;
+  font-size: 0.8em;
+
+  margin-top: 1%;
+  margin-bottom: 3%;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 
 .to-pay {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
 
   font-weight: 600;
   border-top: 1px solid rgb(212, 212, 212);
-  padding-top: 10px;
+  padding-top: 2%;
+}
+
+.coupon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .coupon-wrap input {
-  font-size: 16px;
+  font-size: 0.8em;
   font-family: "Futura";
   text-align: center;
   padding: 5px 15px;
 
-  width: 200px;
+  width: 50%;
   border-radius: 1000px;
   border: 1px dotted black;
 }
 
 .coupon-wrap input::placeholder {
-  font-size: 16px;
+  font-size: 1em;
   font-family: "Futura";
   text-align: center;
 }
 
 .dot {
-  width: 10px;
-  height: 10px;
+  width: 0.8em;
+  height: 0.8em;
 
   border-radius: 50%;
   background-color: rgb(200, 200, 200);
@@ -308,49 +326,156 @@
   background-color: white;
 
   position: absolute;
-  width: 30px;
-  transform: translateX(237px);
-  top: 15px;
+  width: 2.5em;
+
+  right: 2vh;
+  top: 2vh;
 
   cursor: pointer;
 }
 
 .close-checkout-btn img {
-  width: 30px;
+  width: 2.5em;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 1536px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
   .payment-container {
-    display: none;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+
+    width: 95%;
+    height: 50vh;
+  }
+
+  .user-details {
+    width: 45%;
+  }
+
+  .cart-summary {
+    width: 45%;
+    margin-top: 50px;
+  }
+
+  .user-details img {
+    width: 35px;
+    top: 8px;
+    transform: translateX(-165px);
+  }
+
+  .steps {
+    font-size: 2vh;
+    font-weight: 600;
+    gap: 20px;
+  }
+
+  .main-container {
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .main-container h {
+    font-size: 2.3vh;
+    margin-bottom: 10px;
+  }
+
+  .notification-checkbox p {
+    font-size: 1.8vh;
+  }
+
+  .close-checkout-btn {
+    width: 30px;
+    transform: translateX(167px);
+    top: 15px;
+  }
+
+  .cart-summary div {
+    width: 100%;
+  }
+
+  .order-summary-header {
+    margin-top: 0px;
+  }
+
+  .order-summary-header h {
+    font-weight: 600;
+  }
+
+  .order-summary {
+    height: 125px;
+  }
+
+  .totals div div {
+    margin-right: 0px;
+  }
+
+  .cart-summary-footer {
+    flex-direction: row;
   }
 }
 
-@media (max-width: 375px) and (min-width: 321px) {
+@media (max-width: 640px) {
+  .order-summary-header h {
+    font-size: 1.7vh;
+  }
+
   .payment-container {
-    display: none;
+    height: 55vh;
+  }
+
+  .user-details img {
+    transform: translateX(-130px);
+  }
+
+  .cart-summary {
+    margin-top: 0px;
+  }
+
+  .cart-summary-footer div {
+    font-size: 1.7vh;
+    letter-spacing: 0px;
+    /* line-height: 1.2; */
+  }
+
+  .coupon-wrap input {
+    font-size: 1.5vh;
+    padding: 5px 15px;
+
+    width: 100%;
+    border-radius: 1000px;
+    border: 1px dotted black;
+  }
+
+  .coupon-wrap input::placeholder {
+    font-size: 1.5vh;
+  }
+
+  .login-for-loyalty {
+    width: 90% !important;
+  }
+
+  .close-checkout-btn {
+    width: 30px;
+    transform: translateX(127px);
+    top: 15px;
+  }
+
+  .steps {
+    font-size: 1.7vh;
+    gap: 1vh;
   }
 }
 
-@media (max-width: 425px) and (min-width: 376px) {
-  .payment-container {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) and (min-width: 426px) {
-  .payment-container {
-    display: none;
-  }
-}
-
-@media (max-width: 1024px) and (min-width: 769px) {
-  .payment-container {
-    display: none;
-  }
-}
-
-@media (max-width: 1440px) and (min-width: 1025px) {
-  .payment-container {
-    display: none;
-  }
+@media (max-width: 475px) {
 }

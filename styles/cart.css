@@ -4,7 +4,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  width: 450px;
+  width: 25vw;
 
   background-color: rgba(255, 255, 255);
 
@@ -17,10 +17,12 @@
   overflow-y: auto; /* Allow scrolling if content exceeds container */
 
   /* Add smooth transition */
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
 
   /* Start off-screen */
   transform: translateX(100%);
+
+  font-size: 1vw;
 }
 
 /* Show Cart Container when Active */
@@ -40,10 +42,10 @@
 
   border-bottom: 1px solid rgb(198, 198, 198);
 
-  margin-top: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-bottom: 15px;
+  margin-top: 0.9vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding-bottom: 0.9vw;
 }
 
 .cart-heading {
@@ -58,8 +60,7 @@
 }
 
 .close-cart-btn {
-  font-family: "Frank Libre";
-  font-size: 32px;
+  font-size: 1.5vw;
   font-weight: 600;
 
   border: none;
@@ -69,6 +70,7 @@
 
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .close-cart-btn-img {
@@ -77,10 +79,10 @@
 }
 
 .cart-product-container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1vw;
+  padding-right: 1vw;
 
-  max-height: 700px;
+  max-height: 75vh;
   overflow-y: auto;
 
   /* border: 1px solid black; */
@@ -92,13 +94,18 @@
 
 .cart-product-container-child {
   border-bottom: 1px solid rgb(230, 230, 230);
-  height: 125px;
+  height: 7vw;
 
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* margin-top: 0.8vw; */
+  /* margin-bottom: 0.8vw; */
 
-  display: grid;
-  grid-template-columns: 180px 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 1vw;
+  padding-right: 1vw;
 
   font-family: "futura";
 }
@@ -107,53 +114,52 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  height: 100%;
+  width: 25%;
 }
 
 .cart-product-img {
-  max-height: 120px;
-  max-width: 180px;
+  height: 95%;
 }
 
 .cart-product-info-container {
-  padding-left: 20px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-}
 
-.cart-product-info-title {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  width: 70%;
 }
 
 .cart-product-name {
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.2px;
 
-  margin-bottom: 20px;
+  margin-bottom: 1vw;
 }
 
 .cart-product-info-sub {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 0.5vw;
+  /* margin-bottom: 0.5vw; */
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .add-remove-cart-item {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* justify-self: center; */
+  grid-template-columns: repeat(3, 1.3vw);
+
   border: 1px solid rgb(128, 128, 128);
 }
 
 .cart-product-price {
-  grid-column: 3;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .add-cart-item {
@@ -162,8 +168,8 @@
   align-items: center;
 
   border-left: 1px solid rgb(128, 128, 128);
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: 0.15vw;
+  padding-bottom: 0.15vw;
 
   font-weight: 500;
   cursor: pointer;
@@ -180,16 +186,21 @@
   align-items: center;
 
   border-right: 1px solid rgb(128, 128, 128);
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: 0.15vw;
+  padding-bottom: 0.15vw;
 
   font-weight: 500;
   cursor: pointer;
 }
 
+.remove-cart-item img {
+  width: 66%;
+}
+
 .remove-cart-item:hover {
   color: white;
-  background-color: black;
+  background-color: rgb(139, 0, 0);
+  border: none;
 }
 
 .cart-product-quantity {
@@ -197,23 +208,24 @@
   justify-content: center;
   align-items: center;
 
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: 0.15vw;
+  padding-bottom: 0.15vw;
 
   font-weight: 300;
-  font-family: "Frank Libre";
+  font-family: "Futura";
+  text-align: center;
 }
 
 .subtotal-container {
   position: absolute;
   bottom: 0;
 
-  width: 420px;
+  width: 100%;
 
-  margin-left: 15px;
-
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-left: 0.8vw;
+  padding-right: 0.8vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
 
   border-top: 1px solid rgb(128, 128, 128);
 
@@ -239,23 +251,23 @@
   display: flex;
   justify-content: center;
 
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .subtotal-calculated {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 0.8vw;
+  margin-right: 0.8vw;
 }
 
 .subtotal-description {
   display: flex;
   justify-content: center;
 
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
 
   font-family: "Futura";
-  font-size: 14px;
+  font-size: 0.8em;
 }
 
 .checkout-btn {
@@ -264,7 +276,7 @@
   justify-content: center;
   align-items: center;
 
-  height: 72px;
+  height: 4vw;
 
   font-family: "Futura";
 
@@ -278,12 +290,13 @@
 }
 
 .checkout-text {
-  margin-bottom: 5px;
-  font-size: 18px;
+  margin-bottom: 0.6vw;
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
 .checkout-description {
-  font-size: 11px;
+  font-size: 0.9em;
   font-weight: 400;
 }
 

@@ -4,24 +4,15 @@
   justify-content: space-evenly;
   align-items: center;
 
-  padding-left: 220px;
-  padding-right: 220px;
-
-  margin-bottom: 70px;
-
-  padding-top: 50px;
-  padding-bottom: 50px;
-
+  height: 12vw;
   z-index: 100;
 }
 
 .feature {
-  padding: 50px 30px;
-  /* border: 2px solid black; */
   box-shadow: 3px 3px 5px hsla(200, 100%, 20%, 1);
 
-  width: 250px;
-  height: 150px;
+  width: 16%;
+  height: 75%;
 
   display: flex;
   justify-content: center;
@@ -29,7 +20,7 @@
 
   text-align: center;
   font-family: "Futura C";
-  font-size: 48px;
+  font-size: 2.8vw;
   color: #ff9900;
 
   background-color: rgba(0, 0, 0, 0.9);
@@ -61,260 +52,66 @@
   transition-delay: 800ms;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 1536px) {
   .features-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-
-    width: 320px;
-    height: 100px;
-
-    padding-left: 0px;
-    padding-right: 0px;
-
-    margin-bottom: 10px;
-
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-    z-index: 100;
-  }
-
-  .feature {
-    padding: 0px 10px;
-    /* border: 2px solid black; */
-    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
-
-    width: 60px;
-    height: 75px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    font-family: "Futura c";
-    letter-spacing: 0px;
-    font-size: 14px;
-    color: #ff9900;
-
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-}
-
-@media (max-width: 375px) and (min-width: 321px) {
-  .features-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-
-    width: 375px;
-    height: 110px;
-
-    padding-left: 0px;
-    padding-right: 0px;
-
-    margin-bottom: 10px;
-
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-    z-index: 100;
-  }
-
-  .feature {
-    padding: 0px 10px;
-    /* border: 2px solid black; */
-    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
-
-    width: 65px;
-    height: 80px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    font-family: "Futura c";
-    letter-spacing: 0px;
-    font-size: 16px;
-    color: #ff9900;
-
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-}
-
-@media (max-width: 425px) and (min-width: 376px) {
-  .features-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-
-    width: 425px;
-    height: 120px;
-
-    padding-left: 0px;
-    padding-right: 0px;
-
-    margin-bottom: 10px;
-
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-    z-index: 100;
-  }
-
-  .feature {
-    padding: 0px 10px;
-    /* border: 2px solid black; */
-    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
-
-    width: 75px;
-    height: 85px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    font-family: "Futura c";
-    letter-spacing: 0px;
-    font-size: 18px;
-    color: #ff9900;
-
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-}
-
-@media (max-width: 768px) and (min-width: 426px) {
-  .features-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-
-    width: 100%;
-    height: 150px;
-
-    padding-left: 0px;
-    padding-right: 0px;
-
-    margin-bottom: 10px;
-
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-    z-index: 100;
-  }
-
-  .feature {
-    padding: 0px 10px;
-    /* border: 2px solid black; */
-    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
-
-    width: 125px;
-    height: 125px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    font-family: "Futura c";
-    letter-spacing: 0px;
-    font-size: 30px;
-    color: #ff9900;
-
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-}
-
-@media (max-width: 1024px) and (min-width: 769px) {
-  .features-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-
-    width: 100%;
-    height: 30vh;
-
-    padding-left: 0px;
-    padding-right: 0px;
-
-    margin-bottom: 10px;
-
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-    z-index: 100;
-  }
-
-  .feature {
-    padding: 0px 10px;
-    /* border: 2px solid black; */
-    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
-
-    width: 27vh;
     height: 22vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    font-family: "Futura c";
-    letter-spacing: 0px;
-    font-size: 6vh;
-    color: #ff9900;
-
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-}
-
-@media (max-width: 1440px) and (min-width: 1025px) {
-  .features-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-
-    width: 100%;
-    height: 30vh;
-
-    padding-left: 0px;
-    padding-right: 0px;
-
-    margin-bottom: 10px;
-
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-    z-index: 100;
   }
 
   .feature {
-    padding: 0px 10px;
-    /* border: 2px solid black; */
-    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+    height: 18vh;
+    width: 29vh;
+    font-size: 5.8vh;
+  }
+}
 
-    width: 35vh;
-    height: 25vh;
+@media (max-width: 1280px) {
+  .feature {
+    height: 18vh;
+    width: 22vh;
+    font-size: 5vh;
+  }
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 1024px) {
+  .feature {
+    height: 18vh;
+    width: 22vh;
+    font-size: 4.8vh;
+  }
+}
 
-    text-align: center;
-    font-family: "Futura c";
-    letter-spacing: 0px;
-    font-size: 7vh;
-    color: #ff9900;
+@media (max-width: 768px) {
+  .features-container {
+    height: 18vh;
+  }
 
-    background-color: rgba(0, 0, 0, 0.9);
+  .feature {
+    height: 14vh;
+    width: 14.5vh;
+    font-size: 3.3vh;
+  }
+}
+
+@media (max-width: 640px) {
+  .features-container {
+    height: 18vh;
+  }
+
+  .feature {
+    height: 14vh;
+    width: 14vh;
+    font-size: 3.1vh;
+  }
+}
+
+@media (max-width: 475px) {
+  .features-container {
+    height: 13vh;
+  }
+
+  .feature {
+    height: 10vh;
+    width: 10vh;
+    font-size: 2.3vh;
   }
 }

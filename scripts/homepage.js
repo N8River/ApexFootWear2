@@ -106,10 +106,10 @@ document.querySelectorAll(".trending-btn, .new-releases-btn").forEach((btn) => {
     }
 
     const productGrid = document.querySelector(".product-grid");
-    productGrid.classList.add("hide");
+    productGrid.classList.add("hide-opacity");
 
     setTimeout(() => {
-      productGrid.classList.remove("hide");
+      productGrid.classList.remove("hide-opacity");
     }, 50);
   });
 });

@@ -3,409 +3,71 @@
   justify-content: center;
   align-content: center;
 
-  height: 60px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  gap: 1vw;
+
+  height: 3vw;
+  margin-bottom: 1.5vw;
+  margin-top: 1.5vw;
 }
 
-.new-releases-btn {
+.tab button {
   border: 2px solid black;
   border-radius: 50px;
-
-  margin-right: 7px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
 
   background-color: white;
 
   font-family: "Futura";
-  font-size: 20px;
+  font-size: 1.2vw;
   letter-spacing: 0px;
+
+  width: 10vw;
 
   cursor: pointer;
   z-index: 500;
-  transition: 300ms all ease;
-}
-
-.trending-btn {
-  border: 2px solid black;
-  border-radius: 50px;
-
-  margin-left: 7px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  background-color: white;
-
-  font-family: "Futura";
-  font-size: 20px;
-  letter-spacing: 0px;
-
-  cursor: pointer;
-  z-index: 500;
-
   transition: 300ms all ease;
 }
 
 .selected-btn {
-  background-color: black;
-  color: white;
+  background-color: black !important;
+  color: white !important;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 1536px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
   .tab {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    height: 50px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-
-    gap: 10px;
-  }
-
-  .tab button {
-    border: 1.5px solid black;
-    border-radius: 30px;
-
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 10px 15px;
-
-    background-color: white;
-
-    font-family: "Futura";
-    font-size: 14px;
-    letter-spacing: 0px;
-
-    cursor: pointer;
-    z-index: 500;
-  }
-
-  /* .new-releases-btn {
-    border: 1.5px solid black;
-    border-radius: 50px;
-
-    margin-right: 7px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    background-color: white;
-
-    font-family: "Futura";
-    font-size: 16px;
-    letter-spacing: 0px;
-
-    cursor: pointer;
-    z-index: 500;
-  } */
-
-  /* .trending-btn {
-    border: 1.5px solid black;
-    border-radius: 50px;
-
-    margin-left: 7px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    background-color: white;
-
-    font-family: "Roboto";
-    font-size: 16px;
-    letter-spacing: 1px;
-
-    cursor: pointer;
-    z-index: 500;
-  } */
-
-  .selected-btn {
-    background-color: black !important;
-    color: white !important;
+    height: 5.5vh;
+    gap: 1.5vh;
   }
 }
 
-@media (max-width: 375px) and (min-width: 321px) {
+@media (max-width: 768px) {
   .tab {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    height: 55px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-
-    gap: 8px;
-  }
-
-  .tab button {
-    border: 2px solid black;
-    border-radius: 30px;
-
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 8px 12px;
-
-    background-color: white;
-
-    font-family: "Futura";
-    font-size: 16px;
-    letter-spacing: 0px;
-
-    cursor: pointer;
-    z-index: 500;
-  }
-
-  /* .new-releases-btn {
-    border: 1.5px solid black;
-    border-radius: 50px;
-
-    margin-right: 7px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    background-color: white;
-
-    font-family: "Futura";
-    font-size: 16px;
-    letter-spacing: 0px;
-
-    cursor: pointer;
-    z-index: 500;
-  } */
-
-  /* .trending-btn {
-    border: 1.5px solid black;
-    border-radius: 50px;
-
-    margin-left: 7px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    background-color: white;
-
-    font-family: "Roboto";
-    font-size: 16px;
-    letter-spacing: 1px;
-
-    cursor: pointer;
-    z-index: 500;
-  } */
-
-  .selected-btn {
-    background-color: black !important;
-    color: white !important;
+    height: 5vh;
+    gap: 2vh;
   }
 }
 
-@media (max-width: 425px) and (min-width: 376px) {
+@media (max-width: 640px) {
   .tab {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    height: 60px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-
-    gap: 10px;
-  }
-
-  .tab button {
-    border: 2px solid black;
-    border-radius: 30px;
-
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 10px 15px;
-
-    background-color: white;
-
-    font-family: "Futura";
-    font-size: 16px;
-    letter-spacing: 0px;
-
-    cursor: pointer;
-    z-index: 500;
-  }
-
-  /* .new-releases-btn {
-    border: 1.5px solid black;
-    border-radius: 50px;
-
-    margin-right: 7px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    background-color: white;
-
-    font-family: "Futura";
-    font-size: 16px;
-    letter-spacing: 0px;
-
-    cursor: pointer;
-    z-index: 500;
-  } */
-
-  /* .trending-btn {
-    border: 1.5px solid black;
-    border-radius: 50px;
-
-    margin-left: 7px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    background-color: white;
-
-    font-family: "Roboto";
-    font-size: 16px;
-    letter-spacing: 1px;
-
-    cursor: pointer;
-    z-index: 500;
-  } */
-
-  .selected-btn {
-    background-color: black !important;
-    color: white !important;
+    height: 5vh;
+    gap: 2vh;
   }
 }
 
-@media (max-width: 768px) and (min-width: 426px) {
+@media (max-width: 475px) {
   .tab {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    height: 75px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-
-    gap: 15px;
+    height: 4vh;
+    gap: 1.5vh;
   }
 
   .tab button {
-    border: 2px solid black;
-    border-radius: 30px;
+    font-size: 2vh;
 
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 10px 15px;
-
-    background-color: white;
-
-    font-family: "Futura";
-    font-size: 20px;
-    letter-spacing: 0px;
-
-    cursor: pointer;
-    z-index: 500;
-  }
-
-  .selected-btn {
-    background-color: black !important;
-    color: white !important;
-  }
-}
-
-@media (max-width: 1024px) and (min-width: 769px) {
-  .tab {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    height: 15vh;
-    margin-top: 7px;
-    margin-bottom: 7px;
-
-    gap: 15px;
-  }
-
-  .tab button {
-    border: 2px solid black;
-    border-radius: 30px;
-
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 2.5vh 3.5vh;
-
-    background-color: white;
-
-    font-family: "Futura";
-    font-size: 3.5vh;
-    letter-spacing: 0px;
-
-    cursor: pointer;
-    z-index: 500;
-  }
-
-  .selected-btn {
-    background-color: black !important;
-    color: white !important;
-  }
-}
-
-@media (max-width: 1440px) and (min-width: 1025px) {
-  .tab {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    height: 15vh;
-    margin-top: 7px;
-    margin-bottom: 7px;
-
-    gap: 15px;
-  }
-
-  .tab button {
-    border: 2px solid black;
-    border-radius: 30px;
-
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 2.5vh 3.5vh;
-
-    background-color: white;
-
-    font-family: "Futura";
-    font-size: 3.5vh;
-    letter-spacing: 0px;
-
-    cursor: pointer;
-    z-index: 500;
-  }
-
-  .selected-btn {
-    background-color: black !important;
-    color: white !important;
+    width: 15vh;
   }
 }

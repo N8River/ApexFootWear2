@@ -1,40 +1,39 @@
 .product-name {
-  /* font-family: "Frank Libre"; */
-  font-size: 2.5vh;
+  font-size: 1em;
   font-weight: 600;
 
-  height: 6vh;
+  height: 3vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
-  margin-bottom: 10px;
+  margin-bottom: 0.8vw;
 }
 
 .product-price {
   display: flex;
   flex-direction: row;
-
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
 
-  /* font-family: "Frank Libre"; */
   font-weight: normal;
-  font-size: 2vh;
+  font-size: 0.9em;
 
-  /* padding-left: 25px;
-  padding-right: 25px; */
+  padding-left: 0.85vw;
+  padding-right: 0.85vw;
 
-  margin-bottom: 10px;
+  margin-bottom: 0.8vw;
 }
 
 .product-price span {
-  padding-left: 10px;
-  padding-right: 10px;
+  text-align: center;
 }
 
 .discount {
   color: green;
+  font-size: 0.8em;
 }
 
 .price-original {
@@ -49,13 +48,11 @@
   justify-content: space-evenly;
 
   cursor: pointer;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .size-options div {
-  margin-left: 7px;
-  margin-right: 7px;
+  margin-left: 0.4vw;
+  margin-right: 0.4vw;
 }
 
 .size-variants {
@@ -65,730 +62,102 @@
   justify-content: center;
   align-self: center;
 
-  font-size: 2vh;
-  padding: 5px 8px;
+  font-size: 0.8em;
+  padding: 0.3em 0.3em;
 }
 
-.product-grid-header {
-  display: none;
-  justify-content: center;
-  align-items: center;
-
-  background-color: hsl(200, 100%, 80%);
-  border-radius: 1000px;
-
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 600px;
-  margin-right: 600px;
-  height: 75px;
-
-  font-family: "Frank Libre";
-  font-size: 32px;
-  font-weight: 600;
+.size-variants:hover {
+  border: 1px solid black;
+  background-color: rgb(230, 230, 230);
 }
 
-.product-grid-header-open {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: hsl(200, 100%, 80%);
-  border-radius: 1000px;
-
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 600px;
-  margin-right: 600px;
-  height: 75px;
-
-  font-family: "Frank Libre";
-  font-size: 32px;
-  font-weight: 600;
-}
-
-@media (max-width: 320px) {
+@media (max-width: 1536px) {
   .product-name {
-    font-family: "Futura";
-    font-size: 14px;
-    font-weight: 600;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    margin-bottom: 10px;
+    font-size: 2.2vh;
   }
+}
 
-  .product-price {
-    display: flex;
-    flex-direction: row;
-
-    justify-content: center;
-    align-items: center;
-
-    font-family: "Futura";
-    font-weight: normal;
-
-    font-size: 12px;
-    padding-left: 0px;
-    padding-right: 0px;
-
-    margin-bottom: 10px;
-  }
-
-  .product-price span {
-    text-align: center;
-    padding-left: 3px;
-    padding-right: 3px;
-  }
-
-  .discount {
-    color: green;
-  }
-
-  .price-original {
-    text-decoration: line-through;
-  }
-
-  .size-options {
-    display: flex;
-    flex-direction: row;
-
-    align-items: center;
-    justify-content: space-evenly;
-
-    cursor: pointer;
-    padding-left: 0px;
-    padding-right: 0px;
+@media (max-width: 1280px) {
+  .size-variants {
+    font-size: 1.8vh;
+    padding: 0.2em 0.2em;
   }
 
   .size-options div {
-    margin-left: 3px;
-    margin-right: 3px;
+    margin-left: 0.6vh;
+    margin-right: 0.6vh;
   }
 
-  .size-variants {
-    border: 0.5px solid #dddddd;
-
-    display: flex;
-    justify-content: center;
-    align-self: center;
-
-    font-size: 12px;
-    padding: 2px 3px;
-  }
-
-  .product-grid-header {
-    display: none;
-    justify-content: center;
-    align-items: center;
-
-    background-color: hsl(200, 100%, 80%);
-    border-radius: 1000px;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 600px;
-    margin-right: 600px;
-    height: 75px;
-
-    font-family: "Frank Libre";
-    font-size: 32px;
-    font-weight: 600;
-  }
-
-  .product-grid-header-open {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: hsl(200, 100%, 80%);
-    border-radius: 1000px;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 600px;
-    margin-right: 600px;
-    height: 75px;
-
-    font-family: "Frank Libre";
-    font-size: 32px;
-    font-weight: 600;
+  .product-name {
+    font-size: 2.2vh;
   }
 }
 
-@media (max-width: 375px) and (min-width: 321px) {
-  .product-name {
-    font-family: "Futura";
-    font-size: 13px;
-    font-weight: 600;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    margin-bottom: 10px;
-
-    height: 40px;
-  }
-
-  .product-price {
-    display: flex;
-    flex-direction: row;
-
-    justify-content: center;
-    align-items: center;
-
-    font-family: "Futura";
-    font-weight: normal;
-
-    font-size: 12px;
-    padding-left: 0px;
-    padding-right: 0px;
-
-    margin-bottom: 10px;
-  }
-
-  .product-price span {
-    text-align: center;
-    padding-left: 3.5px;
-    padding-right: 3.5px;
-  }
-
-  .discount {
-    color: green;
-  }
-
-  .price-original {
-    text-decoration: line-through;
-  }
-
-  .size-options {
-    display: flex;
-    flex-direction: row;
-
-    align-items: center;
-    justify-content: space-evenly;
-
-    cursor: pointer;
-    padding-left: 0px;
-    padding-right: 0px;
+@media (max-width: 1024px) {
+  .size-variants {
+    font-size: 1.8vh;
+    padding: 0.2em 0.2em;
   }
 
   .size-options div {
-    margin-left: 3.5px;
-    margin-right: 3.5px;
+    margin-left: 0.6vh;
+    margin-right: 0.6vh;
   }
 
-  .size-variants {
-    border: 0.5px solid #dddddd;
-
-    display: flex;
-    justify-content: center;
-    align-self: center;
-
-    font-size: 14px;
-    padding: 3px 4px;
-  }
-
-  .product-grid-header {
-    display: none;
-    justify-content: center;
-    align-items: center;
-
-    background-color: hsl(200, 100%, 80%);
-    border-radius: 1000px;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 600px;
-    margin-right: 600px;
-    height: 75px;
-
-    font-family: "Frank Libre";
-    font-size: 32px;
-    font-weight: 600;
-  }
-
-  .product-grid-header-open {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: hsl(200, 100%, 80%);
-    border-radius: 1000px;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 600px;
-    margin-right: 600px;
-    height: 75px;
-
-    font-family: "Frank Libre";
-    font-size: 32px;
-    font-weight: 600;
+  .product-price {
+    font-size: 1.75vh;
   }
 }
 
-@media (max-width: 425px) and (min-width: 376px) {
-  .product-name {
-    font-family: "Futura";
-    font-size: 14px;
-    font-weight: 600;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .product-price {
-    display: flex;
-    flex-direction: row;
-
-    justify-content: center;
-    align-items: center;
-
-    font-family: "Futura";
-    font-weight: normal;
-
-    font-size: 13px;
-    padding-left: 0px;
-    padding-right: 0px;
-
-    margin-bottom: 10px;
-  }
-
-  .product-price span {
-    text-align: center;
-    padding-left: 4px;
-    padding-right: 4px;
-  }
-
-  .discount {
-    color: green;
-  }
-
-  .price-original {
-    text-decoration: line-through;
-  }
-
-  .size-options {
-    display: flex;
-    flex-direction: row;
-
-    align-items: center;
-    justify-content: space-evenly;
-
-    cursor: pointer;
-    padding-left: 0px;
-    padding-right: 0px;
+@media (max-width: 768px) {
+  .size-variants {
+    font-size: 1.8vh;
+    padding: 0.2em 0.2em;
   }
 
   .size-options div {
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 0.6vh;
+    margin-right: 0.6vh;
   }
 
-  .size-variants {
-    border: 0.5px solid #dddddd;
-
-    display: flex;
-    justify-content: center;
-    align-self: center;
-
-    font-size: 14px;
-    padding: 3px 4px;
-  }
-
-  .product-grid-header {
-    display: none;
-    justify-content: center;
-    align-items: center;
-
-    background-color: hsl(200, 100%, 80%);
-    border-radius: 1000px;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 600px;
-    margin-right: 600px;
-    height: 75px;
-
-    font-family: "Frank Libre";
-    font-size: 32px;
-    font-weight: 600;
-  }
-
-  .product-grid-header-open {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: hsl(200, 100%, 80%);
-    border-radius: 1000px;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 600px;
-    margin-right: 600px;
-    height: 75px;
-
-    font-family: "Frank Libre";
-    font-size: 32px;
-    font-weight: 600;
+  .product-price {
+    font-size: 1.75vh;
   }
 }
 
-@media (max-width: 768px) and (min-width: 426px) {
-  .product-name {
-    font-family: "Futura";
-    font-size: 18px;
-    font-weight: 600;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    margin-bottom: 10px;
-
-    height: 50px;
-  }
-
-  .product-price {
-    display: flex;
-    flex-direction: row;
-
-    justify-content: center;
-    align-items: center;
-
-    font-family: "Futura";
-    font-weight: normal;
-
-    font-size: 16px;
-    padding-left: 0px;
-    padding-right: 0px;
-
-    margin-bottom: 10px;
-  }
-
-  .product-price span {
-    text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .discount {
-    color: green;
-  }
-
-  .price-original {
-    text-decoration: line-through;
-  }
-
-  .size-options {
-    display: flex;
-    flex-direction: row;
-
-    align-items: center;
-    justify-content: space-evenly;
-
-    cursor: pointer;
-    padding-left: 0px;
-    padding-right: 0px;
+@media (max-width: 640px) {
+  .size-variants {
+    font-size: 1.8vh;
+    padding: 0.2em 0.2em;
   }
 
   .size-options div {
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: 0.6vh;
+    margin-right: 0.6vh;
   }
 
-  .size-variants {
-    border: 0.5px solid #dddddd;
-
-    display: flex;
-    justify-content: center;
-    align-self: center;
-
-    font-size: 16px;
-    padding: 3px 4px;
-  }
-
-  .product-grid-header {
-    display: none;
-    justify-content: center;
-    align-items: center;
-
-    background-color: hsl(200, 100%, 80%);
-    border-radius: 1000px;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 600px;
-    margin-right: 600px;
-    height: 75px;
-
-    font-family: "Frank Libre";
-    font-size: 32px;
-    font-weight: 600;
-  }
-
-  .product-grid-header-open {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: hsl(200, 100%, 80%);
-    border-radius: 1000px;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 600px;
-    margin-right: 600px;
-    height: 75px;
-
-    font-family: "Frank Libre";
-    font-size: 32px;
-    font-weight: 600;
+  .product-price {
+    font-size: 1.75vh;
   }
 }
 
-@media (max-width: 1024px) and (min-width: 769px) {
-  .product-name {
-    font-family: "Futura";
-    font-size: 3.5vh;
-    font-weight: 600;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    margin-bottom: 10px;
-
-    height: 8vh;
-  }
-
-  .product-price {
-    display: flex;
-    flex-direction: row;
-
-    justify-content: center;
-    align-items: center;
-
-    font-family: "Futura";
-    font-weight: normal;
-
-    font-size: 3.2vh;
-    padding-left: 0px;
-    padding-right: 0px;
-
-    margin-bottom: 10px;
-  }
-
-  .product-price span {
-    text-align: center;
-    padding-left: 7.5px;
-    padding-right: 7.5px;
-  }
-
-  .discount {
-    color: green;
-  }
-
-  .price-original {
-    text-decoration: line-through;
-  }
-
-  .size-options {
-    display: flex;
-    flex-direction: row;
-
-    align-items: center;
-    justify-content: space-evenly;
-
-    cursor: pointer;
-    padding-left: 0px;
-    padding-right: 0px;
+@media (max-width: 475px) {
+  .size-variants {
+    font-size: 1.5vh;
+    padding: 0.25em 0.25em;
   }
 
   .size-options div {
-    margin-left: 7.5px;
-    margin-right: 7.5px;
-  }
-
-  .size-variants {
-    border: 0.5px solid #dddddd;
-
-    display: flex;
-    justify-content: center;
-    align-self: center;
-
-    font-size: 3.2vh;
-    padding: 3px 4px;
-  }
-
-  .product-grid-header {
-    display: none;
-    justify-content: center;
-    align-items: center;
-
-    background-color: hsl(200, 100%, 80%);
-    border-radius: 1000px;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 600px;
-    margin-right: 600px;
-    height: 75px;
-
-    font-family: "Frank Libre";
-    font-size: 32px;
-    font-weight: 600;
-  }
-
-  .product-grid-header-open {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: hsl(200, 100%, 80%);
-    border-radius: 1000px;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 600px;
-    margin-right: 600px;
-    height: 75px;
-
-    font-family: "Frank Libre";
-    font-size: 32px;
-    font-weight: 600;
-  }
-}
-
-@media (max-width: 1440px) and (min-width: 1025px) {
-  .product-name {
-    font-family: "Futura";
-    font-size: 3.5vh;
-    font-weight: 600;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    margin-bottom: 10px;
-
-    height: 8vh;
+    margin-left: 0.45vh;
+    margin-right: 0.45vh;
   }
 
   .product-price {
-    display: flex;
-    flex-direction: row;
-
-    justify-content: center;
-    align-items: center;
-
-    font-family: "Futura";
-    font-weight: normal;
-
-    font-size: 3.2vh;
-    padding-left: 0px;
-    padding-right: 0px;
-
-    margin-bottom: 10px;
+    font-size: 1.6vh;
   }
 
   .product-price span {
-    text-align: center;
-    padding-left: 7.5px;
-    padding-right: 7.5px;
-  }
-
-  .discount {
-    color: green;
-  }
-
-  .price-original {
-    text-decoration: line-through;
-  }
-
-  .size-options {
-    display: flex;
-    flex-direction: row;
-
-    align-items: center;
-    justify-content: space-evenly;
-
-    cursor: pointer;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .size-options div {
-    margin-left: 7.5px;
-    margin-right: 7.5px;
-  }
-
-  .size-variants {
-    border: 0.5px solid #dddddd;
-
-    display: flex;
-    justify-content: center;
-    align-self: center;
-
-    font-size: 3.2vh;
-    padding: 3px 4px;
-  }
-
-  .product-grid-header {
-    display: none;
-    justify-content: center;
-    align-items: center;
-
-    background-color: hsl(200, 100%, 80%);
-    border-radius: 1000px;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 600px;
-    margin-right: 600px;
-    height: 75px;
-
-    font-family: "Frank Libre";
-    font-size: 32px;
-    font-weight: 600;
-  }
-
-  .product-grid-header-open {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: hsl(200, 100%, 80%);
-    border-radius: 1000px;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 600px;
-    margin-right: 600px;
-    height: 75px;
-
-    font-family: "Frank Libre";
-    font-size: 32px;
-    font-weight: 600;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
   }
 }

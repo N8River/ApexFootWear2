@@ -43,7 +43,7 @@ export function renderCart(products) {
             <div class="cart-product-info-sub">
               <div class="add-remove-cart-item">
                 <div class="remove-cart-item remove-cart-item-btn" data-product-id="${matchingProduct.id}">
-                  -
+                  <img src="images/logos/svg/close.svg">
                 </div>              
                 <div class="cart-product-quantity">
                 ${cartItem.quantity}
