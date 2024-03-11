@@ -118,117 +118,62 @@
 
 @media (max-width: 1280px) {
   .footer-container {
-    padding-left: 5vh;
-    padding-right: 5vh;
-  }
-
-  .footer-grid-2 {
-    width: 15vh !important;
+    font-size: 1.5vw;
   }
 }
 
 @media (max-width: 1024px) {
-  .footer-container div h {
-    font-size: 2.5vh;
+  .newsletter input {
+    width: 80%;
   }
 
-  .footer-container div p {
-    font-size: 1.8vh;
+  .newsletter-btn img {
+    height: 2vw;
   }
 }
 
 @media (max-width: 768px) {
-  .footer-container {
-    gap: 3vh;
-    padding-left: 3vh;
-    padding-right: 3vh;
-  }
-
-  .footer-container div h {
-    margin-bottom: 5px;
-    font-size: 2vh;
-  }
-
-  .footer-container div p {
-    font-size: 1.7vh;
-  }
-
-  .footer-grid-4 {
-    width: 100vh !important;
-  }
-
-  .footer-signup {
-    width: 100vh !important;
-  }
 }
 
 @media (max-width: 640px) {
   .footer-container {
-    gap: 3vh;
-    padding-left: 3vh;
-    padding-right: 3vh;
+    font-size: 1.8vw;
   }
 
-  .footer-container div h {
-    margin-bottom: 5px;
-    font-size: 2vh;
+  .footer-grid-3 {
+    width: 11vw !important;
   }
 
-  .footer-container div p {
-    font-size: 1.7vh;
+  .footer-grid-2 {
+    width: 7vw !important;
   }
 
   .footer-grid-4 {
-    width: 100vh !important;
+    width: 25vw !important;
   }
 
   .footer-signup {
-    width: 100vh !important;
+    width: 25vw !important;
   }
 }
 
 @media (max-width: 475px) {
-  .footer-container {
-    flex-wrap: wrap;
-    height: 35vh;
-    gap: 1.5vh;
-    padding-left: 1vh;
-    padding-right: 1vh;
-  }
-
-  .footer-container div {
-    height: 10vh;
-    text-align: center;
-  }
-
-  .footer-container div h {
-    margin-bottom: 5px;
-    font-size: 1.8vh;
-  }
-
   .footer-container div p {
-    font-size: 1.7vh;
+    margin-top: 0.2vw;
+    margin-bottom: 0.2vw;
   }
 
-  .footer-grid-4 {
-    width: 25vh !important;
-    height: 20vh !important;
+  .newsletter input[type="email"] {
+    padding-left: 0.5vw;
   }
 
-  .footer-signup {
-    width: 25vh !important;
-    height: 20vh !important;
+  .newsletter-btn img {
+    height: 1.5vw;
   }
 
-  .footer-grid-2 {
-    text-align: center;
-  }
-
-  .spacer {
-    height: 5vh;
-  }
-
-  .newsletter {
-    height: 5vh !important;
+  .newsletter-btn {
+    /* position: relative;
+    top: -0%; */
+    padding-right: 0.5vw;
   }
 }

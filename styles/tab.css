@@ -36,38 +36,34 @@
 }
 
 @media (max-width: 1280px) {
-}
-
-@media (max-width: 1024px) {
-  .tab {
-    height: 5.5vh;
-    gap: 1.5vh;
+  .tab button {
+    font-size: 1.3vw;
   }
 }
 
+@media (max-width: 1024px) {
+}
+
 @media (max-width: 768px) {
-  .tab {
-    height: 5vh;
-    gap: 2vh;
+  .tab button {
+    font-size: 1.4vw;
   }
 }
 
 @media (max-width: 640px) {
-  .tab {
-    height: 5vh;
-    gap: 2vh;
+  .tab button {
+    border: 1.5px solid black;
   }
 }
 
 @media (max-width: 475px) {
   .tab {
-    height: 4vh;
-    gap: 1.5vh;
+    height: 4vw;
+    gap: 2vw;
   }
 
   .tab button {
-    font-size: 2vh;
-
-    width: 15vh;
+    width: 13vw;
+    font-size: 1.65vw;
   }
 }

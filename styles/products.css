@@ -73,91 +73,36 @@
 
 @media (max-width: 1536px) {
   .product-name {
-    font-size: 2.2vh;
+    font-size: 1em;
   }
 }
 
 @media (max-width: 1280px) {
   .size-variants {
-    font-size: 1.8vh;
-    padding: 0.2em 0.2em;
-  }
-
-  .size-options div {
-    margin-left: 0.6vh;
-    margin-right: 0.6vh;
-  }
-
-  .product-name {
-    font-size: 2.2vh;
+    font-size: 0.9em;
   }
 }
 
 @media (max-width: 1024px) {
-  .size-variants {
-    font-size: 1.8vh;
-    padding: 0.2em 0.2em;
-  }
-
-  .size-options div {
-    margin-left: 0.6vh;
-    margin-right: 0.6vh;
-  }
-
-  .product-price {
-    font-size: 1.75vh;
-  }
 }
 
 @media (max-width: 768px) {
-  .size-variants {
-    font-size: 1.8vh;
-    padding: 0.2em 0.2em;
-  }
-
-  .size-options div {
-    margin-left: 0.6vh;
-    margin-right: 0.6vh;
-  }
-
-  .product-price {
-    font-size: 1.75vh;
-  }
 }
 
 @media (max-width: 640px) {
-  .size-variants {
-    font-size: 1.8vh;
-    padding: 0.2em 0.2em;
-  }
-
-  .size-options div {
-    margin-left: 0.6vh;
-    margin-right: 0.6vh;
-  }
-
-  .product-price {
-    font-size: 1.75vh;
+  .discount {
+    font-size: 0.9em;
   }
 }
 
 @media (max-width: 475px) {
-  .size-variants {
-    font-size: 1.5vh;
-    padding: 0.25em 0.25em;
+  .product-price {
+    padding-left: 3.7vw;
+    padding-right: 3.7vw;
   }
 
   .size-options div {
-    margin-left: 0.45vh;
-    margin-right: 0.45vh;
-  }
-
-  .product-price {
-    font-size: 1.6vh;
-  }
-
-  .product-price span {
-    padding-left: 0.2em;
-    padding-right: 0.2em;
+    margin-left: 0.55vw;
+    margin-right: 0.55vw;
   }
 }
