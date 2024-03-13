@@ -19,8 +19,11 @@ export let cart = [
   },
 ];
 
-renderCart(products);
+export function saveToStorage() {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
 
+renderCart(products);
 export function renderCart(products) {
   let cartContainerHTML = "";
   cart.forEach((cartItem) => {
@@ -105,7 +108,7 @@ cartBtn.addEventListener("click", () => {
 
 removeItemsFromCart();
 
-function removeItemsFromCart() {
+export function removeItemsFromCart() {
   const removeItemsBtnObject = document.querySelectorAll(
     ".remove-cart-item-btn"
   );
@@ -140,6 +143,8 @@ function removeItemsFromCart() {
       }
     });
   });
+
+  saveToStorage();
 }
 
 export function removeFromCart(productId) {
@@ -147,7 +152,7 @@ export function removeFromCart(productId) {
 }
 
 addItemsToCart();
-function addItemsToCart() {
+export function addItemsToCart() {
   const addItemsBtnObject = document.querySelectorAll(".add-cart-item-btn");
   addItemsBtnObject.forEach((btn) => {
     const productId = btn.dataset.productId;

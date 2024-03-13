@@ -1,6 +1,10 @@
 import { products } from "../data/products.js";
-import { cart } from "../data/cart.js";
-import { renderCart } from "../data/cart.js";
+import { cart, saveToStorage } from "../data/cart.js";
+import {
+  renderCart,
+  removeItemsFromCart,
+  addItemsToCart,
+} from "../data/cart.js";
 
 const announcements = [
   "25% OFF ON ALL PRODUCTS | USE CODE: RN25",
@@ -114,32 +118,37 @@ document.querySelectorAll(".trending-btn, .new-releases-btn").forEach((btn) => {
   });
 });
 
-document.querySelector(".product-grid").addEventListener("click", (event) => {
-  if (event.target.classList.contains("size-variants")) {
-    const productId = event.target.dataset.productId;
-    const productSize = event.target.dataset.productSize;
+addToCart();
+function addToCart() {
+  document.querySelector(".product-grid").addEventListener("click", (event) => {
+    if (event.target.classList.contains("size-variants")) {
+      const productId = event.target.dataset.productId;
+      const productSize = event.target.dataset.productSize;
 
-    let matchingItem;
+      let matchingItem;
 
-    cart.forEach((item) => {
-      if (productId === item.productId && productSize === item.productSize) {
-        matchingItem = item;
-      }
-    });
-
-    if (matchingItem) {
-      matchingItem.quantity += 1;
-    } else {
-      cart.push({
-        productId: productId,
-        productSize: productSize,
-        quantity: 1,
+      cart.forEach((item) => {
+        if (productId === item.productId && productSize === item.productSize) {
+          matchingItem = item;
+        }
       });
-    }
 
-    renderCart(products);
-  }
-});
+      if (matchingItem) {
+        matchingItem.quantity += 1;
+      } else {
+        cart.push({
+          productId: productId,
+          productSize: productSize,
+          quantity: 1,
+        });
+      }
+
+      renderCart(products);
+      removeItemsFromCart();
+      addItemsToCart();
+    }
+  });
+}
 
 const wigdetTrending = document.querySelector(".widget-trending");
 const newdropsTrending = document.querySelector(".widget-newdrops");

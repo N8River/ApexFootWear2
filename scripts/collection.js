@@ -1,5 +1,11 @@
 import { products } from "../data/products.js";
-import { cart, renderCart } from "../data/cart.js";
+import {
+  cart,
+  renderCart,
+  removeItemsFromCart,
+  addItemsToCart,
+  saveToStorage,
+} from "../data/cart.js";
 
 renderCollection(products);
 
@@ -51,32 +57,37 @@ function renderCollection(products) {
   document.querySelector(".product-grid-all").innerHTML = productsHTML;
 }
 
-document.querySelectorAll(".size-variants").forEach((button) => {
-  button.addEventListener("click", () => {
-    const productId = button.dataset.productId;
-    const productSize = button.dataset.productSize;
+addToCartCollection();
+function addToCartCollection() {
+  document.querySelectorAll(".size-variants").forEach((button) => {
+    button.addEventListener("click", () => {
+      const productId = button.dataset.productId;
+      const productSize = button.dataset.productSize;
 
-    let matchingItem;
+      let matchingItem;
 
-    cart.forEach((item) => {
-      if (productId === item.productId && productSize === item.productSize) {
-        matchingItem = item;
-      }
-    });
-
-    if (matchingItem) {
-      matchingItem.quantity += 1;
-    } else {
-      cart.push({
-        productId: productId,
-        productSize: productSize,
-        quantity: 1,
+      cart.forEach((item) => {
+        if (productId === item.productId && productSize === item.productSize) {
+          matchingItem = item;
+        }
       });
-    }
 
-    renderCart(products);
+      if (matchingItem) {
+        matchingItem.quantity += 1;
+      } else {
+        cart.push({
+          productId: productId,
+          productSize: productSize,
+          quantity: 1,
+        });
+      }
+
+      renderCart(products);
+      removeItemsFromCart();
+      addItemsToCart();
+    });
   });
-});
+}
 
 function productTypeFilter(products, filterFor) {
   let filteredProducts = [];
@@ -107,11 +118,13 @@ filterLoafers.addEventListener("click", () => {
   // filterLoafers.classList.toggle("active-filter");
   // filterSneakers.classList.toggle("active-filter");
   renderCollection(productTypeFilter(products, "loafers"));
+  addToCartCollection();
 });
 filterSneakers.addEventListener("click", () => {
   // filterLoafers.classList.toggle("active-filter");
   // filterSneakers.classList.toggle("active-filter");
   renderCollection(productTypeFilter(products, "sneakers"));
+  addToCartCollection();
 });
 
 const filterWhite = document.querySelector(".filter-white");
@@ -121,15 +134,19 @@ const filterBrown = document.querySelector(".filter-brown");
 
 filterWhite.addEventListener("click", () => {
   renderCollection(productColorFilter(products, "white"));
+  addToCartCollection();
 });
 filterBlack.addEventListener("click", () => {
   renderCollection(productColorFilter(products, "black"));
+  addToCartCollection();
 });
 filterBrown.addEventListener("click", () => {
   renderCollection(productColorFilter(products, "brown"));
+  addToCartCollection();
 });
 filterGrey.addEventListener("click", () => {
   renderCollection(productColorFilter(products, "grey"));
+  addToCartCollection();
 });
 
 function productPriceFilter(products, ul, ll) {
@@ -148,9 +165,11 @@ const over3000 = document.querySelector(".over-3000");
 
 under3000.addEventListener("click", () => {
   renderCollection(productPriceFilter(products, 2999, 0));
+  addToCartCollection();
 });
 over3000.addEventListener("click", () => {
   renderCollection(productPriceFilter(products, 9999, 3000));
+  addToCartCollection();
 });
 
 const searchButton = document.querySelector(".search-input");
