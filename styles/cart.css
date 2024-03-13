@@ -149,10 +149,19 @@
 }
 
 .add-remove-cart-item {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
   border: 1px solid rgb(128, 128, 128);
+  width: 25%;
+}
+
+.add-remove-cart-item div {
+  width: 100%;
+  padding-top: 0vw;
+  padding-bottom: 0vw;
 }
 
 .cart-product-price {
@@ -168,8 +177,6 @@
   align-items: center;
 
   border-left: 1px solid rgb(128, 128, 128);
-  padding-top: 0.15vw;
-  padding-bottom: 0.15vw;
 
   font-weight: 500;
   cursor: pointer;
@@ -186,20 +193,14 @@
   align-items: center;
 
   border-right: 1px solid rgb(128, 128, 128);
-  padding-top: 0.15vw;
-  padding-bottom: 0.15vw;
 
   font-weight: 500;
   cursor: pointer;
 }
 
-.remove-cart-item img {
-  width: 66%;
-}
-
 .remove-cart-item:hover {
   color: white;
-  background-color: rgb(139, 0, 0);
+  background-color: black;
   border: none;
 }
 

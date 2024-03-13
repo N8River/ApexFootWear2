@@ -43,16 +43,17 @@ export function renderCart(products) {
             <div class="cart-product-info-sub">
               <div class="add-remove-cart-item">
                 <div class="remove-cart-item remove-cart-item-btn" data-product-id="${matchingProduct.id}">
-                  <img src="images/logos/svg/close.svg">
+                  -
                 </div>              
                 <div class="cart-product-quantity">
                 ${cartItem.quantity}
                 </div>
-                <div class="add-cart-item add-cart-item-btn">
+                <div class="add-cart-item add-cart-item-btn"
+                data-product-id="${matchingProduct.id}">
                   +
                 </div>
               </div>
-              <div class="cart-product-price">Rs. ${matchingProduct.priceCents}</div>
+              <div class="cart-product-price" >Rs. ${matchingProduct.priceCents}</div>
             </div>
     
           </div>
@@ -99,43 +100,15 @@ closeCartBtn.addEventListener("click", () => {
 
 // Add click event listener to cart button
 cartBtn.addEventListener("click", () => {
-  // Toggle 'active' class to show/hide cart container
   cartContainer.classList.toggle("active");
-
-  // Toggle 'blur' class to blur/de-blur the body
-  // body.classList.toggle("blur");
 });
 
-// document.querySelectorAll(".remove-cart-item-btn").forEach((button) => {
-//   button.addEventListener("click", () => {
-//     const productId = button.dataset.productId;
-
-//     decreaseQuantity(productId);
-//     renderCart(products);  Update the cart UI after modifying the quantity
-//   });
-// });
-
-// export function decreaseQuantity(productId) {
-//   const cartItem = cart.find((item) => item.productId === productId);
-//   if (cartItem) {
-//     if (cartItem.quantity > 1) {
-//       cartItem.quantity--;  Decrease the quantity by 1
-//     } else {
-//        If quantity is already 1, remove the item from the cart
-//       removeFromCart(productId);
-//     }
-//   }
-//   console.log(cart);
-// }
-
-// export function removeFromCart(productId) {
-//   cart = cart.filter((cartItem) => cartItem.productId !== productId);
-// }
-
-const removeItemsBtnObject = document.querySelectorAll(".remove-cart-item-btn");
-removeItemsFromCart(removeItemsBtnObject);
+removeItemsFromCart();
 
 function removeItemsFromCart() {
+  const removeItemsBtnObject = document.querySelectorAll(
+    ".remove-cart-item-btn"
+  );
   removeItemsBtnObject.forEach((btn) => {
     const productId = btn.dataset.productId;
 
@@ -150,7 +123,7 @@ function removeItemsFromCart() {
     btn.addEventListener("click", () => {
       if (matchingItem.quantity > 1) {
         matchingItem.quantity--;
-        console.log(cart);
+        // console.log(cart);
         renderCart(products);
         const removeItemsBtnObject = document.querySelectorAll(
           ".remove-cart-item-btn"
@@ -173,14 +146,26 @@ export function removeFromCart(productId) {
   cart = cart.filter((cartItem) => cartItem.productId !== productId);
 }
 
-// export function decreaseQuantity(productId) {
-//   const cartItem = cart.find((item) => item.productId === productId);
-//   if (cartItem) {
-//     if (cartItem.quantity > 1) {
-//       cartItem.quantity--;
-//     } else {
-//       removeFromCart(productId);
-//     }
-//   }
-//   console.log(cart);
-// }
+addItemsToCart();
+function addItemsToCart() {
+  const addItemsBtnObject = document.querySelectorAll(".add-cart-item-btn");
+  addItemsBtnObject.forEach((btn) => {
+    const productId = btn.dataset.productId;
+
+    let matchingItem;
+
+    cart.forEach((cartItem) => {
+      if (cartItem.productId === productId) {
+        matchingItem = cartItem;
+      }
+    });
+
+    btn.addEventListener("click", () => {
+      matchingItem.quantity++;
+      console.log(matchingItem.quantity);
+      renderCart(products);
+      const addItemsBtnObject = document.querySelectorAll(".add-cart-item-btn");
+      addItemsToCart();
+    });
+  });
+}

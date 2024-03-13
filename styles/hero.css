@@ -56,7 +56,7 @@
 
   /* left: 50%; */
 
-  top: 4.2vw;
+  top: 6.5vw;
   height: 50vw;
   width: auto;
   overflow: hidden;
@@ -115,12 +115,21 @@
   .hero-text {
     top: 20vw;
   }
+
+  .hero-shoe-img {
+    height: 55vw;
+    top: 6.8vw;
+  }
 }
 
 @media (max-width: 1280px) {
   .hero-text {
     font-size: 9.8vw;
-    top: 22vw;
+    top: 21vw;
+  }
+
+  .hero-shoe-img {
+    top: 7.9vw;
   }
 
   .hero-background {
@@ -142,6 +151,7 @@
 
   .hero-text {
     font-size: 9.3vw;
+    top: 22vw;
   }
 
   .hero-about-us {
@@ -156,7 +166,7 @@
 
 @media (max-width: 768px) {
   .hero-shoe-img {
-    top: 4.8vw;
+    top: 6.8vw;
     height: 55vw;
   }
 
@@ -176,7 +186,7 @@
 
 @media (max-width: 640px) {
   .hero-text {
-    top: 26.5vw;
+    top: 24.5vw;
     font-size: 8.9vw;
     text-shadow: 1px 1px 1.5px hsl(30, 100%, 20%);
     letter-spacing: 3px;
@@ -194,6 +204,11 @@
     height: 10vw;
     width: 10vw;
   }
+
+  .hero-shoe-img {
+    height: 50vw;
+    top: 7.5vw;
+  }
 }
 
 @media (max-width: 475px) {
@@ -201,6 +216,10 @@
     top: 24.5vw;
     font-size: 9.8vw;
     letter-spacing: 2px;
+  }
+
+  .hero-shoe-img {
+    top: 8vw;
   }
 
   .hero-about-us {

@@ -28,6 +28,7 @@
 
 .lowpoly {
   background-image: url("../images/styles/low-poly-grid-300 (2).svg");
+  background-size: cover;
 }
 
 .hidden {

@@ -6,13 +6,13 @@ a {
 
 .about-container {
   display: flex;
-  padding-left: 300px;
-  padding-right: 300px;
+  padding-left: 20vw;
+  padding-right: 20vw;
 
   background-image: url("../images/styles/stacked-peaks-2000 (2).svg");
 
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
 }
 
 .about-text {
@@ -25,11 +25,11 @@ a {
 
   font-family: "Futura";
 
-  font-size: 44px;
+  font-size: 2vw;
   color: white;
 
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 2px #23446d;
+  margin-bottom: 1vw;
+  text-shadow: 2px 2px 2px hsl(213, 50%, 20%);
 }
 
 .about-heading {
@@ -37,22 +37,10 @@ a {
   align-items: center;
   justify-content: center;
 
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   font-family: "Futura C";
-  font-size: 72px;
+  font-size: 4vw;
 
-  /* font-weight: bold; */
-
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.filler-color {
-  height: 30px;
-  width: 100%;
-  background-color: #209fdf;
-
-  position: absolute;
-  top: 1970px;
-  z-index: 999;
+  margin-top: 0.8vw;
+  margin-bottom: 0.8vw;
 }
