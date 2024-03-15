@@ -1,23 +1,27 @@
 import { products } from "./products.js";
 import { calculateSubTotal } from "./utils/totalCalculator.js";
 
-export let cart = [
-  {
-    productId: "ddc09c63-d682-4b78-bc72-8617cbe42b30",
-    productSize: "42",
-    quantity: 3,
-  },
-  {
-    productId: "7daacfbf-6a97-468e-b65f-2e70b45116fb",
-    productSize: "43",
-    quantity: 1,
-  },
-  {
-    productId: "f80d9586-4823-42bb-9387-1606a2829470",
-    productSize: "45",
-    quantity: 2,
-  },
-];
+export let cart = JSON.parse(localStorage.getItem("cart"));
+
+if (!cart) {
+  cart = [
+    {
+      productId: "ddc09c63-d682-4b78-bc72-8617cbe42b30",
+      productSize: "42",
+      quantity: 3,
+    },
+    {
+      productId: "7daacfbf-6a97-468e-b65f-2e70b45116fb",
+      productSize: "43",
+      quantity: 1,
+    },
+    {
+      productId: "f80d9586-4823-42bb-9387-1606a2829470",
+      productSize: "45",
+      quantity: 2,
+    },
+  ];
+}
 
 export function saveToStorage() {
   localStorage.setItem("cart", JSON.stringify(cart));
@@ -173,4 +177,6 @@ export function addItemsToCart() {
       addItemsToCart();
     });
   });
+
+  saveToStorage();
 }

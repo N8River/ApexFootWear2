@@ -148,6 +148,8 @@ function addToCart() {
       addItemsToCart();
     }
   });
+
+  saveToStorage();
 }
 
 const wigdetTrending = document.querySelector(".widget-trending");

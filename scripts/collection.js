@@ -87,6 +87,8 @@ function addToCartCollection() {
       addItemsToCart();
     });
   });
+
+  saveToStorage();
 }
 
 function productTypeFilter(products, filterFor) {
