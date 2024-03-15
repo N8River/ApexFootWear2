@@ -1,0 +1,129 @@
+.cart-alert-wrap {
+  position: fixed;
+  bottom: 5vw;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  z-index: 1000;
+
+  transition: transform 0.3s ease;
+
+  transform: translateX(150%);
+}
+
+.cart-alert-wrap.active {
+  transform: translateX(0);
+}
+
+.cart-alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: hsl(30, 100%, 60%);
+  font-family: "Futura";
+  font-size: 1.3vw;
+  width: fit-content;
+  height: 2.5vw;
+
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+
+  border-top-left-radius: 1000px;
+  border-bottom-left-radius: 1000px;
+
+  background-color: hsl(200, 100%, 25%);
+  box-shadow: 0px 2px 3px hsla(200, 100%, 10%, 0.8);
+}
+
+@media (max-width: 1536px) {
+  .cart-alert-wrap {
+  }
+
+  .cart-alert {
+    height: 3vw;
+    font-size: 1.6vw;
+    padding-left: 1.8vw;
+    padding-right: 1.8vw;
+  }
+}
+
+@media (max-width: 1280px) {
+  .cart-alert-wrap {
+  }
+
+  .cart-alert {
+    height: 3.5vw;
+    font-size: 1.8vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cart-alert-wrap {
+    height: 6vw;
+  }
+
+  .cart-alert {
+    height: 3.5vw;
+    font-size: 1.8vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-alert-wrap {
+    height: 6vw;
+  }
+
+  .cart-alert {
+    height: 3.5vw;
+    font-size: 1.8vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
+@media (max-width: 640px) {
+  .cart-alert-wrap {
+    height: 6vw;
+  }
+
+  .cart-alert {
+    height: 4vw;
+    font-size: 2.2vw;
+    padding-left: 2.5vw;
+    padding-right: 2vw;
+  }
+}
+
+@media (max-width: 475px) {
+  .cart-alert-wrap {
+    height: 10vw;
+  }
+
+  .cart-alert {
+    height: 4vw;
+    font-size: 2.5vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .cart-alert-wrap {
+    height: 10vw;
+  }
+
+  .cart-alert {
+    height: 5vw;
+    font-size: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+}

@@ -5,6 +5,7 @@ import {
   removeItemsFromCart,
   addItemsToCart,
 } from "../data/cart.js";
+import { alertCart } from "./common/alert.js";
 
 const announcements = [
   "25% OFF ON ALL PRODUCTS | USE CODE: RN25",
@@ -146,6 +147,7 @@ function addToCart() {
       renderCart(products);
       removeItemsFromCart();
       addItemsToCart();
+      alertCart();
     }
   });
 

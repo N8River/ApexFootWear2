@@ -6,6 +6,7 @@ import {
   addItemsToCart,
   saveToStorage,
 } from "../data/cart.js";
+import { alertCart } from "./common/alert.js";
 
 renderCollection(products);
 
@@ -85,6 +86,7 @@ function addToCartCollection() {
       renderCart(products);
       removeItemsFromCart();
       addItemsToCart();
+      alertCart();
     });
   });
 
