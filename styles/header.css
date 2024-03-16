@@ -37,6 +37,10 @@
   font-size: 1vw;
 }
 
+.announcement-text {
+  transition: all 0.25s ease;
+}
+
 .brand-header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

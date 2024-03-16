@@ -1,3 +1,22 @@
+const announcements = [
+  "25% OFF ON ALL PRODUCTS | USE CODE: RN25",
+  "BUY 1 PAIR OF SHOES AND GET 1 PAIR OF SOCKS FOR FREE | USE CODE: FG25",
+  "♥ SIGN IN FOR EXCITING UPDATES AND OFFERS ♥",
+];
+
+const announcementText = document.querySelector(".announcement-text");
+
+let currentIndex = 1;
+setInterval(() => {
+  announcementText.style.opacity = "0";
+
+  setTimeout(() => {
+    announcementText.textContent = announcements[currentIndex];
+    currentIndex < 2 ? currentIndex++ : (currentIndex = 0);
+    announcementText.style.opacity = "1";
+  }, 250);
+}, 7500);
+
 document.querySelector(".brand-header").innerHTML = `
   <div class="brand-header-left">
     <div class="widget-left">

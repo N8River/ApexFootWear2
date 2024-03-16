@@ -7,20 +7,7 @@ import {
 } from "../data/cart.js";
 import { alertCart } from "./common/alert.js";
 
-const announcements = [
-  "25% OFF ON ALL PRODUCTS | USE CODE: RN25",
-  "BUY 1 PAIR OF SHOES AND GET 1 PAIR OF SOCKS FOR FREE | USE CODE: FG25",
-];
-
 const tab = document.querySelector(".tab");
-
-let currentIndex = 0;
-setInterval(() => {
-  document.querySelector(".announcement-bar").innerHTML =
-    announcements[currentIndex];
-
-  currentIndex = (currentIndex + 1) % announcements.length;
-}, 5000);
 
 renderProducts(categorizeProductsTags(products).newRelease, ".product-grid");
 
