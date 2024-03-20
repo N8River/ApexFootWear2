@@ -4,14 +4,14 @@
   align-items: center;
   justify-content: center;
 
-  position: absolute;
+  position: fixed;
   background-color: white;
   left: 50%;
   transform: translateX(-50%) translateY(50px);
 
-  height: 27vw;
-  width: 60vw;
-  font-size: 1.1vw;
+  height: 30rem;
+  width: 60rem;
+  font-size: 1.25rem;
   z-index: 999;
   font-family: "Futura";
 
@@ -26,8 +26,8 @@
   justify-content: flex-start;
   align-items: center;
 
-  padding-right: 1.5em;
-  padding-left: 5em;
+  padding-right: 1.5rem;
+  padding-left: 5rem;
   border-right: 10px solid rgb(230, 230, 230);
 
   height: 75%;
@@ -40,8 +40,8 @@
   justify-content: flex-start;
   align-items: center;
 
-  padding-left: 1.5em;
-  padding-right: 5em;
+  padding-left: 1.5rem;
+  padding-right: 5rem;
   height: 75%;
   width: 50%;
 }
@@ -52,8 +52,8 @@
 
 .user-details img {
   position: absolute;
-  height: 2.5em;
-  width: 2.5em;
+  height: 2.5rem;
+  width: 2.5rem;
   left: 2vh;
   top: 2vh;
 }
@@ -99,13 +99,13 @@
 }
 
 .main-container h {
-  font-size: 1.1em;
+  font-size: 1.25em;
   font-weight: 500;
   margin-bottom: 5%;
 }
 
 .main-container input {
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-family: "Futura";
 
   text-indent: 5px;
@@ -123,7 +123,7 @@
   justify-content: center;
   align-items: center;
 
-  font-size: 0.7em;
+  font-size: 0.75em;
   width: 100%;
   gap: 5%;
   margin-top: 2%;
@@ -149,7 +149,7 @@
   text-align: center;
 
   font-family: "Futura";
-  font-size: 1em;
+  font-size: 1.25em;
   font-weight: 500;
 
   color: white;
@@ -198,17 +198,17 @@
 }
 
 .order-summary-header img {
-  width: 1.4vw;
-  height: 1.4vw;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .order-summary {
-  height: 7.5vw;
+  height: 7.5rem;
   overflow-y: auto;
 }
 
 .order-summary div {
-  font-size: 0.96em;
+  font-size: 1rem;
 }
 
 .totals {
@@ -218,7 +218,7 @@
   justify-content: center;
 
   width: 100%;
-  font-size: 0.8em;
+  font-size: 0.85em;
 }
 
 .totals div {
@@ -256,14 +256,14 @@
   align-items: center;
   justify-content: center;
 
-  font-size: 1.1em;
+  font-size: 1.2em;
 
   width: 100%;
 }
 
 .login-for-loyalty {
   text-align: center;
-  font-size: 0.8em;
+  font-size: 1.25rem;
 
   margin-top: 1%;
   margin-bottom: 3%;
@@ -287,12 +287,12 @@
 }
 
 .coupon-wrap input {
-  font-size: 0.8em;
+  font-size: 1rem;
   font-family: "Futura";
   text-align: center;
   padding: 5px 15px;
 
-  width: 50%;
+  width: 60%;
   border-radius: 1000px;
   border: 1px dotted black;
 }
@@ -339,101 +339,205 @@
 }
 
 @media (max-width: 1536px) {
-  .payment-container {
-    height: 32vw;
-    font-size: 1.15vw;
-  }
-
-  .user-details,
-  .cart-summary {
-    /* height: 80%; */
-    padding-top: 2vw;
-  }
-
-  .coupon-wrap input {
-    width: 66%;
-  }
 }
 
 @media (max-width: 1280px) {
+  .payment-container {
+    height: 25rem;
+    width: 50rem;
+
+    font-size: 1rem;
+  }
+
+  .order-summary div {
+    font-size: 0.9rem;
+  }
+
+  .login-for-loyalty {
+    font-size: 0.9rem;
+  }
+
+  .coupon-wrap input {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 1024px) {
   .payment-container {
-    height: 40vw;
-    width: 70vw;
+    height: 25rem;
+    width: 45rem;
 
-    font-size: 1.5vw;
+    font-size: 1rem;
   }
 
-  .close-checkout-btn {
-    width: 2em;
+  .order-summary div {
+    font-size: 0.9rem;
   }
 
-  .close-checkout-btn img {
-    width: 2em;
+  .login-for-loyalty {
+    font-size: 0.9rem;
+  }
+
+  .coupon-wrap input {
+    font-size: 0.9rem;
   }
 
   .user-details {
-    padding-left: 3em;
+    padding-right: 1rem;
+    padding-left: 3.5rem;
+
+    padding-top: 1rem;
   }
 
   .cart-summary {
-    padding-right: 3em;
-  }
+    padding-left: 1rem;
+    padding-right: 3.5rem;
 
-  .order-summary {
-    height: 9.2vw;
+    padding-top: 1rem;
   }
 }
 
 @media (max-width: 768px) {
+  .payment-container {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .user-details {
+    padding-right: 1rem;
+    padding-left: 2rem;
+
+    padding-top: 1rem;
+  }
+
+  .cart-summary {
+    padding-left: 1rem;
+    padding-right: 2rem;
+
+    padding-top: 1rem;
+  }
+
+  .order-summary div {
+    font-size: 0.85rem;
+  }
+
+  .login-for-loyalty {
+    font-size: 0.85rem;
+  }
+
+  .coupon-wrap input {
+    font-size: 0.85rem;
+  }
+
+  .main-container div {
+    font-size: 0.8em;
+  }
 }
 
 @media (max-width: 640px) {
-  .dot {
-    width: 0.37em;
-    height: 0.37em;
-    border-radius: 50%;
-    background-color: rgb(200, 200, 200);
-    border: 1px solid black;
-    outline: none;
+  .payment-container {
+    flex-direction: column;
+
+    height: auto;
+    width: 100%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    font-size: 1.1rem;
   }
 
+  .user-details {
+    width: 75%;
+
+    border: none;
+    border-bottom: 10px solid rgb(230, 230, 230);
+
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 4rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .cart-summary {
+    width: 75%;
+
+    border: none;
+
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+  }
   .main-container {
-    margin-top: 1.8vw;
+    margin-top: 1rem;
+  }
+
+  .main-container h {
+    margin-bottom: 2.5%;
+  }
+
+  .payment-footer {
+    margin-top: 2.5%;
   }
 }
 
 @media (max-width: 475px) {
-  .close-checkout-btn img {
-    width: 1em;
-  }
-
-  .close-checkout-btn {
-    top: 1.5vw;
-    right: 1vw;
-  }
-
-  .payment-container {
-    height: 60vw;
-    width: 95vw;
-    font-size: 2.2vw;
-  }
-
   .user-details {
-    padding-left: 1.5em;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    width: auto;
   }
 
   .cart-summary {
-    padding-right: 1.5em;
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    width: 100%;
   }
 
-  .order-summary {
-    height: 12vw;
+  .payment-container {
+    font-size: 4vw;
   }
 
   .order-summary div {
-    max-height: 12vw;
+    font-size: 3vw;
+  }
+
+  .main-container {
+    margin-top: 1vw;
+  }
+
+  .main-container div {
+    gap: 1.5vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding-bottom: 1.5vw;
+  }
+
+  .main-container h {
+    margin-bottom: 1vw;
+    font-size: 1.2em;
+  }
+
+  .main-container input {
+    font-size: 0.75em;
+
+    text-indent: 5px;
+
+    border-radius: 5px;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+  }
+
+  .order-summary div {
+    font-size: 3.25vw;
+  }
+
+  .login-for-loyalty {
+    font-size: 3.5vw;
+  }
+
+  .coupon-wrap input {
+    font-size: 3vw;
   }
 }

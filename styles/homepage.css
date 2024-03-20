@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+.html {
+  height: 100%;
+}
+
 .container {
   max-width: 1536px;
   margin-left: auto;
@@ -19,8 +23,23 @@
 }
 
 body {
-  font-family: "Roboto";
+  min-width: 100%;
+  /* display: flex;
+  flex-direction: column; */
+  /* position: relative; */
 }
+
+/* body::before {
+  content: ""; Create a pseudo-element
+  position: fixed; Position the pseudo-element
+  top: 0;
+  left: 0;
+  width: 100%; Cover the entire viewport
+  height: 100%;
+  background-image: url("../images/styles/svgs/grid.svg");
+  opacity: 0.75; Adjust the opacity as desired
+  z-index: -1; Place the pseudo-element behind other content
+} */
 
 .product-image {
   max-width: 100%;
@@ -33,10 +52,11 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 
-  gap: 2vw;
-  margin-bottom: 5vw;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  /* margin-left: 10vw; */
+  /* margin-right: 10vw; */
 
   transition: opacity 1s ease;
 }
@@ -58,7 +78,7 @@ body {
   width: 20%;
   height: auto;
 
-  font-size: 1.2vw;
+  font-size: 1.25rem;
 }
 
 .hide-pe {
@@ -72,49 +92,85 @@ body {
   align-items: center;
 
   height: auto;
-  margin-bottom: 0vh;
-  width: 80%;
+  margin-bottom: 0rem;
+  width: 75%;
 }
 
 @media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .product-container {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 1280px) {
   .product-container {
     width: 25%;
-    font-size: 1.4vw;
+    font-size: 1.2rem;
   }
 
   .product-grid {
-    gap: 4vw;
+    gap: 3rem;
+  }
+
+  .container {
+    max-width: 1024px;
   }
 }
 
 @media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .product-container {
+    font-size: 1.1rem;
+    width: 28%;
+  }
 }
 
 @media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+
+  .product-container {
+    width: 29%;
+    font-size: 1rem;
+  }
+
+  .product-grid {
+    gap: 2.25rem;
+  }
 }
 
 @media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+
   .product-container {
-    width: 30%;
-    font-size: 1.8vw;
+    width: 40%;
   }
 }
 
 @media (max-width: 475px) {
   .product-container {
-    width: 40%;
-    font-size: 2vw;
+    width: 66%;
+    font-size: 4vw;
+  }
+
+  .product-grid {
+    gap: 10vw;
+
+    margin-bottom: 5vw;
+    margin-top: 5vw;
   }
 
   .product-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    margin-bottom: 0vh;
     width: 66%;
   }
 }

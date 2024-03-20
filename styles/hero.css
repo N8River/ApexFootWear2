@@ -1,5 +1,4 @@
 .hero-container {
-  height: 40vw;
   max-height: 700px;
   width: 100%;
   display: flex;
@@ -7,7 +6,7 @@
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 1vw;
+  margin-bottom: 1rem;
 }
 
 .hero-background {
@@ -20,9 +19,8 @@
 
   border-radius: 60px;
 
-  height: 40vw;
   max-height: 700px;
-  width: 97%;
+  width: 100%;
 }
 
 .layered-steps-700 {
@@ -44,27 +42,21 @@
   align-items: center;
   justify-content: center;
 
-  height: 40vw;
   max-height: 700px;
   width: 100%;
-
-  overflow: hidden;
 }
 
 .hero-shoe-img {
   position: relative;
+  top: 2rem;
 
-  /* left: 50%; */
-
-  top: 6.5vw;
-  height: 50vw;
+  height: 900px;
   width: auto;
-  overflow: hidden;
 }
 
 .hero-text {
   position: absolute;
-  top: 18vw;
+  top: 24rem;
 
   text-wrap: nowrap;
 
@@ -72,176 +64,201 @@
   text-align: center;
 
   font-family: "FF-italic";
-  font-size: 10vw;
-  letter-spacing: 4px;
-  color: hsl(30, 100%, 50%);
+  font-size: 10rem;
+  letter-spacing: 3.5px;
+  color: var(--clr-copper);
 
-  text-shadow: 2px 2px 2px hsl(30, 100%, 25%);
+  text-shadow: 2px 2px 2px var(--clr-copper-shadow);
 }
 
 .hero-about-us {
-  position: absolute;
-  top: 8.5vw;
-  right: 2.2vw;
+  position: relative;
+  top: 1.2rem;
+  left: 42rem;
 
   z-index: 2;
   text-align: center;
 
-  height: 8vw;
-  width: 8vw;
+  height: 8rem;
+  width: 8rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background-color: hsl(200, 100%, 20%);
-  border-radius: 1000px;
+  background-color: var(--clr-darkteal);
+  border-radius: 50%;
+  line-height: 8rem;
 
   cursor: pointer;
   font-family: "Futura c";
   font-weight: 100;
 
-  color: hsl(200, 100%, 90%);
-  font-size: 3vw;
+  color: var(--clr-verylightteal);
+  font-size: 2.5rem;
 
   transition: 200ms all ease;
 }
 
 .hero-about-us:hover {
-  background-color: hsl(200, 100%, 15%);
-  color: hsl(190, 100%, 85%);
+  background-color: var(--clr-darkteal-hover);
+  color: var(--clr-verylightteal-hover);
 }
 
 @media (max-width: 1536px) {
   .hero-text {
-    top: 20vw;
+    top: 26rem;
+    font-size: 8.2rem;
+  }
+
+  .hero-about-us {
+    top: 1.2rem;
+    left: 34rem;
+
+    height: 8rem;
+    width: 8rem;
   }
 
   .hero-shoe-img {
-    height: 55vw;
-    top: 6.8vw;
+    top: 2.5rem;
   }
 }
 
 @media (max-width: 1280px) {
+  .hero-container {
+    height: 35rem;
+  }
+
   .hero-text {
-    font-size: 9.8vw;
-    top: 21vw;
+    top: 22.5rem;
+    font-size: 6.7rem;
+    letter-spacing: 2.5px;
   }
 
   .hero-shoe-img {
-    top: 7.9vw;
+    top: -3.5rem;
+    height: 45rem;
   }
 
   .hero-background {
-    border-radius: 50px;
-    width: 98%;
+    height: 35rem;
+    border-radius: 70px;
   }
 
   .hero-about-us {
-    top: 9.8vw;
-    right: 2vw;
+    top: 1.3rem;
+    left: 26.1rem;
   }
 }
 
 @media (max-width: 1024px) {
-  .hero-background {
-    width: 98.5%;
-    border-radius: 40px;
+  .hero-about-us {
+    top: 1.3rem;
+    left: 19.2rem;
+
+    height: 6rem;
+    width: 6rem;
+
+    font-size: 1.8rem;
   }
 
   .hero-text {
-    font-size: 9.3vw;
-    top: 22vw;
+    font-size: 4.8rem;
   }
 
-  .hero-about-us {
-    top: 10.5vw;
-    right: 2.2vw;
-
-    font-size: 3.4vw;
-    height: 9vw;
-    width: 9vw;
+  .hero-shoe-img {
+    height: 40rem;
+    top: -2rem;
   }
 }
 
 @media (max-width: 768px) {
-  .hero-shoe-img {
-    top: 6.8vw;
-    height: 55vw;
+  .hero-text {
+    font-size: 4rem;
+    letter-spacing: 2px;
+
+    top: 21rem;
   }
 
-  .hero-text {
-    top: 23.5vw;
-    font-size: 9vw;
+  .hero-shoe-img {
+    height: 35rem;
+  }
+
+  .hero-container,
+  .hero-background {
+    height: 30rem;
   }
 
   .hero-about-us {
-    top: 13vw;
-    right: 2.2vw;
-    font-size: 3.3vw;
-    height: 9vw;
-    width: 9vw;
+    top: 1.3rem;
+    left: 15.2rem;
+    height: 6rem;
+    width: 6rem;
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 640px) {
-  .hero-text {
-    top: 24.5vw;
-    font-size: 8.9vw;
-    text-shadow: 1px 1px 1.5px hsl(30, 100%, 20%);
-    letter-spacing: 3px;
+  .hero-about-us {
+    top: 0.8rem;
+    left: 10.7rem;
+  }
+
+  .hero-container,
+  .hero-background {
+    height: 35rem;
   }
 
   .hero-background {
-    width: 99%;
-    border-radius: 25px;
+    border-radius: 40px;
   }
 
-  .hero-about-us {
-    top: 14.5vw;
-    right: 2.2vw;
-    font-size: 3.6vw;
-    height: 10vw;
-    width: 10vw;
+  .hero-text {
+    top: 23rem;
+    font-size: 5.5rem;
+    text-wrap: wrap;
+    width: 459px;
   }
 
   .hero-shoe-img {
-    height: 50vw;
-    top: 7.5vw;
+    top: 2rem;
+
+    width: 100%;
+    height: auto;
   }
 }
 
 @media (max-width: 475px) {
   .hero-text {
-    top: 24.5vw;
-    font-size: 9.8vw;
-    letter-spacing: 2px;
+    position: relative;
+    top: 50%;
+
+    transform: translateY(-50%);
+    font-size: 18vw;
+    max-width: 98%;
   }
 
   .hero-shoe-img {
-    top: 8vw;
+    top: 7%;
+    transform: translateY(-50%);
+
+    overflow-x: hidden;
   }
 
   .hero-about-us {
-    top: 12.8vw;
-    right: 2.3vw;
+    top: -38%;
+    left: 48%;
+
+    transform: translateX(-50%);
+
+    height: 5rem;
+    width: 5rem;
+
+    font-size: 1.5rem;
   }
 
+  .hero-background,
   .hero-container {
-    margin-bottom: 2vw;
-  }
-}
-
-@media (max-width: 390px) {
-  .hero-text {
-    top: 23.5vw;
-    letter-spacing: 1.5px;
-  }
-}
-
-@media (max-width: 320px) {
-  .hero-text {
-    top: 24vw;
-    font-size: 9.5vw;
+    height: 110vw;
   }
 }

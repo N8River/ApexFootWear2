@@ -8,6 +8,16 @@
   src: url("../fonts/futura/futura medium bt.ttf");
 }
 
+:root {
+  --clr-darkteal: hsl(200, 100%, 20%);
+  --clr-darkteal-hover: hsl(200, 100%, 15%);
+  --clr-lightteal: hsl(200, 75%, 45%);
+  --clr-copper: hsl(35, 100%, 50%);
+  --clr-copper-shadow: hsl(35, 85%, 25%);
+  --clr-verylightteal: hsl(200, 66%, 85%);
+  --clr-verylightteal-hover: hsl(200, 56%, 70%);
+}
+
 .hide {
   display: none !important;
   transition: 100ms all ease-out;
@@ -23,8 +33,8 @@
   opacity: 1;
 }
 
-.announcement-bar {
-  background-color: hsl(200, 100%, 25%);
+.announcement-bar.container {
+  background-color: var(--clr-darkteal);
   height: 2rem;
 
   color: white;
@@ -34,7 +44,9 @@
   justify-content: center;
   align-items: center;
   letter-spacing: 1px;
-  font-size: 1vw;
+  font-size: 1.2rem;
+
+  max-width: 100%;
 }
 
 .announcement-text {
@@ -44,18 +56,21 @@
 .brand-header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 6vw; /* This sets the fixed height of the header */
-  font-size: 1.2vw;
+  height: 7rem;
+  font-size: 1.25rem;
+
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
 .brand-header-left {
-  height: 100%;
+  height: 7rem;
   display: flex;
   align-items: center;
 }
 
 .brand-header-middle {
-  height: 100%;
+  height: 7rem;
 
   display: flex;
   justify-content: center;
@@ -63,27 +78,26 @@
 }
 
 .brand-header-right {
-  height: 100%;
+  height: 7rem;
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
 
-  margin-right: 5%;
-  gap: 5%;
+  gap: 1em;
 }
 
 .widget-left {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   border-radius: 100px;
-  background-color: hsl(200, 50%, 90%);
+  background-color: var(--clr-verylightteal);
 
-  height: 66%;
-  margin-left: 5%;
+  height: 60%;
+  width: 100%;
 }
 
 .widget-left div {
@@ -94,7 +108,7 @@
   justify-content: center;
   align-items: center;
 
-  padding: 0vh 1.2vw;
+  padding: 0em 1.15em;
   height: 100%;
 
   font-family: "Futura";
@@ -108,19 +122,19 @@
   cursor: pointer;
 }
 .widget-home-2:hover {
-  background-color: hsl(200, 70%, 75%);
+  background-color: var(--clr-verylightteal-hover);
 }
 
 .widget-all-2 {
   background-color: black;
-  color: hsl(200, 66%, 95%);
+  color: var(--clr-verylightteal);
   cursor: pointer;
 }
 
 .widget-newdrops:hover,
 .widget-trending:hover,
 .widget-all:hover {
-  background-color: hsl(200, 70%, 75%);
+  background-color: var(--clr-verylightteal-hover);
   cursor: pointer;
 }
 
@@ -131,7 +145,7 @@
 
 .widget-home {
   background-color: black;
-  color: hsl(200, 66%, 95%);
+  color: var(--clr-verylightteal);
 }
 
 .brand-header-right div {
@@ -139,20 +153,20 @@
   align-items: center;
   justify-content: center;
 
-  height: 66%;
-  padding: 0vh 1.1vw;
+  height: 60%;
+  padding: 0em 0.7em;
 }
 
 .brand-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5.5vw;
+  height: 7rem;
 }
 
 .user-btn,
 .cart-btn {
-  background-color: hsl(200, 50%, 90%);
+  background-color: var(--clr-verylightteal);
   border-radius: 100px;
 
   display: flex;
@@ -166,7 +180,7 @@
 
 .user-btn:hover,
 .cart-btn:hover {
-  background-color: hsl(200, 50%, 75%);
+  background-color: var(--clr-verylightteal-hover);
 }
 
 .cart-logo,
@@ -181,9 +195,9 @@
 
   text-align: center;
 
-  border-radius: 100px;
-  background-color: hsl(200, 50%, 90%);
-  padding: 0vh 2.5vh;
+  border-radius: 50%;
+  background-color: var(--clr-verylightteal);
+  padding: 0rem 1.15rem;
   height: 100%;
 
   font-family: "Futura";
@@ -200,79 +214,201 @@
 } */
 
 @media (max-width: 1536px) {
+  .brand-header {
+    font-size: 1.1rem;
+  }
+
+  .widget-left div {
+    padding: 0rem 1.1rem;
+  }
 }
 
 @media (max-width: 1280px) {
-  .user-logo,
-  .cart-logo {
-    width: 2vw;
-    height: 2vw;
+  .widget-all {
+    display: none !important;
   }
 
-  .brand-header-right {
-    gap: 1vw;
+  .tablet-widget-all {
+    display: flex !important;
   }
 }
 
 @media (max-width: 1024px) {
-  .announcement-bar {
-    font-size: 1.5vw;
+  .announcement-text {
+    font-size: 1rem;
+  }
+
+  .brand-header {
+    font-size: 0.9rem;
+    height: 6rem;
+  }
+
+  .brand-header-left,
+  .brand-header-middle,
+  .brand-header-right {
+    height: 6rem;
+  }
+
+  .widget-left div {
+    padding: 0rem 0.9rem;
+  }
+
+  .widget-left {
+    height: 60%;
+  }
+
+  .brand-logo {
+    height: 6rem;
+  }
+
+  .tablet-widget-all {
+    font-size: 0.9rem;
+
+    height: 3.6rem !important;
+    width: 3.6rem !important;
+
+    border-radius: 50% !important;
   }
 }
 
 @media (max-width: 768px) {
-  .announcement-bar {
-    height: 1.8rem;
-    font-size: 1.7vw;
-  }
-
   .brand-header {
-    height: 8vw;
-    font-size: 1.4vw;
+    font-size: 0.8rem;
   }
 
   .brand-logo {
-    height: 7vw;
+    position: absolute;
+    top: 2.25rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-  .brand-header-right {
-    gap: 2vw;
-  }
-
-  .user-btn,
-  .cart-btn {
-    padding: 0vw 1.5vw;
+  .widget-left div {
+    padding: 0rem 0.8rem;
   }
 
   .user-logo,
   .cart-logo {
-    width: 3vw;
-    height: 3vw;
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .user-btn,
+  .cart-btn {
+    height: 3.6rem;
+    width: 3.6rem;
   }
 }
 
 @media (max-width: 640px) {
   .announcement-bar {
-    font-size: 1.5vw;
-    height: 3vw;
+    height: 4rem !important;
+
+    letter-spacing: 0px !important;
+  }
+
+  .brand-header {
+    height: 7rem;
+    font-size: 0.7rem;
+  }
+
+  .brand-header-left,
+  .brand-header-middle,
+  .brand-header-right {
+    height: 7rem;
+  }
+
+  .widget-left {
+    height: 50%;
+    border-radius: 50px;
+  }
+
+  .widget-left div {
+    padding: 0rem 1rem;
+  }
+
+  .brand-logo {
+    top: 4.5rem;
+    height: 6.5rem;
+  }
+
+  .widget-home {
+    display: none !important;
+  }
+
+  .brand-header-right {
+    gap: 0.25rem;
+  }
+
+  .brand-header-right div {
+    height: 3rem !important;
+    width: 3rem !important;
+  }
+
+  .tablet-widget-all {
+    height: 3rem !important;
+    width: 3rem !important;
   }
 }
 
 @media (max-width: 475px) {
-  .widget-all {
-    display: none !important;
+  .announcement-text {
+    font-size: 3.5vw;
   }
 
-  .brand-header {
-    font-size: 1.75vw;
-  }
+  .widget-left {
+    background-color: white;
 
-  .tablet-widget-all {
-    display: flex !important;
-    font-size: 1em;
+    flex-direction: column;
+
+    height: 95%;
+    border-radius: 0px;
   }
 
   .brand-header-right {
-    margin-right: 7.5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 0rem;
+  }
+
+  .brand-header-right div {
+    height: 12vw !important;
+    width: 12vw !important;
+  }
+
+  .tablet-widget-all,
+  .user-btn {
+    margin-left: 1.3vw;
+    margin-right: 1.3vw;
+
+    font-size: 2.75vw;
+  }
+
+  .widget-left div {
+    background-color: var(--clr-verylightteal);
+    width: 75%;
+
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+  }
+
+  .cart-logo,
+  .user-logo {
+    height: 6vw;
+    width: 6vw;
+  }
+
+  .brand-header {
+    font-size: 2.75vw;
+  }
+
+  .brand-logo {
+    /* height: 22vw; */
+  }
+
+  .user-btn {
+    display: none !important;
   }
 }
