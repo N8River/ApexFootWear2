@@ -325,5 +325,20 @@
 
   .footer-mobile {
     display: flex !important;
+    font-size: 5.5vw;
+  }
+
+  .visit-store-drpdwn,
+  .sign-up-drpdwn,
+  .customer-care-drpdwn {
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+
+    font-size: 0.9em;
+  }
+
+  .customer-care {
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
 }

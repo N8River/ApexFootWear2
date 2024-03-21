@@ -4,13 +4,13 @@
   justify-content: center;
   align-items: center;
 
-  padding-left: 25vw;
-  padding-right: 25vw;
+  padding-left: 25%;
+  padding-right: 25%;
 
-  margin-top: 5vw;
-  margin-bottom: 50vh;
+  margin-top: 2.5rem;
+  margin-bottom: 15rem;
 
-  font-size: 1.5vw;
+  font-size: 1rem;
 }
 
 .login-heading {
@@ -18,13 +18,13 @@
   font-weight: 600;
 
   display: flex;
-  padding-bottom: 0.3vw;
+  padding-bottom: 0.2rem;
 }
 
 .login-lines {
   font-family: "Futura";
-  font-size: 0.9em;
-  margin: 0.3vw;
+  font-size: 1em;
+  margin-bottom: 0.3rem;
 }
 
 .tel-input-container {
@@ -35,20 +35,20 @@
 
   border: 1px solid rgb(128, 128, 128);
   border-radius: 5px;
-  height: 3vw;
+  height: 2.5rem;
   font-family: "futura";
+  font-size: 1em;
 
-  padding: 0.3vw;
-  font-size: 0.85em;
+  padding: 0.3rem;
 
-  margin: 0.3vw;
+  margin: 0.3rem;
 }
 
 .tel-input {
   border: none;
   border-left: 1px solid rgb(128, 128, 128);
 
-  padding: 0.3vw;
+  padding: 0.3rem;
 
   height: 100%;
 
@@ -68,22 +68,22 @@
   justify-content: center;
   align-items: center;
 
-  margin-right: 0.3vw;
+  margin-right: 0.3rem;
 
   height: 100%;
 }
 
 .request-otp-btn {
-  margin: 0.5vw;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
+  margin: 0.5rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
   font-family: "Futura";
-  font-size: 1em;
+  font-size: 1.25em;
 
   color: white;
   background-color: black;
@@ -91,16 +91,17 @@
   border: none;
   border-radius: 10px;
 
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .login-lines-2 {
   width: 100%;
   font-family: "Futura";
-  margin: 0.3vw;
+  margin: 0.8rem 0.8rem;
+
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   position: relative;
 }
@@ -116,18 +117,18 @@
 }
 
 .login-lines-2::before {
-  margin-right: 0.4vw; /* Adjust spacing between text and line */
+  margin-right: 1rem; /* Adjust spacing between text and line */
 }
 
 .login-lines-2::after {
-  margin-left: 0.4vw; /* Adjust spacing between text and line */
+  margin-left: 1rem; /* Adjust spacing between text and line */
 }
 
 .login-action-btn {
-  margin: 0.4vw;
+  margin: 0.3rem;
 
-  width: 9vw;
-  height: 4vw;
+  width: 10rem;
+  height: 3rem;
 
   display: flex;
   justify-content: center;
@@ -137,7 +138,7 @@
   border-radius: 10px;
 
   font-family: "Futura";
-  font-size: 1em;
+  font-size: 1.25em;
 
   background-color: white;
 }
@@ -147,13 +148,79 @@
   justify-content: center;
   align-items: center;
 
-  width: 3vw;
+  height: 75%;
 
-  padding-right: 0.5vw;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .login-container {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+  }
 }
 
 @media (max-width: 640px) {
+  .login-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (max-width: 475px) {
+  .login-container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 5vw;
+    margin-bottom: 50vw;
+    font-size: 3.25vw;
+  }
+
+  .login-heading {
+    padding-bottom: 0.5vw;
+  }
+
+  .login-lines {
+    margin-bottom: 0.5vw;
+  }
+
+  .tel-input-container {
+    height: 7.5vw;
+
+    padding: 0.3vw;
+    margin: 0.3vw;
+  }
+
+  .login-lines-2 {
+    margin: 0.8vw 0.8vw;
+  }
+
   .login-action-btn {
-    border-radius: 3px;
+    margin: 1.5vw;
+    width: 33vw;
+    height: 8vw;
+
+    font-size: 1.25em;
+  }
+
+  .login-action-btn-img {
+    padding-right: 1.5vw;
+  }
+
+  .request-otp-btn {
+    margin: 1.5vw;
+    padding-top: 2.25vw;
+    padding-bottom: 2.25vw;
+
+    border-radius: 2vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
 }

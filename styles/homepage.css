@@ -20,8 +20,6 @@
   margin-right: auto;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-
-  border: 1px solid red;
 }
 
 body {
@@ -61,6 +59,8 @@ body {
   /* margin-right: 10vw; */
 
   transition: opacity 1s ease;
+
+  min-height: 100vh;
 }
 
 .product-grid.hide-pe {

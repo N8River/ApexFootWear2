@@ -5,25 +5,22 @@ export function alertCart() {
   }, 3500);
 }
 
-let lastScrollTop = 0;
-const rewardsPopUp = document.querySelector(".mobile-user");
+// let lastScrollTop = 0;
+// const rewardsPopUp = document.querySelector(".mobile-user");
 
-window.addEventListener("scroll", function () {
-  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+// window.addEventListener("scroll", function () {
+//   let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (currentScroll > lastScrollTop) {
-    // Scrolling down
+//   if (window.innerWidth <= 475) {}
+//   if (currentScroll > lastScrollTop) {
+//     this.setTimeout(() => {
+//       rewardsPopUp.style.display = "flex";
+//     }, 1500);
+//   } else {
+//     this.setTimeout(() => {
+//       rewardsPopUp.style.display = "flex";
+//     }, 1500);
+//   }
 
-    this.setTimeout(() => {
-      rewardsPopUp.style.display = "flex";
-    }, 1500);
-  } else {
-    // Scrolling up
-
-    this.setTimeout(() => {
-      rewardsPopUp.style.display = "flex";
-    }, 1500);
-  }
-
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-});
+//   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+// });
