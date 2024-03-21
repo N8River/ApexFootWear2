@@ -63,6 +63,7 @@
   cursor: pointer;
 
   display: none;
+  transition: all 0.3s ease;
 }
 
 .mobile-user img {
@@ -154,7 +155,7 @@
   }
 
   .mobile-user {
-    display: flex !important;
+    /* display: flex !important; */
 
     height: 9vw;
     width: fit-content;
