@@ -74,19 +74,20 @@
   .feature {
     font-size: 3vw;
   }
+
+  .features-container {
+    height: 10rem !important;
+  }
 }
 
 @media (max-width: 1024px) {
   .features-container {
-    height: 10rem !important;
+    height: 8.5rem !important;
   }
 
   .feature {
-    width: 17%;
+    width: 18%;
     font-size: 1.8rem;
-  }
-
-  .feature-wrap.container {
   }
 }
 
@@ -96,7 +97,7 @@
   }
 
   .features-container {
-    height: 8rem !important;
+    height: 8.5rem !important;
   }
 }
 
@@ -106,19 +107,22 @@
   }
 
   .feature {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-wrap: wrap;
     width: 18%;
+
+    padding: 0.25rem;
   }
 }
 
 @media (max-width: 475px) {
   .feature {
-    font-size: 3.7vw;
-    width: 19%;
+    font-size: 4vw;
+    text-wrap: wrap;
+    width: 18%;
   }
 
   .features-container {
-    height: 25vw !important;
+    height: 20vw !important;
   }
 }
