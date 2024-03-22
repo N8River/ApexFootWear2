@@ -11,18 +11,20 @@ const paymentContainer = document.querySelector(".payment-container");
 const closeCheckoutBtn = document.querySelector(".close-checkout-btn");
 
 checkoutBtn.addEventListener("click", () => {
-  if (paymentContainer.classList.contains("active")) {
-    paymentContainer.classList.remove("active");
-    paymentContainer.classList.add("hide");
-  } else {
-    paymentContainer.classList.add("active");
-    paymentContainer.classList.remove("hide");
-  }
+  paymentContainer.classList.toggle("hide");
+
+  setTimeout(() => {
+    paymentContainer.style.opacity = 1;
+  }, 0);
 });
 
 closeCheckoutBtn.addEventListener("click", () => {
-  paymentContainer.classList.remove("active");
-  paymentContainer.classList.add("hide");
+  setTimeout(() => {
+    paymentContainer.style.opacity = 0;
+    setTimeout(() => {
+      paymentContainer.classList.toggle("hide");
+    }, 250);
+  }, 0);
 });
 
 document.querySelector(".subtotal-rupees").innerHTML = calculateSubTotal();

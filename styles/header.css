@@ -13,24 +13,24 @@
   --clr-darkteal-hover: hsl(200, 100%, 15%);
   --clr-lightteal: hsl(200, 75%, 45%);
   --clr-copper: hsl(40, 100%, 50%);
-  --clr-copper-shadow: hsl(40, 85%, 25%);
+  --clr-copper-shadow: hsl(40, 85%, 20%);
   --clr-verylightteal: hsl(200, 66%, 85%);
   --clr-verylightteal-hover: hsl(200, 56%, 70%);
 }
 
 .hide {
   display: none !important;
-  transition: 100ms all ease-out;
+
+  transition: all 100ms ease;
 }
 
 .hide-opacity {
   opacity: 0;
-  transition: 100ms all ease-out;
+  transition: 100ms all ease;
 }
 
 .active {
-  transition: 250ms all ease;
-  opacity: 1;
+  transition: all 250ms ease;
 }
 
 .announcement-bar.container {

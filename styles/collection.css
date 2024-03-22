@@ -27,6 +27,8 @@
 
   gap: 2rem;
   font-size: 1.25rem !important;
+
+  transition: all 0.25s ease;
 }
 
 .filter-header {
@@ -157,15 +159,17 @@
 
   font-family: "Futura C";
   font-size: 10rem;
-  color: white;
+  color: var(--clr-copper);
+  text-shadow: 2px 2px 2px var(--clr-copper-shadow);
 }
 
 .p-small-1,
 .p-small-2 {
   font-family: "Futura C";
   font-size: 2.5rem;
-  color: white;
+  color: var(--clr-copper);
   font-weight: 500;
+  text-shadow: 1px 2px 2px var(--clr-copper-shadow);
 }
 
 .p-small-1 {
@@ -230,7 +234,7 @@
 .filter-color div:hover,
 .filter-price div:hover {
   background-color: black;
-  color: var(--clr-verylightteal-hover);
+  color: var(--clr-verylightteal);
   cursor: pointer;
 }
 

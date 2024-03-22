@@ -119,15 +119,23 @@ const filterSneakers = document.querySelector(".filter-sneakers");
 const filterLoafers = document.querySelector(".filter-loafers");
 
 filterLoafers.addEventListener("click", () => {
-  // filterLoafers.classList.toggle("active-filter");
-  // filterSneakers.classList.toggle("active-filter");
-  renderCollection(productTypeFilter(products, "loafers"));
+  document.querySelector(".product-grid-all").style.opacity = 0;
+
+  setTimeout(() => {
+    renderCollection(productTypeFilter(products, "loafers"));
+    document.querySelector(".product-grid-all").style.opacity = 1;
+  }, 251);
+
   addToCartCollection();
 });
+
 filterSneakers.addEventListener("click", () => {
-  // filterLoafers.classList.toggle("active-filter");
-  // filterSneakers.classList.toggle("active-filter");
-  renderCollection(productTypeFilter(products, "sneakers"));
+  document.querySelector(".product-grid-all").style.opacity = 0;
+  setTimeout(() => {
+    renderCollection(productTypeFilter(products, "sneakers"));
+    document.querySelector(".product-grid-all").style.opacity = 1;
+  }, 251);
+
   addToCartCollection();
 });
 
@@ -137,19 +145,35 @@ const filterGrey = document.querySelector(".filter-grey");
 const filterBrown = document.querySelector(".filter-brown");
 
 filterWhite.addEventListener("click", () => {
-  renderCollection(productColorFilter(products, "white"));
+  document.querySelector(".product-grid-all").style.opacity = 0;
+  setTimeout(() => {
+    renderCollection(productColorFilter(products, "white"));
+    document.querySelector(".product-grid-all").style.opacity = 1;
+  }, 251);
   addToCartCollection();
 });
 filterBlack.addEventListener("click", () => {
-  renderCollection(productColorFilter(products, "black"));
+  document.querySelector(".product-grid-all").style.opacity = 0;
+  setTimeout(() => {
+    renderCollection(productColorFilter(products, "black"));
+    document.querySelector(".product-grid-all").style.opacity = 1;
+  }, 251);
   addToCartCollection();
 });
 filterBrown.addEventListener("click", () => {
-  renderCollection(productColorFilter(products, "brown"));
+  document.querySelector(".product-grid-all").style.opacity = 0;
+  setTimeout(() => {
+    renderCollection(productColorFilter(products, "brown"));
+    document.querySelector(".product-grid-all").style.opacity = 1;
+  }, 251);
   addToCartCollection();
 });
 filterGrey.addEventListener("click", () => {
-  renderCollection(productColorFilter(products, "grey"));
+  document.querySelector(".product-grid-all").style.opacity = 0;
+  setTimeout(() => {
+    renderCollection(productColorFilter(products, "grey"));
+    document.querySelector(".product-grid-all").style.opacity = 1;
+  }, 251);
   addToCartCollection();
 });
 
@@ -168,24 +192,35 @@ const under3000 = document.querySelector(".under-3000");
 const over3000 = document.querySelector(".over-3000");
 
 under3000.addEventListener("click", () => {
-  renderCollection(productPriceFilter(products, 2999, 0));
+  document.querySelector(".product-grid-all").style.opacity = 0;
+  setTimeout(() => {
+    renderCollection(productPriceFilter(products, 2999, 0));
+    document.querySelector(".product-grid-all").style.opacity = 1;
+  }, 251);
   addToCartCollection();
 });
 over3000.addEventListener("click", () => {
-  renderCollection(productPriceFilter(products, 9999, 3000));
+  document.querySelector(".product-grid-all").style.opacity = 0;
+  setTimeout(() => {
+    renderCollection(productPriceFilter(products, 9999, 3000));
+    document.querySelector(".product-grid-all").style.opacity = 1;
+  }, 251);
   addToCartCollection();
 });
 
-const searchButton = document.querySelector(".search-input");
-const productsObject = document.querySelectorAll(".product-container");
-searchButton.addEventListener("input", (e) => {
-  const value = e.target.value.toLowerCase();
+searchBar();
+function searchBar() {
+  const searchButton = document.querySelector(".search-input");
+  const productsObject = document.querySelectorAll(".product-container");
+  searchButton.addEventListener("input", (e) => {
+    const value = e.target.value.toLowerCase();
 
-  productsObject.forEach((productObject) => {
-    const productName = productObject
-      .querySelector(".product-name")
-      .innerHTML.toLowerCase();
-    const isVisible = productName.includes(value);
-    productObject.classList.toggle("hide-for-search", !isVisible);
+    productsObject.forEach((productObject) => {
+      const productName = productObject
+        .querySelector(".product-name")
+        .innerHTML.toLowerCase();
+      const isVisible = productName.includes(value);
+      productObject.classList.toggle("hide-for-search", !isVisible);
+    });
   });
-});
+}
