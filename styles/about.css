@@ -6,13 +6,15 @@ a {
 
 .about-container {
   display: flex;
-  padding-left: 20vw;
-  padding-right: 20vw;
+  /* padding-left: 15rem;
+  padding-right: 15rem; */
 
   background-image: url("../images/styles/stacked-peaks-2000 (2).svg");
 
-  padding-top: 1vw;
-  padding-bottom: 1vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  min-height: 100vh;
 }
 
 .about-text {
@@ -25,11 +27,11 @@ a {
 
   font-family: "Futura";
 
-  font-size: 2vw;
+  font-size: 2rem;
   color: white;
 
-  margin-bottom: 1vw;
-  text-shadow: 2px 2px 2px hsl(213, 50%, 20%);
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 2px var(--clr-darkteal-hover);
 }
 
 .about-heading {
@@ -37,10 +39,53 @@ a {
   align-items: center;
   justify-content: center;
 
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-family: "Futura C";
-  font-size: 4vw;
+  font-size: 4rem;
 
-  margin-top: 0.8vw;
-  margin-bottom: 0.8vw;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.about-container.container {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .about-text {
+    font-size: 1.6rem;
+  }
+
+  .about-heading {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-text {
+    font-size: 1.4rem;
+  }
+
+  .about-heading {
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 475px) {
+  .about-text {
+    font-size: 5vw;
+  }
+
+  .about-heading {
+    font-size: 8vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+  }
+
+  .about-container {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+  }
 }

@@ -465,7 +465,7 @@
   }
 
   .product-container__c {
-    width: 12rem;
+    width: 15rem;
   }
 
   .product-grid-all {
@@ -473,14 +473,15 @@
   }
 
   .product-name__c {
-    height: 2.5rem !important;
+    height: fit-content !important;
     font-size: 1rem !important;
+    width: 100%;
   }
 
   .product-price__c {
     font-size: 0.9rem !important;
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-bottom: 0.5rem;
   }
 
@@ -591,17 +592,17 @@
   }
 
   .product-price__c {
-    font-size: 0.8em !important;
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
+    font-size: 3.2vw !important;
+    padding-left: 5vw;
+    padding-right: 5vw;
 
     margin-bottom: 1vw;
   }
 
   .product-name__c {
-    height: 4vw !important;
+    height: fit-content !important;
     width: 100%;
-    font-size: 3.5vw !important;
+    font-size: 3.2vw !important;
     margin-bottom: 1vw;
   }
 

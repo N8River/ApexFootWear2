@@ -1,5 +1,5 @@
 document.querySelector(".about-container").innerHTML = `
-<div class="about-text">
+<div class="about-text container">
   <h class="about-heading">About Us</h>
   <p>Welcome to Apex Footwear, where craftsmanship meets elegance, and comfort intertwines with style. Established with a vision to redefine the standards of footwear excellence, we take pride in curating a collection that reflects the essence of sophistication and luxury.</p>
 
