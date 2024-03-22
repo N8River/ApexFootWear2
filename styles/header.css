@@ -12,8 +12,8 @@
   --clr-darkteal: hsl(200, 100%, 20%);
   --clr-darkteal-hover: hsl(200, 100%, 15%);
   --clr-lightteal: hsl(200, 75%, 45%);
-  --clr-copper: hsl(35, 100%, 50%);
-  --clr-copper-shadow: hsl(35, 85%, 25%);
+  --clr-copper: hsl(40, 100%, 50%);
+  --clr-copper-shadow: hsl(40, 85%, 25%);
   --clr-verylightteal: hsl(200, 66%, 85%);
   --clr-verylightteal-hover: hsl(200, 56%, 70%);
 }
