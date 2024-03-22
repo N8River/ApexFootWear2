@@ -166,3 +166,8 @@ newdropsTrending.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+// window.addEventListener("load", () => {
+//   const heroText = document.querySelector(".hero-text");
+//   heroText.classList.add("show");
+// });

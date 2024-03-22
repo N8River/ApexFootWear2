@@ -1,3 +1,25 @@
+@keyframes comeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes textFill {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
 .hero-container {
   max-height: 700px;
   width: 100%;
@@ -52,6 +74,8 @@
 
   height: 900px;
   width: auto;
+
+  animation: comeDown 1s ease 0.5s 1 normal both;
 }
 
 .hero-text {
@@ -66,9 +90,41 @@
   font-family: "FF-italic";
   font-size: 10rem;
   letter-spacing: 3.5px;
-  color: var(--clr-copper);
 
+  color: transparent;
+  /* -webkit-text-stroke: 2px var(--clr-copper); */
+
+  /* ANIMATION AFTER */
+  /* color: var(--clr-copper); */
+  /* text-shadow: 2px 2px 2px var(--clr-copper-shadow); */
+
+  /* animation: textFill 1.5s ease 1s 1 normal both; */
+}
+
+.hero-text::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+
+  text-wrap: nowrap;
+
+  z-index: 1;
+  text-align: center;
+
+  font-family: "FF-italic";
+  font-size: 10rem;
+  letter-spacing: 3.5px;
+
+  /* ANIMATION AFTER */
+  color: var(--clr-copper);
   text-shadow: 2px 2px 2px var(--clr-copper-shadow);
+
+  overflow: hidden;
+
+  animation: textFill 1s ease-in-out 0.75s 1 normal both;
 }
 
 .hero-about-us {
@@ -97,12 +153,15 @@
   color: var(--clr-verylightteal);
   font-size: 2.5rem;
 
-  transition: 200ms all ease;
+  transition: all 200ms ease;
 }
 
 .hero-about-us:hover {
   background-color: var(--clr-darkteal-hover);
-  color: var(--clr-verylightteal-hover);
+  transform: translateY(-00.25rem) translateX(-00.25rem);
+  height: 8.5rem;
+  width: 8.5rem;
+  line-height: 8.5rem;
 }
 
 @media (max-width: 1536px) {
