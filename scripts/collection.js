@@ -56,6 +56,7 @@ function renderCollection(products) {
     `;
   });
   document.querySelector(".product-grid-all").innerHTML = productsHTML;
+  searchBar();
 }
 
 addToCartCollection();
@@ -208,7 +209,6 @@ over3000.addEventListener("click", () => {
   addToCartCollection();
 });
 
-searchBar();
 function searchBar() {
   const searchButton = document.querySelector(".search-input");
   const productsObject = document.querySelectorAll(".product-container");
