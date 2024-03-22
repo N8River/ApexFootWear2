@@ -16,6 +16,7 @@
   --clr-copper-shadow: hsl(40, 85%, 20%);
   --clr-verylightteal: hsl(200, 66%, 85%);
   --clr-verylightteal-hover: hsl(200, 56%, 70%);
+  --clr-verylightteal-shadow: hsl(200, 33%, 50%);
 }
 
 .hide {
@@ -136,6 +137,8 @@
 .widget-all:hover {
   background-color: var(--clr-verylightteal-hover);
   cursor: pointer;
+  transform: translateX(-5%) translateY(10%);
+  box-shadow: 2px -2.5px 2px var(--clr-verylightteal-shadow);
 }
 
 .widget-home,
@@ -181,6 +184,8 @@
 .user-btn:hover,
 .cart-btn:hover {
   background-color: var(--clr-verylightteal-hover);
+  transform: translateX(-5%) translateY(10%);
+  box-shadow: 2px -2.5px 2px var(--clr-verylightteal-shadow);
 }
 
 .cart-logo,
@@ -363,6 +368,10 @@
   .tablet-widget-all {
     height: 3rem !important;
     width: 3rem !important;
+  }
+
+  .announcement-text {
+    font-size: 0.85rem;
   }
 }
 

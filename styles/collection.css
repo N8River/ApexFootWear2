@@ -103,6 +103,7 @@
   letter-spacing: 0px;
 
   cursor: pointer;
+  transition: all 0.15s ease;
 }
 
 .filter-size div {
@@ -128,6 +129,8 @@
 
   border: 1.5px solid var(--clr-verylightteal);
   padding: 0.25rem;
+
+  transition: all 0.15s ease;
 }
 
 .active-filter {
@@ -147,7 +150,7 @@
   justify-content: center;
   align-items: center;
 
-  margin-top: 1rem;
+  margin-top: 0rem;
   margin-bottom: 1rem;
   height: 100%;
 }
@@ -235,6 +238,9 @@
 .filter-price div:hover {
   background-color: black;
   color: var(--clr-verylightteal);
+  border-color: black;
+
+  transform: translateX(-1.5%) translateY(5%);
   cursor: pointer;
 }
 
